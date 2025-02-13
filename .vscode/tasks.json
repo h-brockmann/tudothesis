@@ -1,0 +1,43 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build LaTeX",
+			"type": "shell",
+			"command": "latexmk",
+			"args": [
+				"--lualatex",
+				"--output-directory=build",
+				"thesis.tex",
+				// "-interaction=nonstopmode",
+				// "-file-line-error",
+				// "thesis.tex"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"presentation": {
+				// "reveal": "silent",
+				// "panel": "shared"
+			},
+			"problemMatcher": [
+				"$latex"
+			]
+		},
+		{
+			"label": "Build and Open PDF",
+			"type": "shell",
+			"dependsOn": "Build LaTeX",
+			"command": "code",
+			"args": [
+				"build/thesis.pdf"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			},
+			"presentation": {}
+		}
+	]
+}

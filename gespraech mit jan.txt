@@ -1,0 +1,28 @@
+1) Einleitung mit Motivation
+nicht adam und eva ABER
+was ist der grobe kontext
+warum brauchen wir das
+und warum habe ich das gemacht
+
+structure of this work
+
+2) Grundlagen
+Was ist RTOS, benchmarks und so
+Ein Informatiker sollte nach dem Kapitel die Arbeit verstehen.
+Bigger Context vor der state of the art (related work). was ist das größere System.
+Was haben andere getan? und dann bisschen festlegen wo meine arbeit da steht
+als letzte (sub-)section sowas wie related work. aber schon mal versuchen möglichst viele Quellen in den Grundlagen referenzieren und alles was nicht reingepasst hier einbauen (Das ist der Kontext, den habe ich hier nicht unterbekommen)
+
+Gucken wie tief oder feingranular ich das mache. Gut zum Seiten erzeugen oder wegschmeißen.
+
+3) Hauptteil
+gesamtbild/ziel erklären
+einzelne problemstellen herausstellen
+- hier erklären warum harmonische Taskset genutzt werden und warum keine harmonischen Tasksets?
+eigene Lösung präsentieren
+
+4) Fazit + Ausblick
+
+
+
+Jan sagt 50-60 Seiten sind top (als Betreuer)

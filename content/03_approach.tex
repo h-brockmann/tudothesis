@@ -1,0 +1,43 @@
+\chapter{Approach}
+\section{Model}
+\label{sec:model}
+periodic tasks
+hard deadlines
+preemption
+inter-task communication
+
+
+\section{Tasks with Release Times and Execution Times}
+\label{sec:tasks_release_execution}
+
+In real-time systems, tasks are characterized by their release times and execution times.
+The release time of a task is the time at which the task becomes ready for execution.
+Execution times can vary depending on the complexity and requirements of the task.
+
+Consider a set of tasks \( \tau = \{\tau_1, \tau_2, \ldots, \tau_n\} \).
+Each task \( \tau_i \) has a release time \( r_i \) and a list of possible execution times \( \{e_{i1}, e_{i2}, \ldots, e_{im}\} \).
+The release time \( r_i \) indicates when the task \( \tau_i \) is ready to be executed, and the list of execution times represents the different durations the task might take to complete under various conditions.
+The release times will be constrained further in the section \cref{sec:harmonic_task_set}.
+
+For example, let us define three tasks with their respective release times and execution times:
+
+\begin{itemize}
+	\item Task \( \tau_1 \): Release time \( r_1 = 0 \), Execution times \( \{3, 4, 5\} \)
+	\item Task \( \tau_2 \): Release time \( r_2 = 2 \), Execution times \( \{2, 3\} \)
+	\item Task \( \tau_3 \): Release time \( r_3 = 4 \), Execution times \( \{1, 2, 3\} \)
+\end{itemize}
+
+The scheduler must consider both the release times and the possible execution times to ensure that all tasks meet their deadlines.
+Each task will be assigned a hard deadline which strictly encases the time frame a task may be scheduled in. 
+This involves determining the optimal order of execution and allocating sufficient resources to handle the variability in execution times.
+
+By analyzing the release times and execution times, we can develop strategies to improve the efficiency and reliability of real-time systems, ensuring that tasks are completed within their required time frames.
+
+\section{Flow of Data}
+\label{sec:flow_of_data}
+
+\section{Creating Conditions}
+\label{sec:creating_conditions}
+
+\section{Representation}
+\label{sec:representation}

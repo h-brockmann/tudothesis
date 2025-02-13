@@ -33,13 +33,20 @@
 
 % load english (for abstract) and ngerman language
 % the main language has to come last
-\usepackage[american, ngerman]{babel}
+\usepackage[american]{babel}
+% \usepackage[american, ngerman]{babel}
 
 % intelligent quotation marks, language and nesting sensitive
 \usepackage[autostyle]{csquotes}
 
 % microtypographical features, makes the text look nicer on the small scale
 \usepackage{microtype}
+
+\usepackage{todonotes}
+%% TODO remove this package before submitting
+% \usepackage{showkeys}
+% \usepackage{acronym}
+\usepackage[printonlyused,withpage]{acronym}
 
 %------------------------------------------------------------------------------
 %------------------------ Math Packages and settings --------------------------
@@ -115,17 +122,19 @@
 %------------------------------------------------------------------------------
 
 \usepackage[
+	sortcites,
   backend=biber,   % use modern biber backend
   autolang=hyphen, % load hyphenation rules for if language of bibentry is not
                    % german, has to be loaded with \setotherlanguages
                    % in the references.bib use langid={en} for english sources
 ]{biblatex}
-\addbibresource{references.bib}  % the bib file to use
-\DefineBibliographyStrings{german}{andothers = {{et\,al\adddot}}}  % replace u.a. with et al.
+\addbibresource{Meine Bibliothek.bib}  % the bib file to use
+\DefineBibliographyStrings{english}{andothers = {{et\,al\adddot}}}  % replace u.a. with et al.
 
 
 % Last packages, do not change order or insert new packages after these ones
 \usepackage[pdfusetitle, unicode, linkbordercolor=tugreen, citebordercolor=tugreen]{hyperref}
+\usepackage{cleveref} % added
 \usepackage{bookmark}
 \usepackage[shortcuts]{extdash}
 
@@ -133,27 +142,29 @@
 %-------------------------    Angaben zur Arbeit   ----------------------------
 %------------------------------------------------------------------------------
 
-\author{Maximilian Nöthe}
-\title{\LaTeX-Dokumentenklasse und Vorlage für Abschlussarbeiten an der TU Dortmund}
-\date{2014}
-\birthplace{Castrop-Rauxel}
-\chair{Lehrstuhl für Experimentelle Physik V}
-\division{Fakultät Physik}
-\thesisclass{Bachelor of Science}
-\submissiondate{31. September 2015}
-\firstcorrector{Prof.~Dr.~Erstgutachter}
-\secondcorrector{Prof.~Dr.~Zweitgutachter}
+\author{Henning Brockmann}
+\title{Generating Real-Time System Specifications with Known Response Times}
+\date{2025}
+% \birthplace{Steinfurt}
+\chair{Lehrstuhl für Informatik 12}
+\division{Fakultät Informatik}
+\thesisclass{Master of Science}
+\submissiondate{03.März 2025}
+\firstcorrector{Prof.~Dr.~Peter~Ulbrich}
+\secondcorrector{Alwin~Berger}
 
 % tu logo on top of the titlepage
 \titlehead{\includegraphics[height=1.5cm]{logos/tu-logo.pdf}}
 
+
 \begin{document}
 \frontmatter
-\input{content/hints.tex}
+% \input{content/hints.tex}
 \maketitle
 
 % Gutachterseite
 \makecorrectorpage
+
 
 % hier beginnt der Vorspann, nummeriert in römischen Zahlen
 \input{content/00_abstract.tex}
@@ -161,14 +172,23 @@
 
 \mainmatter
 % Hier beginnt der Inhalt mit Seite 1 in arabischen Ziffern
-\input{content/01_einleitung.tex}
-\input{content/02_struktur.tex}
-\input{content/03_grundlagen.tex}
-\input{content/04_figs_tabs.tex}
+\input{content/01_introduction.tex}
+\input{content/02_basics.tex}
+\input{content/03_approach.tex}
+\input{content/04_evaluation.tex}
+% \input{content/05_approach.tex}
+% \input{content/06_evaluation.tex}
+% \input{content/07_relatedwork.tex}
+% \input{content/08_conclusion.tex}
+
+
+% \input{content/03_grundlagen.tex}
+% \input{content/04_figs_tabs.tex}
 
 \appendix
 % Hier beginnt der Anhang, nummeriert in lateinischen Buchstaben
 \input{content/a_anhang.tex}
+\input{content/b_acronyms.tex}
 
 \backmatter
 \printbibliography

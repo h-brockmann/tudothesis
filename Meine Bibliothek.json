@@ -1,0 +1,4108 @@
+{
+  "config": {
+    "id": "36a3b0b5-bad0-4a04-b79b-441c7cef77db",
+    "label": "BetterBibTeX JSON",
+    "preferences": {
+      "ascii": "",
+      "asciiBibLaTeX": false,
+      "asciiBibTeX": true,
+      "autoAbbrev": false,
+      "autoExport": "immediate",
+      "autoExportDelay": 5,
+      "autoExportIdleWait": 10,
+      "autoExportPathReplaceDiacritics": false,
+      "autoExportPathReplaceDirSep": "-",
+      "autoExportPathReplaceSpace": " ",
+      "automaticTags": true,
+      "autoPinDelay": 0,
+      "auxImport": false,
+      "baseAttachmentPath": "",
+      "biblatexExtendedDateFormat": true,
+      "biblatexExtendedNameFormat": true,
+      "biblatexExtractEprint": true,
+      "bibtexEditionOrdinal": false,
+      "bibtexParticleNoOp": false,
+      "bibtexURL": "off",
+      "cache": true,
+      "cacheDelete": false,
+      "cacheRetain": false,
+      "charmap": "",
+      "citeCommand": "cite",
+      "citekeyCaseInsensitive": true,
+      "citekeyFold": true,
+      "citekeyFormat": "auth.lower + shorttitle(3,3) + year",
+      "citekeySearch": true,
+      "citekeyUnsafeChars": "\\\"#%'(),={}~",
+      "csquotes": "",
+      "DOIandURL": "both",
+      "exportBibTeXStrings": "off",
+      "exportBraceProtection": true,
+      "exportSort": "citekey",
+      "exportTitleCase": true,
+      "extraMergeCitekeys": false,
+      "extraMergeCSL": false,
+      "extraMergeTeX": false,
+      "git": "config",
+      "import": true,
+      "importBibTeXStrings": true,
+      "importCaseProtection": "as-needed",
+      "importCitationKey": true,
+      "importDetectURLs": true,
+      "importExtra": true,
+      "importJabRefAbbreviations": true,
+      "importJabRefStrings": true,
+      "importNoteToExtra": "",
+      "importSentenceCase": "on+guess",
+      "importSentenceCaseQuoted": true,
+      "importUnknownTexCommand": "ignore",
+      "itemObserverDelay": 5,
+      "jabrefFormat": 0,
+      "jieba": false,
+      "keyConflictPolicy": "keep",
+      "keyScope": "library",
+      "kuroshiro": false,
+      "language": "langid",
+      "mapMath": "",
+      "mapText": "",
+      "packages": "",
+      "parseParticles": true,
+      "patchDates": "dateadded=dateAdded, date-added=dateAdded, datemodified=dateModified, date-modified=dateModified",
+      "postscript": "",
+      "postscriptOverride": "",
+      "preferencesOverride": "",
+      "qualityReport": false,
+      "quickCopyEta": "",
+      "quickCopyMode": "latex",
+      "quickCopyOrgMode": "zotero",
+      "quickCopyPandocBrackets": false,
+      "quickCopySelectLink": "zotero",
+      "rawImports": false,
+      "rawLaTag": "#LaTeX",
+      "relativeFilePaths": false,
+      "separatorList": "and",
+      "separatorNames": "and",
+      "skipFields": "",
+      "skipWords": "a,ab,aboard,about,above,across,after,against,al,along,amid,among,an,and,anti,around,as,at,before,behind,below,beneath,beside,besides,between,beyond,but,by,d,da,das,de,del,dell,dello,dei,degli,della,dell,delle,dem,den,der,des,despite,die,do,down,du,during,ein,eine,einem,einen,einer,eines,el,en,et,except,for,from,gli,i,il,in,inside,into,is,l,la,las,le,les,like,lo,los,near,nor,of,off,on,onto,or,over,past,per,plus,round,save,since,so,some,sur,than,the,through,to,toward,towards,un,una,unas,under,underneath,une,unlike,uno,unos,until,up,upon,versus,via,von,while,with,within,without,yet,zu,zum",
+      "startupProgress": "popup",
+      "strings": "",
+      "stringsOverride": "",
+      "verbatimFields": "url,doi,file,pdf,ids,eprint,/^verb[a-z]$/,groups,/^citeulike-linkout-[0-9]+$/, /^bdsk-url-[0-9]+$/, keywords",
+      "warnBulkModify": 10,
+      "warnTitleCased": false
+    },
+    "options": {
+      "Items": true,
+      "Normalize": false,
+      "Preferences": true,
+      "biblatexAPA": false,
+      "biblatexChicago": false,
+      "exportDir": "D:\\Masterarbeit\\tudothesis",
+      "exportFileData": false,
+      "exportNotes": true,
+      "exportPath": "D:\\Masterarbeit\\tudothesis\\Meine Bibliothek.json",
+      "keepUpdated": false,
+      "worker": true
+    }
+  },
+  "version": {
+    "zotero": "7.0.11",
+    "bbt": "7.0.5"
+  },
+  "collections": {
+    "ZQBD9B7Y": {
+      "key": "ZQBD9B7Y",
+      "parent": "",
+      "name": "Screenshots",
+      "collections": [],
+      "items": [
+        57,
+        58,
+        59
+      ]
+    }
+  },
+  "items": [
+    {
+      "key": "9U9YNAU4",
+      "version": 0,
+      "itemType": "attachment",
+      "title": "Model-Based Exploration of Parallelism in Context  of Automotive Multi-Processor Systems",
+      "linkMode": "imported_file",
+      "contentType": "application/pdf",
+      "charset": "",
+      "filename": "thesis_hoettger.pdf",
+      "tags": [
+        {
+          "tag": "amalthea"
+        }
+      ],
+      "collections": [],
+      "relations": {},
+      "dateAdded": "2024-11-07T14:15:10Z",
+      "dateModified": "2024-11-07T20:19:04Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/9U9YNAU4",
+      "itemID": 2,
+      "localPath": "C:\\Users\\Henni\\Zotero\\storage\\9U9YNAU4\\thesis_hoettger.pdf",
+      "defaultPath": "files/2/thesis_hoettger.pdf",
+      "itemKey": "9U9YNAU4",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/9U9YNAU4"
+    },
+    {
+      "key": "AYGW7AKA",
+      "version": 0,
+      "itemType": "attachment",
+      "title": "cpu-sched-multi",
+      "linkMode": "imported_file",
+      "contentType": "application/pdf",
+      "charset": "",
+      "filename": "cpu-sched-multi.pdf",
+      "tags": [],
+      "collections": [],
+      "relations": {},
+      "dateAdded": "2024-11-07T20:25:09Z",
+      "dateModified": "2024-11-07T20:25:09Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/AYGW7AKA",
+      "itemID": 9,
+      "localPath": "C:\\Users\\Henni\\Zotero\\storage\\AYGW7AKA\\cpu-sched-multi.pdf",
+      "defaultPath": "files/9/cpu-sched-multi.pdf",
+      "itemKey": "AYGW7AKA",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/AYGW7AKA"
+    },
+    {
+      "key": "RE29F9CQ",
+      "version": 0,
+      "itemType": "attachment",
+      "title": "Performance Analysis of Multi-Core Multi-Mode Systems with Shared Resources - Principles and Application to AUTOSAR",
+      "linkMode": "imported_file",
+      "contentType": "application/pdf",
+      "charset": "",
+      "filename": "Diss_Negrean_Mircea_Florin(1).pdf",
+      "tags": [],
+      "collections": [],
+      "relations": {},
+      "dateAdded": "2024-11-07T20:26:19Z",
+      "dateModified": "2024-11-07T20:37:53Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/RE29F9CQ",
+      "itemID": 41,
+      "localPath": "C:\\Users\\Henni\\Zotero\\storage\\RE29F9CQ\\Diss_Negrean_Mircea_Florin(1).pdf",
+      "defaultPath": "files/41/Diss_Negrean_Mircea_Florin(1).pdf",
+      "itemKey": "RE29F9CQ",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/RE29F9CQ"
+    },
+    {
+      "key": "H2Z7DN63",
+      "version": 0,
+      "itemType": "attachment",
+      "title": "Lecture7-es-marw-4b-periodic",
+      "linkMode": "imported_file",
+      "contentType": "application/pdf",
+      "charset": "",
+      "filename": "Lecture7-es-marw-4b-periodic.pdf",
+      "tags": [],
+      "collections": [],
+      "relations": {},
+      "dateAdded": "2024-11-07T20:26:27Z",
+      "dateModified": "2024-11-07T20:26:27Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/H2Z7DN63",
+      "itemID": 47,
+      "localPath": "C:\\Users\\Henni\\Zotero\\storage\\H2Z7DN63\\Lecture7-es-marw-4b-periodic.pdf",
+      "defaultPath": "files/47/Lecture7-es-marw-4b-periodic.pdf",
+      "itemKey": "H2Z7DN63",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/H2Z7DN63"
+    },
+    {
+      "key": "JKN6DSPH",
+      "version": 0,
+      "itemType": "attachment",
+      "title": "snapshot",
+      "linkMode": "imported_file",
+      "contentType": "image/jpeg",
+      "charset": "",
+      "filename": "snapshot.jpg",
+      "tags": [],
+      "collections": [
+        "ZQBD9B7Y"
+      ],
+      "relations": {},
+      "dateAdded": "2024-11-07T20:26:34Z",
+      "dateModified": "2024-11-07T20:26:34Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/JKN6DSPH",
+      "itemID": 57,
+      "localPath": "C:\\Users\\Henni\\Zotero\\storage\\JKN6DSPH\\snapshot.jpg",
+      "defaultPath": "files/57/snapshot.jpg",
+      "itemKey": "JKN6DSPH",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/JKN6DSPH"
+    },
+    {
+      "key": "4K7GWATN",
+      "version": 0,
+      "itemType": "attachment",
+      "title": "snapshot2",
+      "linkMode": "imported_file",
+      "contentType": "image/jpeg",
+      "charset": "",
+      "filename": "snapshot2.jpg",
+      "tags": [],
+      "collections": [
+        "ZQBD9B7Y"
+      ],
+      "relations": {},
+      "dateAdded": "2024-11-07T20:26:34Z",
+      "dateModified": "2024-11-07T20:26:34Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/4K7GWATN",
+      "itemID": 58,
+      "localPath": "C:\\Users\\Henni\\Zotero\\storage\\4K7GWATN\\snapshot2.jpg",
+      "defaultPath": "files/58/snapshot2.jpg",
+      "itemKey": "4K7GWATN",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/4K7GWATN"
+    },
+    {
+      "key": "Y4ETE6UW",
+      "version": 0,
+      "itemType": "attachment",
+      "title": "snapshot3",
+      "linkMode": "imported_file",
+      "contentType": "image/jpeg",
+      "charset": "",
+      "filename": "snapshot3.jpg",
+      "tags": [],
+      "collections": [
+        "ZQBD9B7Y"
+      ],
+      "relations": {},
+      "dateAdded": "2024-11-07T20:26:34Z",
+      "dateModified": "2024-11-07T20:26:34Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/Y4ETE6UW",
+      "itemID": 59,
+      "localPath": "C:\\Users\\Henni\\Zotero\\storage\\Y4ETE6UW\\snapshot3.jpg",
+      "defaultPath": "files/59/snapshot3.jpg",
+      "itemKey": "Y4ETE6UW",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/Y4ETE6UW"
+    },
+    {
+      "key": "99HK6TZD",
+      "version": 0,
+      "itemType": "attachment",
+      "title": "thesis_hoettger",
+      "linkMode": "imported_file",
+      "contentType": "application/pdf",
+      "charset": "",
+      "filename": "thesis_hoettger.pdf",
+      "tags": [],
+      "collections": [],
+      "relations": {},
+      "dateAdded": "2024-11-07T20:26:48Z",
+      "dateModified": "2024-11-07T20:26:48Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/99HK6TZD",
+      "itemID": 73,
+      "localPath": "C:\\Users\\Henni\\Zotero\\storage\\99HK6TZD\\thesis_hoettger.pdf",
+      "defaultPath": "files/73/thesis_hoettger.pdf",
+      "itemKey": "99HK6TZD",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/99HK6TZD"
+    },
+    {
+      "key": "KZUSAE7T",
+      "version": 0,
+      "itemType": "conferencePaper",
+      "title": "Integrating multimedia applications in hard real-time systems",
+      "date": "1998",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "http://ieeexplore.ieee.org/document/739726/",
+      "accessDate": "2025-02-13T11:13:40Z",
+      "place": "Madrid, Spain",
+      "publisher": "IEEE Comput. Soc",
+      "ISBN": "978-0-8186-9212-3",
+      "pages": "4-13",
+      "proceedingsTitle": "Proceedings 19th IEEE Real-Time Systems Symposium (Cat. No.98CB36279)",
+      "conferenceName": "Real-Time Systems Symposium",
+      "DOI": "10.1109/REAL.1998.739726",
+      "creators": [
+        {
+          "firstName": "L.",
+          "lastName": "Abeni",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "G.",
+          "lastName": "Buttazzo",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-02-13T11:13:40Z",
+      "dateModified": "2025-02-13T11:13:40Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/KZUSAE7T",
+      "itemID": 230,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-13T11:13:53Z",
+          "dateModified": "2025-02-13T11:13:53Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/V9JK7GFI",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\V9JK7GFI\\Abeni und Buttazzo - 1998 - Integrating multimedia applications in hard real-time systems.pdf",
+          "select": "zotero://select/library/items/V9JK7GFI"
+        }
+      ],
+      "notes": [],
+      "citationKey": "abeniIntegratingMultimediaApplications1998",
+      "itemKey": "KZUSAE7T",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/KZUSAE7T"
+    },
+    {
+      "key": "R4C4GZIJ",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Stack-based scheduling of realtime processes",
+      "date": "3/1991",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "http://link.springer.com/10.1007/BF00365393",
+      "accessDate": "2024-11-17T17:19:07Z",
+      "rights": "http://www.springer.com/tdm",
+      "volume": "3",
+      "pages": "67-99",
+      "publicationTitle": "Real-Time Systems",
+      "DOI": "10.1007/BF00365393",
+      "issue": "1",
+      "journalAbbreviation": "The Journal of Real-Time Systems",
+      "ISSN": "0922-6443, 1573-1383",
+      "creators": [
+        {
+          "firstName": "T. P.",
+          "lastName": "Baker",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-11-17T17:19:07Z",
+      "dateModified": "2024-11-17T17:19:07Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/R4C4GZIJ",
+      "itemID": 149,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-17T17:19:20Z",
+          "dateModified": "2024-11-17T17:19:20Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/8S8JHJR8",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\8S8JHJR8\\Baker - 1991 - Stack-based scheduling of realtime processes.pdf",
+          "select": "zotero://select/library/items/8S8JHJR8"
+        }
+      ],
+      "notes": [],
+      "citationKey": "bakerStackbasedSchedulingRealtime1991",
+      "itemKey": "R4C4GZIJ",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/R4C4GZIJ"
+    },
+    {
+      "key": "TBBF35HD",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "The MATERIAL framework: Modeling and AuTomatic code Generation of Edge Real-TIme AppLications under the QNX RTOS",
+      "abstractNote": "Modern edge real-time automotive applications are becoming more complex, dynamic, and distributed, moving away from conventional static operating environments to support advanced driving assistance and autonomous driving functionalities. This shift necessitates formulating more complex task models to represent the evolving nature of these applications aptly. Modeling of real-time automotive systems is typically performed leveraging Architectural Languages (ALs) such as Amalthea, which are commonly used by the industry to describe the characteristics of processing platforms, operating systems, and tasks. However, these architectural languages are originally derived for classical automotive applications and need to evolve to meet the needs of next-generation applications.",
+      "date": "09/2024",
+      "language": "en",
+      "shortTitle": "The MATERIAL framework",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S1383762124001565",
+      "accessDate": "2024-11-07T20:27:12Z",
+      "volume": "154",
+      "pages": "103219",
+      "publicationTitle": "Journal of Systems Architecture",
+      "DOI": "10.1016/j.sysarc.2024.103219",
+      "journalAbbreviation": "Journal of Systems Architecture",
+      "ISSN": "13837621",
+      "creators": [
+        {
+          "firstName": "Matthias",
+          "lastName": "Becker",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Daniel",
+          "lastName": "Casini",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-11-07T20:27:12Z",
+      "dateModified": "2024-11-07T20:27:12Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/TBBF35HD",
+      "itemID": 88,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:26:34Z",
+          "dateModified": "2024-11-07T20:27:13Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/M985NA8T",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\M985NA8T\\Becker und Casini - 2024 - The MATERIAL framework Modeling and AuTomatic code Generation of Edge Real-TIme AppLications under.pdf",
+          "select": "zotero://select/library/items/M985NA8T"
+        }
+      ],
+      "notes": [],
+      "citationKey": "beckerMATERIALFrameworkModeling2024",
+      "itemKey": "TBBF35HD",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/TBBF35HD"
+    },
+    {
+      "key": "WEHF2SLE",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Model Checking Amalthea with Spin",
+      "abstractNote": "Although the Amalthea meta-model has emerged in the past years to an industrially adopted exchange format for (also safety-critical) embedded software architectures, model checking has been seldom applied to Amalthea models so far. This work presents a simple and extensible translation approach from Amalthea to Promela models for analysis with the widely used Spin model checker. This is a first step towards applying standard state-of-the-art model checkers to Amalthea.",
+      "language": "en",
+      "libraryCatalog": "Zotero",
+      "creators": [
+        {
+          "firstName": "Jan Steffen",
+          "lastName": "Becker",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-11-07T20:27:04Z",
+      "dateModified": "2024-11-07T20:27:04Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/WEHF2SLE",
+      "itemID": 85,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:26:30Z",
+          "dateModified": "2024-11-07T20:27:04Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/PQ4XDS7M",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\PQ4XDS7M\\Becker - Model Checking Amalthea with Spin.pdf",
+          "select": "zotero://select/library/items/PQ4XDS7M"
+        }
+      ],
+      "notes": [],
+      "citationKey": "beckerModelCheckingAmalthea",
+      "itemKey": "WEHF2SLE",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/WEHF2SLE"
+    },
+    {
+      "key": "5LWQ9VL6",
+      "version": 0,
+      "itemType": "conferencePaper",
+      "title": "Biasing effects in schedulability measures",
+      "abstractNote": "The performance of a schedulabilty test is typically evaluated by generating a huge number of synthetic task sets and then computing the fraction of those that pass the test with respect to the total number of feasible ones. The resulting ratio, however, depends on the metrics used for evaluating the performance and on the method for generating random task parameters. In particular, an important factor that affects the overall result of the simulation is the probability density function of the random variables used to generate the task set parameters.",
+      "date": "2004",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "http://ieeexplore.ieee.org/document/1311021/",
+      "accessDate": "2024-11-07T20:26:55Z",
+      "place": "Catania, Italy",
+      "publisher": "IEEE",
+      "ISBN": "978-0-7695-2176-3",
+      "pages": "196-203",
+      "proceedingsTitle": "Proceedings. 16th Euromicro Conference on Real-Time Systems, 2004. ECRTS 2004.",
+      "conferenceName": "Proceedings. 16th Euromicro Conference on Real-Time Systems, 2004. ECRTS 2004.",
+      "DOI": "10.1109/EMRTS.2004.1311021",
+      "creators": [
+        {
+          "firstName": "E.",
+          "lastName": "Bini",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "G.C.",
+          "lastName": "Buttazzo",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-11-07T20:26:55Z",
+      "dateModified": "2024-11-07T20:26:55Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/5LWQ9VL6",
+      "itemID": 78,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:26:19Z",
+          "dateModified": "2024-11-07T20:26:55Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/RYHIK3FD",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\RYHIK3FD\\Bini und Buttazzo - 2004 - Biasing effects in schedulability measures.pdf",
+          "select": "zotero://select/library/items/RYHIK3FD"
+        }
+      ],
+      "notes": [],
+      "citationKey": "biniBiasingEffectsSchedulability2004",
+      "itemKey": "5LWQ9VL6",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/5LWQ9VL6"
+    },
+    {
+      "key": "H2JI6YR3",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Measuring the Performance of Schedulability Tests",
+      "abstractNote": "The high computational complexity required for performing an exact schedulability analysis of ﬁxed priority systems has led the research community to investigate new feasibility tests which are less complex than exact tests, but still provide a reasonable performance in terms of acceptance ratio. The performance of a test is typically evaluated by generating a huge number of synthetic task sets and then computing the fraction of those that pass the test with respect to the total number of feasible ones. The resulting ratio, however, depends on the metrics used for evaluating the performance and on the method for generating random task parameters. In particular, an important factor that aﬀects the overall result of the simulation is the probability density function of the random variables used to generate the task set parameters.",
+      "date": "5/2005",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "http://link.springer.com/10.1007/s11241-005-0507-9",
+      "accessDate": "2024-11-07T20:27:02Z",
+      "rights": "http://www.springer.com/tdm",
+      "volume": "30",
+      "pages": "129-154",
+      "publicationTitle": "Real-Time Systems",
+      "DOI": "10.1007/s11241-005-0507-9",
+      "issue": "1-2",
+      "journalAbbreviation": "Real-Time Syst",
+      "ISSN": "0922-6443, 1573-1383",
+      "creators": [
+        {
+          "firstName": "Enrico",
+          "lastName": "Bini",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Giorgio C.",
+          "lastName": "Buttazzo",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-11-07T20:27:02Z",
+      "dateModified": "2024-11-07T20:27:02Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/H2JI6YR3",
+      "itemID": 84,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:26:28Z",
+          "dateModified": "2024-11-07T20:27:02Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/V32QGU9N",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\V32QGU9N\\Bini und Buttazzo - 2005 - Measuring the Performance of Schedulability Tests.pdf",
+          "select": "zotero://select/library/items/V32QGU9N"
+        }
+      ],
+      "notes": [],
+      "citationKey": "biniMeasuringPerformanceSchedulability2005",
+      "itemKey": "H2JI6YR3",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/H2JI6YR3"
+    },
+    {
+      "key": "NVUIIWMJ",
+      "version": 0,
+      "itemType": "conferencePaper",
+      "title": "Hard Constant Bandwidth Server: Comprehensive formulation and critical scenarios",
+      "date": "6/2014",
+      "shortTitle": "Hard Constant Bandwidth Server",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "https://ieeexplore.ieee.org/document/6871182",
+      "accessDate": "2024-11-16T20:49:13Z",
+      "place": "Pisa",
+      "publisher": "IEEE",
+      "ISBN": "978-1-4799-4023-3",
+      "pages": "29-37",
+      "proceedingsTitle": "Proceedings of the 9th IEEE International Symposium on Industrial Embedded Systems (SIES 2014)",
+      "conferenceName": "2014 9th IEEE International Symposium on Industrial Embedded Systems (SIES 2014)",
+      "DOI": "10.1109/SIES.2014.6871182",
+      "creators": [
+        {
+          "firstName": "Alessandro",
+          "lastName": "Biondi",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Alessandra",
+          "lastName": "Melani",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Marko",
+          "lastName": "Bertogna",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-11-16T20:49:13Z",
+      "dateModified": "2024-11-16T20:49:13Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/NVUIIWMJ",
+      "itemID": 142,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-16T20:49:41Z",
+          "dateModified": "2024-11-16T20:49:41Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/KF7VMHTF",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\KF7VMHTF\\Biondi et al. - 2014 - Hard Constant Bandwidth Server Comprehensive formulation and critical scenarios.pdf",
+          "select": "zotero://select/library/items/KF7VMHTF"
+        }
+      ],
+      "notes": [],
+      "citationKey": "biondiHardConstantBandwidth2014",
+      "itemKey": "NVUIIWMJ",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/NVUIIWMJ"
+    },
+    {
+      "key": "XDCRJBED",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Worst Case Reaction Time Analysis of Concurrent Reactive Programs",
+      "abstractNote": "Reactive programs have to react continuously to their inputs. Here the time needed to react with the according output is important. While the synchrony hypothesis takes the view that the program is inﬁnitely fast, real computations take time. Similar to the traditional Worst Case Execution Time (WCET), the Worst Case Reaction Time (WCRT) of a program determines the maximal time for one reaction.",
+      "date": "06/2008",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S1571066108003253",
+      "accessDate": "2024-11-07T20:27:15Z",
+      "rights": "https://www.elsevier.com/tdm/userlicense/1.0/",
+      "volume": "203",
+      "pages": "65-79",
+      "publicationTitle": "Electronic Notes in Theoretical Computer Science",
+      "DOI": "10.1016/j.entcs.2008.05.011",
+      "issue": "4",
+      "journalAbbreviation": "Electronic Notes in Theoretical Computer Science",
+      "ISSN": "15710661",
+      "creators": [
+        {
+          "firstName": "Marian",
+          "lastName": "Boldt",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Claus",
+          "lastName": "Traulsen",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Reinhard",
+          "lastName": "Von Hanxleden",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-11-07T20:27:15Z",
+      "dateModified": "2024-11-07T20:27:15Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/XDCRJBED",
+      "itemID": 89,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:26:36Z",
+          "dateModified": "2024-11-07T20:27:15Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/JABY3GRR",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\JABY3GRR\\Boldt et al. - 2008 - Worst Case Reaction Time Analysis of Concurrent Reactive Programs.pdf",
+          "select": "zotero://select/library/items/JABY3GRR"
+        }
+      ],
+      "notes": [],
+      "citationKey": "boldtWorstCaseReaction2008",
+      "itemKey": "XDCRJBED",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/XDCRJBED"
+    },
+    {
+      "key": "Y5L9LT5H",
+      "version": 0,
+      "itemType": "conferencePaper",
+      "title": "Monte Carlo Response-Time Analysis",
+      "date": "12/2021",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "https://ieeexplore.ieee.org/document/9622372/",
+      "accessDate": "2025-01-19T14:34:24Z",
+      "rights": "https://doi.org/10.15223/policy-029",
+      "place": "Dortmund, DE",
+      "publisher": "IEEE",
+      "ISBN": "978-1-6654-2802-6",
+      "pages": "342-355",
+      "proceedingsTitle": "2021 IEEE Real-Time Systems Symposium (RTSS)",
+      "conferenceName": "2021 IEEE Real-Time Systems Symposium (RTSS)",
+      "DOI": "10.1109/RTSS52674.2021.00039",
+      "creators": [
+        {
+          "firstName": "Sergey",
+          "lastName": "Bozhko",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Georg",
+          "lastName": "Von Der Bruggen",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Bjorn B.",
+          "lastName": "Brandenburg",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-01-19T14:34:24Z",
+      "dateModified": "2025-01-19T14:34:24Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/Y5L9LT5H",
+      "itemID": 172,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-01-19T14:34:54Z",
+          "dateModified": "2025-01-19T14:34:54Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/GYIXUK65",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\GYIXUK65\\Bozhko et al. - 2021 - Monte Carlo Response-Time Analysis.pdf",
+          "select": "zotero://select/library/items/GYIXUK65"
+        }
+      ],
+      "notes": [],
+      "citationKey": "bozhkoMonteCarloResponseTime2021",
+      "itemKey": "Y5L9LT5H",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/Y5L9LT5H"
+    },
+    {
+      "key": "P3F33FEF",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Worst-case response time analysis of real-time tasks under fixed-priority scheduling with deferred preemption",
+      "date": "8/2009",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "http://link.springer.com/10.1007/s11241-009-9071-z",
+      "accessDate": "2025-02-13T19:22:30Z",
+      "volume": "42",
+      "pages": "63-119",
+      "publicationTitle": "Real-Time Systems",
+      "DOI": "10.1007/s11241-009-9071-z",
+      "issue": "1-3",
+      "journalAbbreviation": "Real-Time Syst",
+      "ISSN": "0922-6443, 1573-1383",
+      "creators": [
+        {
+          "firstName": "Reinder J.",
+          "lastName": "Bril",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Johan J.",
+          "lastName": "Lukkien",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Wim F. J.",
+          "lastName": "Verhaegh",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-02-13T19:22:30Z",
+      "dateModified": "2025-02-13T19:22:30Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/P3F33FEF",
+      "itemID": 236,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Volltext",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-13T19:22:33Z",
+          "dateModified": "2025-02-13T19:22:33Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/JLLEJ4RT",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\JLLEJ4RT\\Bril et al. - 2009 - Worst-case response time analysis of real-time tasks under fixed-priority scheduling with deferred p.pdf",
+          "select": "zotero://select/library/items/JLLEJ4RT"
+        }
+      ],
+      "notes": [],
+      "citationKey": "brilWorstcaseResponseTime2009",
+      "itemKey": "P3F33FEF",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/P3F33FEF"
+    },
+    {
+      "key": "TBPYWEBE",
+      "version": 0,
+      "itemType": "book",
+      "title": "Embedded Software and Systems (vol. # 3605): First International Conference, ICESS 2004, Hangzhou, China, December 9-10, 2004, Revised Selected Papers",
+      "date": "2005",
+      "language": "eng",
+      "shortTitle": "Embedded Software and Systems (vol. # 3605)",
+      "libraryCatalog": "K10plus ISBN",
+      "extra": "DOI: 10.1007/11535409",
+      "place": "Berlin, Heidelberg",
+      "publisher": "Springer Berlin Heidelberg",
+      "ISBN": "978-3-540-28128-3 978-3-540-31823-1",
+      "series": "Lecture Notes in Computer Science",
+      "seriesNumber": "3605",
+      "numPages": "610",
+      "creators": [
+        {
+          "firstName": "Jiajun",
+          "lastName": "Bu",
+          "creatorType": "editor"
+        },
+        {
+          "firstName": "Chun",
+          "lastName": "Chen",
+          "creatorType": "editor"
+        },
+        {
+          "firstName": "Minyi",
+          "lastName": "Guo",
+          "creatorType": "editor"
+        },
+        {
+          "firstName": "Zhaohui",
+          "lastName": "Wu",
+          "creatorType": "editor"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-11-18T19:34:31Z",
+      "dateModified": "2024-11-18T19:34:31Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/TBPYWEBE",
+      "itemID": 157,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "11535409",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-18T19:35:05Z",
+          "dateModified": "2024-11-18T19:35:05Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/5BFR4EC9",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\5BFR4EC9\\11535409.pdf",
+          "select": "zotero://select/library/items/5BFR4EC9"
+        },
+        {
+          "itemType": "attachment",
+          "title": "Table of Contents PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-18T19:34:33Z",
+          "dateModified": "2024-11-18T19:34:33Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/AUPGZAUI",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\AUPGZAUI\\Bu et al. - 2005 - Embedded Software and Systems (vol. # 3605) First International Conference, ICESS 2004, Hangzhou, C.pdf",
+          "select": "zotero://select/library/items/AUPGZAUI"
+        }
+      ],
+      "notes": [
+        {
+          "key": "GQX44LL7",
+          "version": 0,
+          "itemType": "note",
+          "parentItem": "TBPYWEBE",
+          "note": "Keynote Speeches and Invited Talks Abstracts (Partial) -- Track 1 Distributed Embedded Computing -- Track 2 Embedded Systems -- Track 3 Embedded Hardware and Architecture -- Track 4 Middleware for Embedded Computing -- Track 5 Mobile Systems -- Track 6 Transducer Network -- Track 7 Embedded Operating System -- Track 8 Power-Aware Computing -- Track 9 Real-Time System -- Track 10 Embedded System Verification and Testing -- Track 11 Software Tools for Embedded Systems Welcome to the post proceedings of the First International Conference on Embedded Software and Systems (ICESS 2004), which was held in Hangzhou, P. R. China, 9–10 December 2004. Embedded Software and Systems technology is of increasing importance for a wide range of industrial areas, such as aerospace, automotive, telecommunication, and manufacturing automation. Embedded technology is playing an increasingly dominant role in modern society. This is a natural outcome of amazingly fast developments in the embedded field. The ICESS 2004 conference brought together researchers and developers from academia, industry, and government to advance the science, engineering, and technology in embedded software and systems development, and provided them with a forum to present and exchange their ideas, results, work in progress, and experience in all areas of embedded systems research and development. The ICESS 2004 conference attracted much more interest than expected. The total number of paper submissions to the main conference and its three workshops, namely, Pervasive Computing, Automobile Electronics and Tele-communication, was almost 400, from nearly 20 countries and regions. All submissions were reviewed by at least three Program or Technical Committee members or external reviewers. It was extremely difficult to make the final decision on paper acceptance because there were so many excellent, foreseeing, and interesting submissions with brilliant ideas",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-18T19:34:31Z",
+          "dateModified": "2024-11-18T19:34:31Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/GQX44LL7"
+        }
+      ],
+      "citationKey": "buEmbeddedSoftwareSystems2005",
+      "itemKey": "TBPYWEBE",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/TBPYWEBE"
+    },
+    {
+      "key": "273N53MD",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "A Categorization of Real-time Multiprocessor Scheduling Problems and Algorithms",
+      "language": "en",
+      "libraryCatalog": "Zotero",
+      "creators": [
+        {
+          "firstName": "John",
+          "lastName": "Carpenter",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Shelby",
+          "lastName": "Funk",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Philip",
+          "lastName": "Holman",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Anand",
+          "lastName": "Srinivasan",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "James",
+          "lastName": "Anderson",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Sanjoy",
+          "lastName": "Baruah",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {
+        "dc:replaces": [
+          "http://zotero.org/users/local/etxm3DPf/items/XCLIP9K7"
+        ]
+      },
+      "dateAdded": "2024-11-07T20:25:29Z",
+      "dateModified": "2024-11-07T20:31:44Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/273N53MD",
+      "itemID": 21,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {
+            "dc:replaces": [
+              "http://zotero.org/users/local/etxm3DPf/items/Y4MQQGGK"
+            ]
+          },
+          "dateAdded": "2024-11-07T20:25:07Z",
+          "dateModified": "2024-11-07T20:31:44Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/JBKYSHQ4",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\JBKYSHQ4\\Carpenter et al. - A Categorization of Real-time Multiprocessor Scheduling Problems and Algorithms.pdf",
+          "select": "zotero://select/library/items/JBKYSHQ4"
+        }
+      ],
+      "notes": [],
+      "citationKey": "carpenterCategorizationRealtimeMultiprocessor",
+      "itemKey": "273N53MD",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/273N53MD"
+    },
+    {
+      "key": "93HE3YD5",
+      "version": 0,
+      "itemType": "presentation",
+      "title": "Chen",
+      "creators": [
+        {
+          "firstName": "Chen",
+          "lastName": "",
+          "creatorType": "presenter"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-11-07T20:39:23Z",
+      "dateModified": "2024-11-07T20:39:34Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/93HE3YD5",
+      "itemID": 114,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "_A-EDFvsRM",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:41:26Z",
+          "dateModified": "2024-11-07T20:41:26Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/7BXSQTBJ",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\7BXSQTBJ\\_A-EDFvsRM.pdf",
+          "select": "zotero://select/library/items/7BXSQTBJ"
+        },
+        {
+          "itemType": "attachment",
+          "title": "01-Model",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:40:04Z",
+          "dateModified": "2024-11-07T20:40:04Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/XCUU4HL8",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\XCUU4HL8\\01-Model.pdf",
+          "select": "zotero://select/library/items/XCUU4HL8"
+        },
+        {
+          "itemType": "attachment",
+          "title": "02-Schedulability",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:40:05Z",
+          "dateModified": "2024-11-07T20:40:05Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/KR2H4CKD",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\KR2H4CKD\\02-Schedulability.pdf",
+          "select": "zotero://select/library/items/KR2H4CKD"
+        },
+        {
+          "itemType": "attachment",
+          "title": "03-Aperiodic",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:40:07Z",
+          "dateModified": "2024-11-07T20:40:07Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/7XMVASNZ",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\7XMVASNZ\\03-Aperiodic.pdf",
+          "select": "zotero://select/library/items/7XMVASNZ"
+        },
+        {
+          "itemType": "attachment",
+          "title": "04-WCET",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:40:07Z",
+          "dateModified": "2024-11-07T20:40:07Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/Q6E23UAV",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\Q6E23UAV\\04-WCET.pdf",
+          "select": "zotero://select/library/items/Q6E23UAV"
+        },
+        {
+          "itemType": "attachment",
+          "title": "06-Non-Preemptive-Scheduling",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:40:10Z",
+          "dateModified": "2024-11-07T20:40:10Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/VFTBDN2A",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\VFTBDN2A\\06-Non-Preemptive-Scheduling.pdf",
+          "select": "zotero://select/library/items/VFTBDN2A"
+        },
+        {
+          "itemType": "attachment",
+          "title": "07-Resource",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:40:11Z",
+          "dateModified": "2024-11-07T20:40:11Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/5LJJQGZM",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\5LJJQGZM\\07-Resource.pdf",
+          "select": "zotero://select/library/items/5LJJQGZM"
+        },
+        {
+          "itemType": "attachment",
+          "title": "08-Servers",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:40:12Z",
+          "dateModified": "2024-11-07T20:40:12Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/PUSMR2AY",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\PUSMR2AY\\08-Servers.pdf",
+          "select": "zotero://select/library/items/PUSMR2AY"
+        },
+        {
+          "itemType": "attachment",
+          "title": "09-suspension",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:40:13Z",
+          "dateModified": "2024-11-07T20:40:13Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/WT6YRNU6",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\WT6YRNU6\\09-suspension.pdf",
+          "select": "zotero://select/library/items/WT6YRNU6"
+        },
+        {
+          "itemType": "attachment",
+          "title": "10-k2u",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:40:15Z",
+          "dateModified": "2024-11-07T20:40:15Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/2M97X9QH",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\2M97X9QH\\10-k2u.pdf",
+          "select": "zotero://select/library/items/2M97X9QH"
+        },
+        {
+          "itemType": "attachment",
+          "title": "11-Resource-Augmentation",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:40:16Z",
+          "dateModified": "2024-11-07T20:40:16Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/R9SN9294",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\R9SN9294\\11-Resource-Augmentation.pdf",
+          "select": "zotero://select/library/items/R9SN9294"
+        },
+        {
+          "itemType": "attachment",
+          "title": "13-Communication",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:40:17Z",
+          "dateModified": "2024-11-07T20:40:17Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/HH8W36TG",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\HH8W36TG\\13-Communication.pdf",
+          "select": "zotero://select/library/items/HH8W36TG"
+        },
+        {
+          "itemType": "attachment",
+          "title": "15-RTC",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:40:18Z",
+          "dateModified": "2024-11-07T20:40:18Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/FLUFCL79",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\FLUFCL79\\15-RTC.pdf",
+          "select": "zotero://select/library/items/FLUFCL79"
+        },
+        {
+          "itemType": "attachment",
+          "title": "16-Partition",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:40:20Z",
+          "dateModified": "2024-11-07T20:40:20Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/WG9PKTCR",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\WG9PKTCR\\16-Partition.pdf",
+          "select": "zotero://select/library/items/WG9PKTCR"
+        },
+        {
+          "itemType": "attachment",
+          "title": "17-Global",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:40:22Z",
+          "dateModified": "2024-11-07T20:40:22Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/BZRITAI4",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\BZRITAI4\\17-Global.pdf",
+          "select": "zotero://select/library/items/BZRITAI4"
+        },
+        {
+          "itemType": "attachment",
+          "title": "17-Semi",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:40:23Z",
+          "dateModified": "2024-11-07T20:40:23Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/R4WAUYM3",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\R4WAUYM3\\17-Semi.pdf",
+          "select": "zotero://select/library/items/R4WAUYM3"
+        },
+        {
+          "itemType": "attachment",
+          "title": "20-Multicore",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:40:25Z",
+          "dateModified": "2024-11-07T20:40:25Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/HWQ6F2T6",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\HWQ6F2T6\\20-Multicore.pdf",
+          "select": "zotero://select/library/items/HWQ6F2T6"
+        },
+        {
+          "itemType": "attachment",
+          "title": "A-CriticalInstant",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:40:26Z",
+          "dateModified": "2024-11-07T20:40:26Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/JBXMZL7V",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\JBXMZL7V\\A-CriticalInstant.pdf",
+          "select": "zotero://select/library/items/JBXMZL7V"
+        },
+        {
+          "itemType": "attachment",
+          "title": "basics_mathematics",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:40:26Z",
+          "dateModified": "2024-11-07T20:40:26Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/IJPLL7YQ",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\IJPLL7YQ\\basics_mathematics.pdf",
+          "select": "zotero://select/library/items/IJPLL7YQ"
+        },
+        {
+          "itemType": "attachment",
+          "title": "formal-proof",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:40:26Z",
+          "dateModified": "2024-11-07T20:40:26Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/KZ8A52ZY",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\KZ8A52ZY\\formal-proof.pdf",
+          "select": "zotero://select/library/items/KZ8A52ZY"
+        },
+        {
+          "itemType": "attachment",
+          "title": "merged",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:40:28Z",
+          "dateModified": "2024-11-07T20:40:28Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/AWU3S72I",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\AWU3S72I\\merged.pdf",
+          "select": "zotero://select/library/items/AWU3S72I"
+        },
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:40:03Z",
+          "dateModified": "2024-11-07T20:40:03Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/NZWS8XST",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\NZWS8XST\\00-Introduction.pdf",
+          "select": "zotero://select/library/items/NZWS8XST"
+        }
+      ],
+      "notes": [],
+      "citationKey": "Chen",
+      "itemKey": "93HE3YD5",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/93HE3YD5"
+    },
+    {
+      "key": "R2S4SQDN",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Fundamentals of Real-Time Systems",
+      "language": "en",
+      "libraryCatalog": "Zotero",
+      "creators": [
+        {
+          "firstName": "Jian-Jia",
+          "lastName": "Chen",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-11-07T20:24:38Z",
+      "dateModified": "2024-11-07T20:24:38Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/R2S4SQDN",
+      "itemID": 5,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:24:34Z",
+          "dateModified": "2024-11-07T20:24:38Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/2EWZKHEY",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\2EWZKHEY\\Chen - Fundamentals of Real-Time Systems.pdf",
+          "select": "zotero://select/library/items/2EWZKHEY"
+        }
+      ],
+      "notes": [],
+      "citationKey": "chenFundamentalsRealTimeSystems",
+      "itemKey": "R2S4SQDN",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/R2S4SQDN"
+    },
+    {
+      "key": "GG5Y8SSA",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Assignment and scheduling communicating periodic tasks in distributed real-time systems",
+      "abstractNote": "We present an optimal solution to the problem of allocating communicating periodic tasks to heterogeneous processing nodes (PNs) in a distributed real-time system. The solution is optimal in the sense of minimizing the maximum normalized task response time, called the systemhazard, subject to the precedence constraints resulting from intercommunication among the tasks to be allocated. Minimization of the system hazard ensures that the solution algorithm will allocate tasks so as to meet all task deadlines under an optimal schedule, whenever such an allocation exists. The task system is modeled with a task graph (TG), in which computation and communication modules, communication delays, and intertask precedence constraints are clearly described. Tasks described by this TG are assigned to PNs by using a branch-and-bound (B&B) search algorithm. The algorithm traverses a search tree whose leavescorrespond to potential solutions to the task allocation problem. We use a bounding method that prunes, in polynomial time, nonleaf vertices that cannot lead to an optimal solution, while ensuring that the search path leading to an optimal solution will never be pruned. For each generated leaf vertex we compute the exact cost using the algorithm developed in [1]. The lowest-cost leaf vertex (one with the least system hazard) represents an optimal task allocation. Computational experiences and examples are provided to demonstrate the concept, utility, and power of the proposed approach.",
+      "date": "Dec./1997",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "http://ieeexplore.ieee.org/document/637388/",
+      "accessDate": "2024-11-07T20:27:28Z",
+      "rights": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html",
+      "volume": "23",
+      "pages": "745-758",
+      "publicationTitle": "IEEE Transactions on Software Engineering",
+      "DOI": "10.1109/32.637388",
+      "issue": "12",
+      "journalAbbreviation": "IIEEE Trans. Software Eng.",
+      "ISSN": "00985589",
+      "creators": [
+        {
+          "name": "Dar-Tzen Peng",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "K.G.",
+          "lastName": "Shin",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "T.F.",
+          "lastName": "Abdelzaher",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-11-07T20:27:28Z",
+      "dateModified": "2024-11-07T20:27:28Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/GG5Y8SSA",
+      "itemID": 94,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:26:29Z",
+          "dateModified": "2024-11-07T20:27:28Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/EA6TAXC8",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\EA6TAXC8\\Dar-Tzen Peng et al. - 1997 - Assignment and scheduling communicating periodic tasks in distributed real-time systems.pdf",
+          "select": "zotero://select/library/items/EA6TAXC8"
+        }
+      ],
+      "notes": [],
+      "citationKey": "dar-tzenpengAssignmentSchedulingCommunicating1997",
+      "itemKey": "GG5Y8SSA",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/GG5Y8SSA"
+    },
+    {
+      "key": "C4TWUDMS",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Task-set generator for schedulability analysis using the TACLebench benchmark suite",
+      "abstractNote": "Currently, real-time embedded systems evolve towards complex systems using new state of the art technologies such as multi-core processors and virtualization techniques. Both technologies require new real-time scheduling algorithms. For uniprocessor scheduling, utilization-based evaluation methodologies are well-established. For multi-core systems and virtualization, evaluating and comparing scheduling techniques using the tasks’ parameters is more realistic. Evaluating such scheduling techniques requires relevant and standardised task sets. Scheduling algorithms can be evaluated at three levels: 1) using a mathematical model of the algorithm, 2) simulating the algorithm and 3) implementing the algorithm on the target platform. Generating task sets is straightforward in the case of the ﬁrst two levels; only the parameters of the tasks are required. Evaluating and comparing scheduling algorithms on the target platform itself, however, requires executable tasks matching the predeﬁned standardised task sets. Generating those executable tasks is not standardized yet.",
+      "date": "2018-03-20",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "https://dl.acm.org/doi/10.1145/3199610.3199613",
+      "accessDate": "2024-11-07T20:25:50Z",
+      "volume": "15",
+      "pages": "22-28",
+      "publicationTitle": "ACM SIGBED Review",
+      "DOI": "10.1145/3199610.3199613",
+      "issue": "1",
+      "journalAbbreviation": "SIGBED Rev.",
+      "ISSN": "1551-3688",
+      "creators": [
+        {
+          "firstName": "Yorick",
+          "lastName": "De Bock",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Sebastian",
+          "lastName": "Altmeyer",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Thomas",
+          "lastName": "Huybrechts",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jan",
+          "lastName": "Broeckhove",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Peter",
+          "lastName": "Hellinckx",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {
+        "dc:replaces": [
+          "http://zotero.org/users/local/etxm3DPf/items/JJ24EFNV"
+        ]
+      },
+      "dateAdded": "2024-11-07T20:25:50Z",
+      "dateModified": "2024-11-07T20:35:22Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/C4TWUDMS",
+      "itemID": 33,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {
+            "dc:replaces": [
+              "http://zotero.org/users/local/etxm3DPf/items/EEEYUX5A"
+            ]
+          },
+          "dateAdded": "2024-11-07T20:25:22Z",
+          "dateModified": "2024-11-07T20:35:22Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/FKJ5QJ52",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\FKJ5QJ52\\De Bock et al. - 2018 - Task-set generator for schedulability analysis using the TACLebench benchmark suite.pdf",
+          "select": "zotero://select/library/items/FKJ5QJ52"
+        }
+      ],
+      "notes": [],
+      "citationKey": "debockTasksetGeneratorSchedulability2018",
+      "itemKey": "C4TWUDMS",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/C4TWUDMS"
+    },
+    {
+      "key": "MURFXV92",
+      "version": 0,
+      "itemType": "conferencePaper",
+      "title": "Scheduling real-time applications in an open environment",
+      "date": "1997",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "http://ieeexplore.ieee.org/document/641292/",
+      "accessDate": "2025-02-13T11:53:58Z",
+      "place": "San Francisco, CA, USA",
+      "publisher": "IEEE Comput. Soc",
+      "ISBN": "978-0-8186-8268-1",
+      "pages": "308-319",
+      "proceedingsTitle": "Proceedings Real-Time Systems Symposium",
+      "conferenceName": "Real-Time Systems Symposium",
+      "DOI": "10.1109/REAL.1997.641292",
+      "creators": [
+        {
+          "firstName": "Z.",
+          "lastName": "Deng",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "J.W.-S.",
+          "lastName": "Liu",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-02-13T11:53:58Z",
+      "dateModified": "2025-02-13T11:53:58Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/MURFXV92",
+      "itemID": 234,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-13T11:54:14Z",
+          "dateModified": "2025-02-13T11:54:14Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/C4FDB2VL",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\C4FDB2VL\\Deng und Liu - 1997 - Scheduling real-time applications in an open environment.pdf",
+          "select": "zotero://select/library/items/C4FDB2VL"
+        }
+      ],
+      "notes": [],
+      "citationKey": "dengSchedulingRealtimeApplications1997",
+      "itemKey": "MURFXV92",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/MURFXV92"
+    },
+    {
+      "key": "G73MGQ3X",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "SysWCET: Whole-System Response-Time Analysis for Fixed-Priority Real-Time Systems",
+      "abstractNote": "The worst-case response time (WCRT) – the time span from release to completion of a real-time task – is a crucial property of real-time systems. However, WCRT analysis is complex in practice, as it depends not only on the realistic examination of worst-case execution times (WCET), but also on system-level overheads and blocking/preemption times. While the implicit path enumeration technique (IPET) has greatly improved automated WCET analysis, the resulting values still need to be aggregated manually with the system-level overheads – an errorprone and tedious process that yields overly pessimistic results. With SysWCET, we provide an integrated approach for the automated WCRT analysis across multiple threads of execution, locks, interrupt service routines, and the real-time operating system (RTOS) in particular. Our approach spans a single IPET formulation over the whole system and exploits RTOS and scheduler semantics to derive cross-kernel ﬂow facts in order to signiﬁcantly reduce pessimism in the WCRT analysis.",
+      "language": "en",
+      "libraryCatalog": "Zotero",
+      "creators": [
+        {
+          "firstName": "Christian",
+          "lastName": "Dietrich",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Peter",
+          "lastName": "Wagemann",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Peter",
+          "lastName": "Ulbrich",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Daniel",
+          "lastName": "Lohmann",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {
+        "dc:replaces": [
+          "http://zotero.org/users/local/etxm3DPf/items/UEKNQZJR"
+        ]
+      },
+      "dateAdded": "2024-11-07T20:25:34Z",
+      "dateModified": "2024-11-07T20:35:18Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/G73MGQ3X",
+      "itemID": 23,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {
+            "dc:replaces": [
+              "http://zotero.org/users/local/etxm3DPf/items/K3NYM4HU"
+            ]
+          },
+          "dateAdded": "2024-11-07T20:25:10Z",
+          "dateModified": "2024-11-07T20:35:18Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/LHICPUD4",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\LHICPUD4\\Dietrich et al. - SysWCET Whole-System Response-Time Analysis for Fixed-Priority Real-Time Systems.pdf",
+          "select": "zotero://select/library/items/LHICPUD4"
+        }
+      ],
+      "notes": [],
+      "citationKey": "dietrichSysWCETWholeSystemResponseTime",
+      "itemKey": "G73MGQ3X",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/G73MGQ3X"
+    },
+    {
+      "key": "ZZGZN4KV",
+      "version": 0,
+      "itemType": "conferencePaper",
+      "title": "GENEE: a benchmark generator for static analysis tools of energy-constrained cyber-physical systems",
+      "abstractNote": "To guarantee the safe completion of a specific task in an energyconstrained (i.e., battery-operated, energy-harvesting) cyber-physical system (CPS), information on the task’s worst-case energy consumption (WCEC) is necessary. To determine upper bounds on the WCEC, analysis tools conducting static program-code analysis make sound but conservative assumptions on the program’s dynamic behavior. When using existing source-code benchmarks, knowledge of their possible program paths and thus their dynamic behaviors are not available. This lack of knowledge leads to missing baselines, which prevents comprehensive evaluations of the accuracy of WCEC analyzers, that is, the difference between the actual WCEC and analyzer’s reported upper bound is unknown.",
+      "date": "2019-04-15",
+      "language": "en",
+      "shortTitle": "GENEE",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "https://dl.acm.org/doi/10.1145/3312480.3313170",
+      "accessDate": "2024-11-07T20:25:40Z",
+      "place": "Montreal Quebec Canada",
+      "publisher": "ACM",
+      "ISBN": "978-1-4503-6693-9",
+      "pages": "1-6",
+      "proceedingsTitle": "Proceedings of the 2nd Workshop on Benchmarking Cyber-Physical Systems and Internet of Things",
+      "conferenceName": "CPS-IoT Week '19: Cyber-Physical Systems and Internet of Things Week 2019",
+      "DOI": "10.1145/3312480.3313170",
+      "creators": [
+        {
+          "firstName": "Christian",
+          "lastName": "Eichler",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Peter",
+          "lastName": "Wägemann",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Wolfgang",
+          "lastName": "Schröder-Preikschat",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {
+        "dc:replaces": [
+          "http://zotero.org/users/local/etxm3DPf/items/L9HNN88R"
+        ]
+      },
+      "dateAdded": "2024-11-07T20:25:40Z",
+      "dateModified": "2024-11-07T20:36:15Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/ZZGZN4KV",
+      "itemID": 26,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {
+            "dc:replaces": [
+              "http://zotero.org/users/local/etxm3DPf/items/LFXQFYRC"
+            ]
+          },
+          "dateAdded": "2024-11-07T20:25:14Z",
+          "dateModified": "2024-11-07T20:33:19Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/LZG6YNLK",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\LZG6YNLK\\Eichler et al. - 2019 - G EN EE a benchmark generator for static analysis too.pdf",
+          "select": "zotero://select/library/items/LZG6YNLK"
+        }
+      ],
+      "notes": [],
+      "citationKey": "eichlerGENEEBenchmarkGenerator2019",
+      "itemKey": "ZZGZN4KV",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/ZZGZN4KV"
+    },
+    {
+      "key": "BLVVSCKP",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "TASKers: A Whole-System Generator for Benchmarking Real-Time-System Analyses",
+      "abstractNote": "Implementation-based benchmarking of timing and schedulability analyses requires system code that can be executed on real hardware and has deﬁned properties, for example, known worst-case execution times (WCETs) of tasks. Traditional approaches for creating benchmarks with such characteristics often result in implementations that do not resemble real-world systems, either due to work only being simulated by means of busy waiting, or because tasks have no controlﬂow dependencies between each other. In this paper, we address this problem with TASKers, a generator that constructs realistic benchmark systems with predeﬁned properties. To achieve this, TASKers composes patterns of real-world programs to generate tasks that produce known outputs and exhibit preconﬁgured WCETs when being executed with certain inputs. Using this knowledge during the generation process, TASKers is able to speciﬁcally introduce inter-task control-ﬂow dependencies by mapping the output of one task to the input of another.",
+      "date": "2018",
+      "language": "en",
+      "shortTitle": "TASKers",
+      "libraryCatalog": "DOI.org (Datacite)",
+      "url": "https://drops.dagstuhl.de/entities/document/10.4230/OASIcs.WCET.2018.6",
+      "accessDate": "2024-11-07T20:25:45Z",
+      "rights": "Creative Commons Attribution 3.0 Unported license, info:eu-repo/semantics/openAccess",
+      "extra": "Artwork Size: 12 pages, 2159166 bytes\nISBN: 9783959770736\nMedium: application/pdf\nPublisher: Schloss Dagstuhl – Leibniz-Zentrum für Informatik",
+      "volume": "63",
+      "pages": "6:1-6:12",
+      "publicationTitle": "OASIcs, Volume 63, WCET 2018",
+      "DOI": "10.4230/OASICS.WCET.2018.6",
+      "ISSN": "2190-6807",
+      "creators": [
+        {
+          "firstName": "Christian",
+          "lastName": "Eichler",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Tobias",
+          "lastName": "Distler",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Peter",
+          "lastName": "Ulbrich",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Peter",
+          "lastName": "Wägemann",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Wolfgang",
+          "lastName": "Schröder-Preikschat",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Florian",
+          "lastName": "Brandner",
+          "creatorType": "contributor"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "benchmarking real-time-system analyses",
+          "type": 1
+        },
+        {
+          "tag": "static timing analysis",
+          "type": 1
+        },
+        {
+          "tag": "task-set generation",
+          "type": 1
+        },
+        {
+          "tag": "WCET analysis",
+          "type": 1
+        },
+        {
+          "tag": "whole-system generation",
+          "type": 1
+        }
+      ],
+      "relations": {
+        "dc:replaces": [
+          "http://zotero.org/users/local/etxm3DPf/items/9BPXAUK2"
+        ]
+      },
+      "dateAdded": "2024-11-07T20:25:45Z",
+      "dateModified": "2024-11-07T20:35:26Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/BLVVSCKP",
+      "itemID": 30,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {
+            "dc:replaces": [
+              "http://zotero.org/users/local/etxm3DPf/items/8DG7TQMH"
+            ]
+          },
+          "dateAdded": "2024-11-07T20:25:18Z",
+          "dateModified": "2024-11-07T20:35:26Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/HG7AG23B",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\HG7AG23B\\Eichler et al. - 2018 - TASKers A Whole-System Generator for Benchmarking Real-Time-System Analyses.pdf",
+          "select": "zotero://select/library/items/HG7AG23B"
+        }
+      ],
+      "notes": [
+        {
+          "key": "YCNYW9WQ",
+          "version": 0,
+          "itemType": "note",
+          "parentItem": "BLVVSCKP",
+          "note": "<h2>SeriesInformation</h2>\nOASIcs, Vol. 63, 18th International Workshop on Worst-Case Execution Time Analysis (WCET 2018), pages 6:1-6:12",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:25:45Z",
+          "dateModified": "2024-11-07T20:25:45Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/YCNYW9WQ"
+        },
+        {
+          "key": "HY4CL6DV",
+          "version": 0,
+          "itemType": "note",
+          "parentItem": "BLVVSCKP",
+          "note": "<h2>SeriesInformation</h2>\nOASIcs, Vol. 63, 18th International Workshop on Worst-Case Execution Time Analysis (WCET 2018), pages 6:1-6:12",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:27:44Z",
+          "dateModified": "2024-11-07T20:35:26Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/HY4CL6DV"
+        }
+      ],
+      "citationKey": "eichlerTASKersWholeSystemGenerator2018",
+      "itemKey": "BLVVSCKP",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/BLVVSCKP"
+    },
+    {
+      "key": "3RHPY53W",
+      "version": 0,
+      "itemType": "conferencePaper",
+      "title": "Static-Priority Real-Time Scheduling: Response Time Computation Is NP-Hard",
+      "date": "11/2008",
+      "shortTitle": "Static-Priority Real-Time Scheduling",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "http://ieeexplore.ieee.org/document/4700453/",
+      "accessDate": "2025-02-10T18:04:11Z",
+      "place": "Barcelona, Spain",
+      "publisher": "IEEE",
+      "ISBN": "978-0-7695-3477-0",
+      "pages": "397-406",
+      "proceedingsTitle": "2008 Real-Time Systems Symposium",
+      "conferenceName": "2008 IEEE 29th Real-Time Systems Symposium (RTSS)",
+      "DOI": "10.1109/RTSS.2008.25",
+      "creators": [
+        {
+          "firstName": "Friedrich",
+          "lastName": "Eisenbrand",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Thomas",
+          "lastName": "Rothvoß",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-02-10T18:04:11Z",
+      "dateModified": "2025-02-10T18:04:11Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/3RHPY53W",
+      "itemID": 223,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Eingereichte Version",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-10T18:04:15Z",
+          "dateModified": "2025-02-10T18:04:15Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/H7LHTDGE",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\H7LHTDGE\\Eisenbrand und Rothvoß - 2008 - Static-Priority Real-Time Scheduling Response Time Computation Is NP-Hard.pdf",
+          "select": "zotero://select/library/items/H7LHTDGE"
+        },
+        {
+          "itemType": "attachment",
+          "title": "Static-Priority_Real-Time_Scheduling_Response_Time_Computation_Is_NP-Hard",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-10T18:05:36Z",
+          "dateModified": "2025-02-10T18:05:36Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/WJN5ZBAM",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\WJN5ZBAM\\Static-Priority_Real-Time_Scheduling_Response_Time_Computation_Is_NP-Hard.pdf",
+          "select": "zotero://select/library/items/WJN5ZBAM"
+        }
+      ],
+      "notes": [],
+      "citationKey": "eisenbrandStaticPriorityRealTimeScheduling2008",
+      "itemKey": "3RHPY53W",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/3RHPY53W"
+    },
+    {
+      "key": "VLHTSVBG",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Techniques For The Synthesis Of Multiprocessor Tasksets",
+      "abstractNote": "The selection of task attributes for empirical evaluations of multiprocessor scheduling algorithms and associated schedulability analyses can greatly affect the results of experiments. Taskset generation algorithms should meet three requirements: efﬁciency, parameter independence, and lack of bias. Satisfying these requirements enables tasksets to be generated in a moderate amount of time, allows effects of speciﬁc parameters to be explored without the problem of confounding variables, and ensures fairness in comparisons between different schedulability analysis techniques. For the uniprocessor case, they are met by the UUniFast algorithm but for multiprocessor systems, where the total desired utilisation is greater than one, UUniFast can produce invalid tasksets. This paper outlines an algorithm, Randﬁxedsum, for the underlying mathematical problem of efﬁciently generating uniformly distributed random points whose components have constant sum. This algorithm has been available via a MatLab forum for a number of years; however, this is the ﬁrst time it has been formally published. This algorithm has direct application to multiprocessor taskset generation. The importance of period generation to experimental evaluation of schedulability tests is also covered.",
+      "language": "en",
+      "libraryCatalog": "Zotero",
+      "creators": [
+        {
+          "firstName": "Paul",
+          "lastName": "Emberson",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Roger",
+          "lastName": "Stafford",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Robert I",
+          "lastName": "Davis",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {
+        "dc:replaces": [
+          "http://zotero.org/users/local/etxm3DPf/items/53IHHTKW",
+          "http://zotero.org/users/local/etxm3DPf/items/LCMFHSXJ"
+        ]
+      },
+      "dateAdded": "2024-11-07T20:25:38Z",
+      "dateModified": "2024-11-07T20:35:29Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/VLHTSVBG",
+      "itemID": 25,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {
+            "dc:replaces": [
+              "http://zotero.org/users/local/etxm3DPf/items/L33MZPZK",
+              "http://zotero.org/users/local/etxm3DPf/items/R3P6XTML"
+            ]
+          },
+          "dateAdded": "2024-11-07T20:25:13Z",
+          "dateModified": "2024-11-07T20:35:29Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/MCA7K8LA",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\MCA7K8LA\\Emberson et al. - Techniques For The Synthesis Of Multiprocessor Tasksets.pdf",
+          "select": "zotero://select/library/items/MCA7K8LA"
+        }
+      ],
+      "notes": [],
+      "citationKey": "embersonTechniquesSynthesisMultiprocessor",
+      "itemKey": "VLHTSVBG",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/VLHTSVBG"
+    },
+    {
+      "key": "SSB7S6PS",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "TACLeBench: A Benchmark Collection to Support Worst-Case Execution Time Research",
+      "abstractNote": "Engineering related research, such as research on worst-case execution time, uses experimentation to evaluate ideas. For these experiments we need example programs. Furthermore, to make the research experimentation repeatable those programs shall be made publicly available.",
+      "date": "2016",
+      "language": "en",
+      "shortTitle": "TACLeBench",
+      "libraryCatalog": "DOI.org (Datacite)",
+      "url": "https://drops.dagstuhl.de/entities/document/10.4230/OASIcs.WCET.2016.2",
+      "accessDate": "2024-11-07T20:25:52Z",
+      "rights": "Creative Commons Attribution 3.0 Unported license, info:eu-repo/semantics/openAccess",
+      "extra": "Artwork Size: 10 pages, 454018 bytes\nISBN: 9783959770255\nMedium: application/pdf\nPublisher: Schloss Dagstuhl – Leibniz-Zentrum für Informatik",
+      "volume": "55",
+      "pages": "2:1-2:10",
+      "publicationTitle": "OASIcs, Volume 55, WCET 2016",
+      "DOI": "10.4230/OASICS.WCET.2016.2",
+      "ISSN": "2190-6807",
+      "creators": [
+        {
+          "firstName": "Heiko",
+          "lastName": "Falk",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Sebastian",
+          "lastName": "Altmeyer",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Peter",
+          "lastName": "Hellinckx",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Björn",
+          "lastName": "Lisper",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Wolfgang",
+          "lastName": "Puffitsch",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Christine",
+          "lastName": "Rochange",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Martin",
+          "lastName": "Schoeberl",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Rasmus Bo",
+          "lastName": "Sørensen",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Peter",
+          "lastName": "Wägemann",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Simon",
+          "lastName": "Wegener",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Martin",
+          "lastName": "Schoeberl",
+          "creatorType": "contributor"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "WCET analysis",
+          "type": 1
+        },
+        {
+          "tag": "Benchmark",
+          "type": 1
+        },
+        {
+          "tag": "real-time systems",
+          "type": 1
+        }
+      ],
+      "relations": {
+        "dc:replaces": [
+          "http://zotero.org/users/local/etxm3DPf/items/7LL2EZ5K"
+        ]
+      },
+      "dateAdded": "2024-11-07T20:25:52Z",
+      "dateModified": "2024-11-07T20:35:20Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/SSB7S6PS",
+      "itemID": 34,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {
+            "dc:replaces": [
+              "http://zotero.org/users/local/etxm3DPf/items/YZDUIAJF"
+            ]
+          },
+          "dateAdded": "2024-11-07T20:25:23Z",
+          "dateModified": "2024-11-07T20:35:20Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/M3PMXQ22",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\M3PMXQ22\\Falk et al. - 2016 - TACLeBench A Benchmark Collection to Support Worst-Case Execution Time Research.pdf",
+          "select": "zotero://select/library/items/M3PMXQ22"
+        }
+      ],
+      "notes": [
+        {
+          "key": "IK43LE5F",
+          "version": 0,
+          "itemType": "note",
+          "parentItem": "SSB7S6PS",
+          "note": "<h2>SeriesInformation</h2>\nOASIcs, Vol. 55, 16th International Workshop on Worst-Case Execution Time Analysis (WCET 2016), pages 2:1-2:10",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:25:52Z",
+          "dateModified": "2024-11-07T20:25:52Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/IK43LE5F"
+        },
+        {
+          "key": "2MCN9ZSP",
+          "version": 0,
+          "itemType": "note",
+          "parentItem": "SSB7S6PS",
+          "note": "<h2>SeriesInformation</h2>\nOASIcs, Vol. 55, 16th International Workshop on Worst-Case Execution Time Analysis (WCET 2016), pages 2:1-2:10",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:27:42Z",
+          "dateModified": "2024-11-07T20:35:20Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/2MCN9ZSP"
+        }
+      ],
+      "citationKey": "falkTACLeBenchBenchmarkCollection2016",
+      "itemKey": "SSB7S6PS",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/SSB7S6PS"
+    },
+    {
+      "key": "FID5ZK5L",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "System-level Logical Execution Time: Augmenting the Logical Execution Time Paradigm for Distributed Real-time Automotive Software",
+      "abstractNote": "Logical Execution Time (LET) is a timed programming abstraction, which features predictable and composable timing. It has recently gained considerable attention in the automotive industry, where it was successfully applied to master the distribution of software applications on multi-core electronic control units. However, the LET abstraction in its conventional form is only valid within the scope of a single component. With the recent introduction of System-level Logical Execution Time (SL LET), the concept could be transferred to a system-wide scope. This article improves over a first paper on SL LET, by providing matured definitions and an extensive discussion of the concept. It also features a comprehensive evaluation exploring the impacts of SL LET with regard to design, verification, performance, and implementability. The evaluation goes far beyond the contexts in which LET was originally applied. Indeed, SL LET allows us to address many open challenges in the design and verification of complex embedded hardware/software systems addressing predictability, synchronization, composability, and extensibility. Furthermore, we investigate performance trade-offs, and we quantify implementation costs by providing an analysis of the additionally required buffers.",
+      "date": "2021-04-30",
+      "language": "en",
+      "shortTitle": "System-level Logical Execution Time",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "https://dl.acm.org/doi/10.1145/3381847",
+      "accessDate": "2024-11-10T18:52:55Z",
+      "volume": "5",
+      "pages": "1-27",
+      "publicationTitle": "ACM Transactions on Cyber-Physical Systems",
+      "DOI": "10.1145/3381847",
+      "issue": "2",
+      "journalAbbreviation": "ACM Trans. Cyber-Phys. Syst.",
+      "ISSN": "2378-962X, 2378-9638",
+      "creators": [
+        {
+          "firstName": "Kai-Björn",
+          "lastName": "Gemlau",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Leonie",
+          "lastName": "Köhler",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Rolf",
+          "lastName": "Ernst",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Sophie",
+          "lastName": "Quinton",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-11-10T18:52:55Z",
+      "dateModified": "2024-11-10T18:52:55Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/FID5ZK5L",
+      "itemID": 137,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Volltext",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-10T18:52:56Z",
+          "dateModified": "2024-11-10T18:52:56Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/GKWEY247",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\GKWEY247\\Gemlau et al. - 2021 - System-level Logical Execution Time Augmenting the Logical Execution Time Paradigm for Distributed.pdf",
+          "select": "zotero://select/library/items/GKWEY247"
+        }
+      ],
+      "notes": [],
+      "citationKey": "gemlauSystemlevelLogicalExecution2021",
+      "itemKey": "FID5ZK5L",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/FID5ZK5L"
+    },
+    {
+      "key": "5MA8TVYN",
+      "version": 0,
+      "itemType": "conferencePaper",
+      "title": "A tool for automatic flow analysis of C-programs for WCET calculation",
+      "abstractNote": "Bounding the Worst Case Execution Time (WCET) of programs is essential for real-time systems. To be able to do WCET calculations, the iteration bounds for loops and recursion must be known. We describe a newly developed prototype tool that calculates these bounds automatically, thereby avoiding the need for manual annotations by the programmer.",
+      "date": "2003",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "http://ieeexplore.ieee.org/document/1218072/",
+      "accessDate": "2024-11-07T20:25:36Z",
+      "place": "Guadalajara, Mexico",
+      "publisher": "IEEE",
+      "ISBN": "978-0-7695-1929-6",
+      "pages": "106-112",
+      "proceedingsTitle": "Proceedings of the Eighth International Workshop on Object-Oriented Real-Time Dependable Systems, 2003. (WORDS 2003).",
+      "conferenceName": "WORDS 2003: 8th International Workshop on Object-oriented Real-Time Dependable Systems",
+      "DOI": "10.1109/WORDS.2003.1218072",
+      "creators": [
+        {
+          "firstName": "J.",
+          "lastName": "Gustafsson",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "B.",
+          "lastName": "Lisper",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "C.",
+          "lastName": "Sandberg",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "N.",
+          "lastName": "Bermudo",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {
+        "dc:replaces": [
+          "http://zotero.org/users/local/etxm3DPf/items/VUTGRRV4"
+        ]
+      },
+      "dateAdded": "2024-11-07T20:25:36Z",
+      "dateModified": "2024-11-07T20:32:37Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/5MA8TVYN",
+      "itemID": 24,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {
+            "dc:replaces": [
+              "http://zotero.org/users/local/etxm3DPf/items/9ICUBGZ2"
+            ]
+          },
+          "dateAdded": "2024-11-07T20:25:12Z",
+          "dateModified": "2024-11-07T20:32:37Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/72UK97SI",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\72UK97SI\\Gustafsson et al. - 2003 - A tool for automatic flow analysis of C-programs for WCET calculation.pdf",
+          "select": "zotero://select/library/items/72UK97SI"
+        }
+      ],
+      "notes": [],
+      "citationKey": "gustafssonToolAutomaticFlow2003",
+      "itemKey": "5MA8TVYN",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/5MA8TVYN"
+    },
+    {
+      "key": "C9RAYUET",
+      "version": 0,
+      "itemType": "conferencePaper",
+      "title": "The Survey of Real Time Operating System: RTOS",
+      "date": "01/2014",
+      "shortTitle": "The Survey of Real Time Operating System",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "http://ieeexplore.ieee.org/document/6745342/",
+      "accessDate": "2025-02-13T10:37:10Z",
+      "place": "Nagpur, India",
+      "publisher": "IEEE",
+      "ISBN": "978-1-4799-2102-7",
+      "pages": "34-39",
+      "proceedingsTitle": "2014 International Conference on Electronic Systems, Signal Processing and Computing Technologies",
+      "conferenceName": "2014 International Conference on Electronic Systems, Signal Processing and Computing Technologies (ICESC)",
+      "DOI": "10.1109/ICESC.2014.15",
+      "creators": [
+        {
+          "firstName": "Prasanna",
+          "lastName": "Hambarde",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Rachit",
+          "lastName": "Varma",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Shivani",
+          "lastName": "Jha",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-02-13T10:37:10Z",
+      "dateModified": "2025-02-13T10:37:10Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/C9RAYUET",
+      "itemID": 228,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-13T10:39:09Z",
+          "dateModified": "2025-02-13T10:39:09Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/Y4RE8SP5",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\Y4RE8SP5\\Hambarde et al. - 2014 - The Survey of Real Time Operating System RTOS.pdf",
+          "select": "zotero://select/library/items/Y4RE8SP5"
+        }
+      ],
+      "notes": [],
+      "citationKey": "hambardeSurveyRealTime2014",
+      "itemKey": "C9RAYUET",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/C9RAYUET"
+    },
+    {
+      "key": "NDNYAHPG",
+      "version": 0,
+      "itemType": "bookSection",
+      "title": "Optimizing Round-Robin Scheduling Algorithm Performance in Real-Time Systems",
+      "date": "2024",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "https://link.springer.com/10.1007/978-3-031-68639-9_24",
+      "accessDate": "2025-02-10T13:32:44Z",
+      "extra": "Series Title: Communications in Computer and Information Science\nDOI: 10.1007/978-3-031-68639-9_24",
+      "volume": "2065",
+      "place": "Cham",
+      "publisher": "Springer Nature Switzerland",
+      "ISBN": "978-3-031-68638-2 978-3-031-68639-9",
+      "pages": "371-382",
+      "bookTitle": "Applied Intelligence and Informatics",
+      "creators": [
+        {
+          "firstName": "Mufti",
+          "lastName": "Mahmud",
+          "creatorType": "editor"
+        },
+        {
+          "firstName": "Hanene",
+          "lastName": "Ben-Abdallah",
+          "creatorType": "editor"
+        },
+        {
+          "firstName": "M. Shamim",
+          "lastName": "Kaiser",
+          "creatorType": "editor"
+        },
+        {
+          "firstName": "Muhammad Raisuddin",
+          "lastName": "Ahmed",
+          "creatorType": "editor"
+        },
+        {
+          "firstName": "Ning",
+          "lastName": "Zhong",
+          "creatorType": "editor"
+        },
+        {
+          "firstName": "Tarek",
+          "lastName": "Helmy",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-02-10T13:32:44Z",
+      "dateModified": "2025-02-10T13:32:44Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/NDNYAHPG",
+      "itemID": 221,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-10T13:34:27Z",
+          "dateModified": "2025-02-10T13:34:27Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/VDN6SYHT",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\VDN6SYHT\\Helmy - 2024 - Optimizing Round-Robin Scheduling Algorithm Performance in Real-Time Systems.pdf",
+          "select": "zotero://select/library/items/VDN6SYHT"
+        }
+      ],
+      "notes": [],
+      "citationKey": "helmyOptimizingRoundRobinScheduling2024",
+      "itemKey": "NDNYAHPG",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/NDNYAHPG"
+    },
+    {
+      "key": "JANNUVN9",
+      "version": 0,
+      "itemType": "conferencePaper",
+      "title": "Hardware architecture specification and constraint-based WCET computation",
+      "abstractNote": "The analysis of the worst-case execution times is necessary in the design of critical real-time systems. To get sound and precise times, the WCET analysis for these systems must be performed on binary code and based on static analysis. OTAWA, a tool providing WCET computation, uses the Sim-nML language to describe the instruction set and XML ﬁles to describe the microarchitecture. The latter information is usually inadequate to describe real architectures and, therefore, requires speciﬁc modiﬁcations, currently performed by hand, to allow correct time calculation. In this paper, we propose to extend Sim-nML in order to support the description of modern microarchitecture features along the instruction set description and to seamlessly derive the time calculation. This time computation is speciﬁed as a constraint solving problem that is automatically synthesized from the extended Sim-nML. Thanks to its declarative aspect, this approach makes easier and modular the description of complex features of microprocessors while maintaining a sound process to compute times.",
+      "date": "06/2013",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "https://ieeexplore.ieee.org/document/6601499",
+      "accessDate": "2024-11-07T20:26:59Z",
+      "place": "Porto",
+      "publisher": "IEEE",
+      "ISBN": "978-1-4799-0658-1",
+      "pages": "259-268",
+      "proceedingsTitle": "2013 8th IEEE International Symposium on Industrial Embedded Systems (SIES)",
+      "conferenceName": "2013 8th IEEE International Symposium on Industrial Embedded Systems (SIES)",
+      "DOI": "10.1109/SIES.2013.6601499",
+      "creators": [
+        {
+          "firstName": "Hajer",
+          "lastName": "Herbegue",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Hugues",
+          "lastName": "Casse",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Mamoun",
+          "lastName": "Filali",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Christine",
+          "lastName": "Rochange",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-11-07T20:26:59Z",
+      "dateModified": "2024-11-07T20:26:59Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/JANNUVN9",
+      "itemID": 82,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:26:25Z",
+          "dateModified": "2024-11-07T20:26:59Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/7RRI5J69",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\7RRI5J69\\Herbegue et al. - 2013 - Hardware architecture specification and constraint-based WCET computation.pdf",
+          "select": "zotero://select/library/items/7RRI5J69"
+        }
+      ],
+      "notes": [],
+      "citationKey": "herbegueHardwareArchitectureSpecification2013",
+      "itemKey": "JANNUVN9",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/JANNUVN9"
+    },
+    {
+      "key": "PXWP6YJ6",
+      "version": 0,
+      "itemType": "standard",
+      "title": "IEEE Standard for a Real-Time Operating System (RTOS) for Small-Scale Embedded Systems",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "https://ieeexplore.ieee.org/document/8445674/",
+      "accessDate": "2025-02-13T11:24:58Z",
+      "extra": "ISBN: 9781504448581",
+      "publisher": "IEEE",
+      "DOI": "10.1109/IEEESTD.2018.8445674",
+      "creators": [],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-02-13T11:24:58Z",
+      "dateModified": "2025-02-13T11:24:58Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/PXWP6YJ6",
+      "itemID": 232,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-13T11:25:13Z",
+          "dateModified": "2025-02-13T11:25:13Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/GHW8AGA2",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\GHW8AGA2\\IEEE Standard for a Real-Time Operating System (RTOS) for Small-Scale Embedded Systems.pdf",
+          "select": "zotero://select/library/items/GHW8AGA2"
+        }
+      ],
+      "notes": [],
+      "citationKey": "IEEEStandardRealTime",
+      "itemKey": "PXWP6YJ6",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/PXWP6YJ6"
+    },
+    {
+      "key": "BKE42UCY",
+      "version": 0,
+      "itemType": "book",
+      "title": "RTAS 2015: 21st IEEE Real Time and Embedded Technology and Applications Symposium: proceedings",
+      "date": "2015",
+      "language": "eng",
+      "shortTitle": "RTAS 2015",
+      "libraryCatalog": "K10plus ISBN",
+      "extra": "Meeting Name: Real-Time and Embedded Technology and Applications Symposium",
+      "place": "Piscataway, NJ",
+      "publisher": "IEEE",
+      "ISBN": "978-1-4799-8603-3",
+      "numPages": "1",
+      "creators": [
+        {
+          "name": "Institute of Electrical and Electronics Engineers",
+          "creatorType": "editor"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-11-16T21:07:09Z",
+      "dateModified": "2024-11-16T21:07:09Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/BKE42UCY",
+      "itemID": 144,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-16T21:08:34Z",
+          "dateModified": "2024-11-16T21:08:34Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/SU47RFG2",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\SU47RFG2\\Institute of Electrical and Electronics Engineers - 2015 - RTAS 2015 21st IEEE Real Time and Embedded Technology and Applications Symposium proceedings.pdf",
+          "select": "zotero://select/library/items/SU47RFG2"
+        }
+      ],
+      "notes": [
+        {
+          "key": "HRD3M8U6",
+          "version": 0,
+          "itemType": "note",
+          "parentItem": "BKE42UCY",
+          "note": "Titelzusatz auf weiterer Titelseite: Seattle, Washington, April 13-16, 2015 Übergeordnete Tagung: Cyber-Physical Systems Week Literaturangaben",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-16T21:07:09Z",
+          "dateModified": "2024-11-16T21:07:09Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/HRD3M8U6"
+        }
+      ],
+      "citationKey": "instituteofelectricalandelectronicsengineersRTAS201521st2015",
+      "itemKey": "BKE42UCY",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/BKE42UCY"
+    },
+    {
+      "key": "EFCCGZUT",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "WCET Analysis and Optimization for Multi-Core Real-Time Systems",
+      "creators": [
+        {
+          "firstName": "Timon",
+          "lastName": "Kelter",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-02-13T21:45:10Z",
+      "dateModified": "2025-02-13T21:45:10Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/EFCCGZUT",
+      "itemID": 243,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "kelter-phd",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-01-02T17:06:32Z",
+          "dateModified": "2025-02-13T21:45:32Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/MQAWUNTE",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\MQAWUNTE\\kelter-phd.pdf",
+          "select": "zotero://select/library/items/MQAWUNTE"
+        }
+      ],
+      "notes": [],
+      "citationKey": "kelterWCETAnalysisOptimization",
+      "itemKey": "EFCCGZUT",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/EFCCGZUT"
+    },
+    {
+      "key": "SVTWNYWA",
+      "version": 0,
+      "itemType": "conferencePaper",
+      "title": "WCET-aware scheduling optimizations for multi-core real-time systems",
+      "abstractNote": "In real-time systems, the WCET (worst-case execution time) of tasks is of utmost importance. For multi-cores, the WCET has been shown to be hard to determine due to task interactions on shared memory and shared buses. This problem is usually addressed by spatial or temporal partitioning of the resources, but both lead to lower utilization if the partitioning is not done optimally. We examine two approaches for optimizing resource usage in a temporally partitioned multi-core system and show that these techniques can reduce the WCET by more than 30% on average, leading to better schedulability and higher system utilization.",
+      "date": "7/2014",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "https://ieeexplore.ieee.org/document/6893196",
+      "accessDate": "2024-11-07T20:27:53Z",
+      "place": "Agios Konstantinos, Samos, Greece",
+      "publisher": "IEEE",
+      "ISBN": "978-1-4799-3770-7",
+      "pages": "67-74",
+      "proceedingsTitle": "2014 International Conference on Embedded Computer Systems: Architectures, Modeling, and Simulation (SAMOS XIV)",
+      "conferenceName": "2014 International Conference on Embedded Computer Systems: Architectures, Modeling, and Simulation (SAMOS XIV)",
+      "DOI": "10.1109/SAMOS.2014.6893196",
+      "creators": [
+        {
+          "firstName": "Timon",
+          "lastName": "Kelter",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Hendrik",
+          "lastName": "Borghorst",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Peter",
+          "lastName": "Marwedel",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-11-07T20:27:53Z",
+      "dateModified": "2024-11-07T20:27:53Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/SVTWNYWA",
+      "itemID": 108,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:26:52Z",
+          "dateModified": "2024-11-07T20:27:53Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/K32GT7HF",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\K32GT7HF\\Kelter et al. - 2014 - WCET-aware scheduling optimizations for multi-core real-time systems.pdf",
+          "select": "zotero://select/library/items/K32GT7HF"
+        }
+      ],
+      "notes": [],
+      "citationKey": "kelterWCETawareSchedulingOptimizations2014",
+      "itemKey": "SVTWNYWA",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/SVTWNYWA"
+    },
+    {
+      "key": "UIW2WZZU",
+      "version": 0,
+      "itemType": "conferencePaper",
+      "title": "WCET overapproximation for software in the context of a Cyber-Physical System",
+      "abstractNote": "We propose an approach for overapproximating the worst-case execution time (WCET) of embedded control software using formal methods. Model checking is iteratively applied to compute the WCET from the machine code of the software considering a platform and an environment model. We implemented the approach and present ﬁrst experiments for a thermal controller application executed on a LEON3 processor under different environment constraints.",
+      "date": "9/2016",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "http://ieeexplore.ieee.org/document/7753559/",
+      "accessDate": "2024-11-07T20:27:08Z",
+      "place": "Tallinn, Estonia",
+      "publisher": "IEEE",
+      "ISBN": "978-1-5090-3561-8",
+      "pages": "1-6",
+      "proceedingsTitle": "2016 IFIP/IEEE International Conference on Very Large Scale Integration (VLSI-SoC)",
+      "conferenceName": "2016 IFIP/IEEE International Conference on Very Large Scale Integration (VLSI-SoC)",
+      "DOI": "10.1109/VLSI-SoC.2016.7753559",
+      "creators": [
+        {
+          "firstName": "Niklas",
+          "lastName": "Krafczyk",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Heinz",
+          "lastName": "Riener",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Goerschwin",
+          "lastName": "Fey",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-11-07T20:27:08Z",
+      "dateModified": "2024-11-07T20:27:09Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/UIW2WZZU",
+      "itemID": 87,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:26:32Z",
+          "dateModified": "2024-11-07T20:27:09Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/XJPMZ4MY",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\XJPMZ4MY\\Krafczyk et al. - 2016 - WCET overapproximation for software in the context of a Cyber-Physical System.pdf",
+          "select": "zotero://select/library/items/XJPMZ4MY"
+        }
+      ],
+      "notes": [],
+      "citationKey": "krafczykWCETOverapproximationSoftware2016",
+      "itemKey": "UIW2WZZU",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/UIW2WZZU"
+    },
+    {
+      "key": "DPFLHCVN",
+      "version": 0,
+      "itemType": "conferencePaper",
+      "title": "Performance of real-time bus scheduling algorithms",
+      "date": "1986",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "http://portal.acm.org/citation.cfm?doid=317499.317538",
+      "accessDate": "2025-02-03T09:06:08Z",
+      "place": "Raleigh, North Carolina, United States",
+      "publisher": "ACM Press",
+      "ISBN": "978-0-89791-184-9",
+      "pages": "44-53",
+      "proceedingsTitle": "Proceedings of the 1986 ACM SIGMETRICS joint international conference on Computer performance modelling, measurement and evaluation  - SIGMETRICS '86/PERFORMANCE '86",
+      "conferenceName": "the 1986 ACM SIGMETRICS joint international conference",
+      "DOI": "10.1145/317499.317538",
+      "creators": [
+        {
+          "firstName": "John P.",
+          "lastName": "Lehoczky",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Lui",
+          "lastName": "Sha",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-02-03T09:06:08Z",
+      "dateModified": "2025-02-03T09:06:08Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/DPFLHCVN",
+      "itemID": 213,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Volltext",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-03T09:06:09Z",
+          "dateModified": "2025-02-03T09:06:09Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/UZ3WB5VS",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\UZ3WB5VS\\Lehoczky und Sha - 1986 - Performance of real-time bus scheduling algorithms.pdf",
+          "select": "zotero://select/library/items/UZ3WB5VS"
+        }
+      ],
+      "notes": [],
+      "citationKey": "lehoczkyPerformanceRealtimeBus1986",
+      "itemKey": "DPFLHCVN",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/DPFLHCVN"
+    },
+    {
+      "key": "75J8GATM",
+      "version": 0,
+      "itemType": "conferencePaper",
+      "title": "The rate monotonic scheduling algorithm: exact characterization and average case behavior",
+      "date": "1989",
+      "shortTitle": "The rate monotonic scheduling algorithm",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "http://ieeexplore.ieee.org/document/63567/",
+      "accessDate": "2025-01-19T14:53:57Z",
+      "place": "Santa Monica, CA, USA",
+      "publisher": "IEEE Comput. Soc. Press",
+      "ISBN": "978-0-8186-2004-1",
+      "pages": "166-171",
+      "proceedingsTitle": "[1989] Proceedings. Real-Time Systems Symposium",
+      "conferenceName": "[1989] Proceedings. Real-Time Systems Symposium",
+      "DOI": "10.1109/REAL.1989.63567",
+      "creators": [
+        {
+          "firstName": "J.",
+          "lastName": "Lehoczky",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "L.",
+          "lastName": "Sha",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Y.",
+          "lastName": "Ding",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-01-19T14:53:57Z",
+      "dateModified": "2025-01-19T14:53:57Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/75J8GATM",
+      "itemID": 174,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "The_rate_monotonic_scheduling_algorithm_exact_characterization_and_average_case_behavior",
+          "path": "G:\\Meine Ablage\\Masterarbeit\\Quellen\\The_rate_monotonic_scheduling_algorithm_exact_characterization_and_average_case_behavior.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-01-19T14:54:10Z",
+          "dateModified": "2025-01-19T14:54:10Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/Z7MVZ53S",
+          "select": "zotero://select/library/items/Z7MVZ53S"
+        }
+      ],
+      "notes": [],
+      "citationKey": "lehoczkyRateMonotonicScheduling1989",
+      "itemKey": "75J8GATM",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/75J8GATM"
+    },
+    {
+      "key": "LS7CLJ36",
+      "version": 0,
+      "itemType": "conferencePaper",
+      "title": "Analysis of EDF and RM scheduling algorithms for periodic and aperiodic tasks in multi-core ECU",
+      "date": "2023-6-25",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "https://ieeexplore.ieee.org/document/10212836/",
+      "accessDate": "2024-11-18T19:12:40Z",
+      "rights": "https://doi.org/10.15223/policy-029",
+      "place": "Jeju, Korea, Republic of",
+      "publisher": "IEEE",
+      "ISBN": "979-8-3503-2641-3",
+      "pages": "1-6",
+      "proceedingsTitle": "2023 International Technical Conference on Circuits/Systems, Computers, and Communications (ITC-CSCC)",
+      "conferenceName": "2023 International Technical Conference on Circuits/Systems, Computers, and Communications (ITC-CSCC)",
+      "DOI": "10.1109/ITC-CSCC58803.2023.10212836",
+      "creators": [
+        {
+          "firstName": "Se Jeong",
+          "lastName": "Lim",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jong Hun",
+          "lastName": "Kim",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jae Wook",
+          "lastName": "Jeon",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-11-18T19:12:40Z",
+      "dateModified": "2024-11-18T19:12:40Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/LS7CLJ36",
+      "itemID": 154,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-18T19:13:13Z",
+          "dateModified": "2024-11-18T19:13:13Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/DNJ4W28L",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\DNJ4W28L\\Lim et al. - 2023 - Analysis of EDF and RM scheduling algorithms for periodic and aperiodic tasks in multi-core ECU.pdf",
+          "select": "zotero://select/library/items/DNJ4W28L"
+        }
+      ],
+      "notes": [],
+      "citationKey": "limAnalysisEDFRM2023",
+      "itemKey": "LS7CLJ36",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/LS7CLJ36"
+    },
+    {
+      "key": "S8Z2PLTQ",
+      "version": 0,
+      "itemType": "bookSection",
+      "title": "SWEET – A Tool for WCET Flow Analysis (Extended Abstract)",
+      "date": "2014",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "http://link.springer.com/10.1007/978-3-662-45231-8_38",
+      "accessDate": "2024-11-07T20:25:31Z",
+      "extra": "Series Title: Lecture Notes in Computer Science\nDOI: 10.1007/978-3-662-45231-8_38",
+      "volume": "8803",
+      "place": "Berlin, Heidelberg",
+      "publisher": "Springer Berlin Heidelberg",
+      "ISBN": "978-3-662-45230-1 978-3-662-45231-8",
+      "pages": "482-485",
+      "bookTitle": "Leveraging Applications of Formal Methods, Verification and Validation. Specialized Techniques and Applications",
+      "creators": [
+        {
+          "firstName": "Tiziana",
+          "lastName": "Margaria",
+          "creatorType": "editor"
+        },
+        {
+          "firstName": "Bernhard",
+          "lastName": "Steffen",
+          "creatorType": "editor"
+        },
+        {
+          "firstName": "Björn",
+          "lastName": "Lisper",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {
+        "dc:replaces": [
+          "http://zotero.org/users/local/etxm3DPf/items/A8JNY892"
+        ]
+      },
+      "dateAdded": "2024-11-07T20:25:31Z",
+      "dateModified": "2024-11-07T20:34:48Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/S8Z2PLTQ",
+      "itemID": 22,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {
+            "dc:replaces": [
+              "http://zotero.org/users/local/etxm3DPf/items/AR9KHBS7"
+            ]
+          },
+          "dateAdded": "2024-11-07T20:25:08Z",
+          "dateModified": "2024-11-07T20:34:48Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/QR7MM4QE",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\QR7MM4QE\\Lisper - 2014 - SWEET – A Tool for WCET Flow Analysis (Extended Abstract).pdf",
+          "select": "zotero://select/library/items/QR7MM4QE"
+        }
+      ],
+      "notes": [],
+      "citationKey": "lisperSWEETToolWCET2014",
+      "itemKey": "S8Z2PLTQ",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/S8Z2PLTQ"
+    },
+    {
+      "key": "PW8GP3V9",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Scheduling algorithms for multiprogramming in a hard-real-time environment",
+      "date": "1973",
+      "extra": "Publisher: ACM New York, NY, USA",
+      "volume": "20",
+      "pages": "46-61",
+      "publicationTitle": "Journal of the ACM (JACM)",
+      "issue": "1",
+      "journalAbbreviation": "Journal of the ACM (JACM)",
+      "ISSN": "0004-5411",
+      "creators": [
+        {
+          "firstName": "Chung Laung",
+          "lastName": "Liu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "James W",
+          "lastName": "Layland",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-02-13T06:27:28Z",
+      "dateModified": "2025-02-13T06:27:28Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/PW8GP3V9",
+      "itemID": 227,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {
+            "dc:replaces": [
+              "http://zotero.org/users/local/etxm3DPf/items/8G9I4QJ9"
+            ]
+          },
+          "dateAdded": "2024-11-07T20:26:58Z",
+          "dateModified": "2025-02-13T06:27:49Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/DRQL7B3Q",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\DRQL7B3Q\\Liu - Scheduling Algorithms for Multiprogramming in a Hard-Real-Time Environment.pdf",
+          "select": "zotero://select/library/items/DRQL7B3Q"
+        }
+      ],
+      "notes": [],
+      "citationKey": "liuSchedulingAlgorithmsMultiprogramming1973",
+      "itemKey": "PW8GP3V9",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/PW8GP3V9"
+    },
+    {
+      "key": "YJBIMURY",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Measurement-based WCET estimation in multicore real-time systems",
+      "language": "en",
+      "libraryCatalog": "Zotero",
+      "creators": [
+        {
+          "firstName": "Sören",
+          "lastName": "Meinken",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {
+        "dc:replaces": [
+          "http://zotero.org/users/local/etxm3DPf/items/XPLML7BV"
+        ]
+      },
+      "dateAdded": "2024-11-07T20:25:43Z",
+      "dateModified": "2024-11-07T20:33:34Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/YJBIMURY",
+      "itemID": 29,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {
+            "dc:replaces": [
+              "http://zotero.org/users/local/etxm3DPf/items/FUQ3IMPV"
+            ]
+          },
+          "dateAdded": "2024-11-07T20:25:16Z",
+          "dateModified": "2024-11-07T20:33:34Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/N9K979YX",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\N9K979YX\\Meinken - Measurement-based WCET estimation in multicore real-time systems.pdf",
+          "select": "zotero://select/library/items/N9K979YX"
+        }
+      ],
+      "notes": [],
+      "citationKey": "meinkenMeasurementbasedWCETEstimation",
+      "itemKey": "YJBIMURY",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/YJBIMURY"
+    },
+    {
+      "key": "Y3K923Q7",
+      "version": 0,
+      "itemType": "bookSection",
+      "title": "Real-Time Operating Systems for DSP",
+      "date": "2006",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/B9780750677592500107",
+      "accessDate": "2024-11-07T20:26:42Z",
+      "extra": "DOI: 10.1016/B978-075067759-2/50010-7",
+      "publisher": "Elsevier",
+      "ISBN": "978-0-7506-7759-2",
+      "pages": "261-320",
+      "bookTitle": "DSP Software Development Techniques for Embedded and Real-Time Systems",
+      "creators": [
+        {
+          "firstName": "Robert",
+          "lastName": "Oshana",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-11-07T20:26:43Z",
+      "dateModified": "2024-11-07T20:26:43Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/Y3K923Q7",
+      "itemID": 68,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:26:16Z",
+          "dateModified": "2024-11-07T20:26:43Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/7J6L3H9V",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\7J6L3H9V\\Oshana - 2006 - Real-Time Operating Systems for DSP.pdf",
+          "select": "zotero://select/library/items/7J6L3H9V"
+        }
+      ],
+      "notes": [],
+      "citationKey": "oshanaRealTimeOperatingSystems2006",
+      "itemKey": "Y3K923Q7",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/Y3K923Q7"
+    },
+    {
+      "key": "SQ46G7YQ",
+      "version": 0,
+      "itemType": "conferencePaper",
+      "title": "A new real time simulator for task scheduling",
+      "abstractNote": "There are many new and existing scheduling policies within the ﬁeld of real time scheduling theory. But, only a few of them are useful for real time implementation. The main difﬁculty is in reforming the Real Time Operating System (RTOS) to integrate the scheduling policy, which needs a skilled programming. Due to this hinderance, it is difﬁcult to test and evaluate different policies and compare their performances. So a simulation study becomes inevitable. The available simulators mainly refer to only certain class of scheduling problem with particular execution sequence. This paper presents a software simulator which can be used to measure the performance of existing and new scheduling algorithms. The simulator is also integrated with different feasibility analysis and calculation of different scheduling aspects.",
+      "date": "12/2012",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "http://ieeexplore.ieee.org/document/6510232/",
+      "accessDate": "2024-11-07T20:26:46Z",
+      "place": "Coimbatore, India",
+      "publisher": "IEEE",
+      "ISBN": "978-1-4673-1344-5 978-1-4673-1342-1 978-1-4673-1343-8",
+      "pages": "1-4",
+      "proceedingsTitle": "2012 IEEE International Conference on Computational Intelligence and Computing Research",
+      "conferenceName": "2012 IEEE International Conference on Computational Intelligence and Computing Research (ICCIC)",
+      "DOI": "10.1109/ICCIC.2012.6510232",
+      "creators": [
+        {
+          "firstName": "Anju S.",
+          "lastName": "Pillai",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "T. B.",
+          "lastName": "Isha",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {
+        "dc:replaces": [
+          "http://zotero.org/users/local/etxm3DPf/items/65JM9C4W"
+        ]
+      },
+      "dateAdded": "2024-11-07T20:26:46Z",
+      "dateModified": "2024-11-07T20:32:20Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/SQ46G7YQ",
+      "itemID": 72,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {
+            "dc:replaces": [
+              "http://zotero.org/users/local/etxm3DPf/items/QFJLG8DF"
+            ]
+          },
+          "dateAdded": "2024-11-07T20:26:17Z",
+          "dateModified": "2024-11-07T20:32:20Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/PZHPBBSW",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\PZHPBBSW\\Pillai und Isha - 2012 - A new real time simulator for task scheduling.pdf",
+          "select": "zotero://select/library/items/PZHPBBSW"
+        }
+      ],
+      "notes": [],
+      "citationKey": "pillaiNewRealTime2012",
+      "itemKey": "SQ46G7YQ",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/SQ46G7YQ"
+    },
+    {
+      "key": "H5EYP4PY",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Holistic Scheduling and Analysis of Mixed Time/Event- Triggered Distributed Embedded Systems",
+      "abstractNote": "This paper deals with specific issues related to the design of distributed embedded systems implemented with mixed, eventtriggered and time-triggered tusk sets, which communicate over bus protocols consisting of both static and dynamic phases. Such systems are emerging as the new standard for automotive applications. We have developed a holistic timing analysis and scheduling approach for this category of systems. We have also identified several new design problems characteristic to such hybrid systems. An example relatedto bus access optimization in the context of a mixed static~dynamic bus protocol is presented. Experimental results prove the efficiency of such an optimization approach.",
+      "language": "en",
+      "libraryCatalog": "Zotero",
+      "creators": [
+        {
+          "firstName": "Traian",
+          "lastName": "Pop",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Petru",
+          "lastName": "Eles",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Zebo",
+          "lastName": "Peng",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-11-07T20:27:17Z",
+      "dateModified": "2024-11-07T20:27:17Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/H5EYP4PY",
+      "itemID": 90,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:26:23Z",
+          "dateModified": "2024-11-07T20:27:17Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/8RGVWHJ5",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\8RGVWHJ5\\Pop et al. - Holistic Scheduling and Analysis of Mixed TimeEvent- Triggered Distributed Embedded Systems.pdf",
+          "select": "zotero://select/library/items/8RGVWHJ5"
+        }
+      ],
+      "notes": [],
+      "citationKey": "popHolisticSchedulingAnalysis",
+      "itemKey": "H5EYP4PY",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/H5EYP4PY"
+    },
+    {
+      "key": "FYSL6KRJ",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "A priority based round robin CPU scheduling algorithm for real time systems",
+      "date": "2012",
+      "extra": "Publisher: Citeseer",
+      "volume": "1",
+      "pages": "1-11",
+      "publicationTitle": "International Journal of Innovations in Engineering and Technology",
+      "issue": "3",
+      "journalAbbreviation": "International Journal of Innovations in Engineering and Technology",
+      "ISSN": "2319-1058",
+      "creators": [
+        {
+          "firstName": "Ishwari Singh",
+          "lastName": "Rajput",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Deepa",
+          "lastName": "Gupta",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-02-10T12:50:29Z",
+      "dateModified": "2025-02-10T12:50:29Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/FYSL6KRJ",
+      "itemID": 217,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-10T12:51:40Z",
+          "dateModified": "2025-02-10T12:51:40Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/33C5SJW8",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\33C5SJW8\\Rajput und Gupta - 2012 - A priority based round robin CPU scheduling algorithm for real time systems.pdf",
+          "select": "zotero://select/library/items/33C5SJW8"
+        }
+      ],
+      "notes": [],
+      "citationKey": "rajputPriorityBasedRobin2012",
+      "itemKey": "FYSL6KRJ",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/FYSL6KRJ"
+    },
+    {
+      "key": "NNA29DU2",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Combined Scheduling of Time-Triggered Plans and Priority Scheduled Task Sets",
+      "abstractNote": "Preemptive, priority-based scheduling on the one hand, and time-triggered scheduling on the other, are the two major techniques in use for development of real-time and embedded software. Both have their advantages and drawbacks with respect to the other, and are commonly adopted in mutual exclusion.",
+      "date": "2016-07-13",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "https://dl.acm.org/doi/10.1145/2971571.2971580",
+      "accessDate": "2024-11-07T20:27:19Z",
+      "volume": "36",
+      "pages": "68-76",
+      "publicationTitle": "ACM SIGAda Ada Letters",
+      "DOI": "10.1145/2971571.2971580",
+      "issue": "1",
+      "journalAbbreviation": "Ada Lett.",
+      "ISSN": "1094-3641",
+      "creators": [
+        {
+          "firstName": "Jorge",
+          "lastName": "Real",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Sergio",
+          "lastName": "Sáez",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Alfons",
+          "lastName": "Crespo",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-11-07T20:27:19Z",
+      "dateModified": "2024-11-07T20:27:19Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/NNA29DU2",
+      "itemID": 91,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:26:25Z",
+          "dateModified": "2024-11-07T20:27:20Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/6U9QFVYX",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\6U9QFVYX\\Real et al. - 2016 - Combined Scheduling of Time-Triggered Plans and Priority Scheduled Task Sets.pdf",
+          "select": "zotero://select/library/items/6U9QFVYX"
+        }
+      ],
+      "notes": [],
+      "citationKey": "realCombinedSchedulingTimeTriggered2016",
+      "itemKey": "NNA29DU2",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/NNA29DU2"
+    },
+    {
+      "key": "2BLZW2PA",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Dealing with Uncertainty in pWCET Estimations",
+      "abstractNote": "The problem of estimating a tight and safe Worst-Case Execution Time (WCET), needed for certification in safety-critical environment, is a challenging problem for modern embedded systems. A possible solution proposed in past years is to exploit statistical tools to obtain a probability distribution of the WCET. These probabilistic real-time analyses for WCET are, however, subject to errors, even when all the applicability hypotheses are satisfied and verified. This is caused by the uncertainties of the probabilistic-WCET distribution estimator. This article aims at improving the measurement-based probabilistic timing analysis approach providing some techniques to analyze and deal with such uncertainties. The so-called region of acceptance model based on state-of-the-art statistical test procedures is defined over the distribution space parameters. From this model, a set of strategies is derived and discussed to provide the methodology to deal with the trade-off safety/tightness of the WCET estimation. These techniques are then tested over real datasets, including industrial safety-critical applications, to show the increased value of using the proposed approach in probabilistic WCET analyses.",
+      "date": "2020-09-30",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "https://dl.acm.org/doi/10.1145/3396234",
+      "accessDate": "2025-01-20T17:47:21Z",
+      "volume": "19",
+      "pages": "1-23",
+      "publicationTitle": "ACM Transactions on Embedded Computing Systems",
+      "DOI": "10.1145/3396234",
+      "issue": "5",
+      "journalAbbreviation": "ACM Trans. Embed. Comput. Syst.",
+      "ISSN": "1539-9087, 1558-3465",
+      "creators": [
+        {
+          "firstName": "Federico",
+          "lastName": "Reghenzani",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Luca",
+          "lastName": "Santinelli",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "William",
+          "lastName": "Fornaciari",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-01-20T17:47:21Z",
+      "dateModified": "2025-01-20T17:47:21Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/2BLZW2PA",
+      "itemID": 203,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "3396234",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-01-20T17:47:46Z",
+          "dateModified": "2025-01-20T17:47:46Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/X3KITSM9",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\X3KITSM9\\3396234.pdf",
+          "select": "zotero://select/library/items/X3KITSM9"
+        },
+        {
+          "itemType": "attachment",
+          "title": "Volltext",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-01-20T17:47:24Z",
+          "dateModified": "2025-01-20T17:47:24Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/JY35SN4K",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\JY35SN4K\\Reghenzani et al. - 2020 - Dealing with Uncertainty in pWCET Estimations.pdf",
+          "select": "zotero://select/library/items/JY35SN4K"
+        }
+      ],
+      "notes": [],
+      "citationKey": "reghenzaniDealingUncertaintyPWCET2020",
+      "itemKey": "2BLZW2PA",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/2BLZW2PA"
+    },
+    {
+      "key": "GN5WMFZT",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Classes of recursively enumerable sets and their decision problems",
+      "date": "1953",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "https://www.ams.org/tran/1953-074-02/S0002-9947-1953-0053041-6/",
+      "accessDate": "2025-01-20T12:49:22Z",
+      "volume": "74",
+      "pages": "358-366",
+      "publicationTitle": "Transactions of the American Mathematical Society",
+      "DOI": "10.1090/S0002-9947-1953-0053041-6",
+      "issue": "2",
+      "journalAbbreviation": "Trans. Amer. Math. Soc.",
+      "ISSN": "0002-9947, 1088-6850",
+      "creators": [
+        {
+          "firstName": "H. G.",
+          "lastName": "Rice",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-01-20T12:49:22Z",
+      "dateModified": "2025-01-20T12:49:22Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/GN5WMFZT",
+      "itemID": 197,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Volltext",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-01-20T12:49:26Z",
+          "dateModified": "2025-01-20T12:49:26Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/XPTUIZ9W",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\XPTUIZ9W\\Rice - 1953 - Classes of recursively enumerable sets and their decision problems.pdf",
+          "select": "zotero://select/library/items/XPTUIZ9W"
+        }
+      ],
+      "notes": [],
+      "citationKey": "riceClassesRecursivelyEnumerable1953",
+      "itemKey": "GN5WMFZT",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/GN5WMFZT"
+    },
+    {
+      "key": "I9AD2YDT",
+      "version": 0,
+      "itemType": "conferencePaper",
+      "title": "Analysis of hierar hical fixed-priority scheduling",
+      "date": "2002",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "http://ieeexplore.ieee.org/document/1019197/",
+      "accessDate": "2024-11-18T19:54:54Z",
+      "place": "Vienna, Austria",
+      "publisher": "IEEE Comput. Soc",
+      "ISBN": "978-0-7695-1665-3",
+      "pages": "152-160",
+      "proceedingsTitle": "Proceedings 14th Euromicro Conference on Real-Time Systems. Euromicro RTS 2002",
+      "conferenceName": "14th Euromicro Conference on Real-Time Systems. Euromicro RTS 2002",
+      "DOI": "10.1109/EMRTS.2002.1019197",
+      "creators": [
+        {
+          "firstName": "S.",
+          "lastName": "Saewong",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "R.R.",
+          "lastName": "Rajkumar",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "J.P.",
+          "lastName": "Lehoczky",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "M.H.",
+          "lastName": "Klein",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-11-18T19:54:54Z",
+      "dateModified": "2024-11-18T19:54:54Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/I9AD2YDT",
+      "itemID": 163,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-18T19:55:05Z",
+          "dateModified": "2024-11-18T19:55:05Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/EQ7I3RIU",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\EQ7I3RIU\\Saewong et al. - 2002 - Analysis of hierar hical fixed-priority scheduling.pdf",
+          "select": "zotero://select/library/items/EQ7I3RIU"
+        }
+      ],
+      "notes": [],
+      "citationKey": "saewongAnalysisHierarHical2002",
+      "itemKey": "I9AD2YDT",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/I9AD2YDT"
+    },
+    {
+      "key": "L6MERHWB",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Scheduling periodic and aperiodic tasks in hard real-time computing systems",
+      "abstractNote": "Scheduling periodic and aperiodic tasks to meet their time constraints has been an important issue in the design of real-time computing systems. Usually, the task scheduling algorithms in such systems must satisfy the deadlines of periodic tasks and provide fast response times for aperiodic tasks. A simple and efficient approach to scheduling real-time tasks is the use of a periodic server in a static preemptive scheduling algorithm. Periodic tasks, including the server, are scheduled at priori to meet their deadlines according to the knowledge of their periods and computation times. The scheduling of aperiodic tasks is then managed by the periodic server during its service time. In this paper, a new scheduling algorithm is proposed. The new algorithm creates a periodic server which will have the highest priority but not necessarily the shortest period. The server is suspended to reduce the overhead if there are no aperiodic tasks waiting, and is activated immediately upon the arrival of the next aperiodic task. After activated, the server performs its duty periodically until all waiting aperiodic tasks are completed. For a set of tasks scheduled by this algorithm, the deadlines of periodic tasks are guaranteed by a deterministic feasibility check, and the mean response time of aperiodic tasks are estimated using a queueing model. Based on the analytical results, we can determine the period and service time of the server producing the minimum mean response time for aperiodic tasks. The analytical results are compared with simulation results to demonstrate the correctness of our model.",
+      "language": "en",
+      "libraryCatalog": "Zotero",
+      "creators": [],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-11-07T20:28:00Z",
+      "dateModified": "2024-11-07T20:28:00Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/L6MERHWB",
+      "itemID": 111,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:26:56Z",
+          "dateModified": "2024-11-07T20:28:00Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/9HIFM4MH",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\9HIFM4MH\\Scheduling periodic and aperiodic tasks in hard real-time computing systems.pdf",
+          "select": "zotero://select/library/items/9HIFM4MH"
+        }
+      ],
+      "notes": [],
+      "citationKey": "SchedulingPeriodicAperiodic",
+      "itemKey": "L6MERHWB",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/L6MERHWB"
+    },
+    {
+      "key": "447VNUWV",
+      "version": 0,
+      "itemType": "conferencePaper",
+      "title": "Measurement based WCET Analysis for Multi-core Architectures",
+      "abstractNote": "The interference on shared resources caused by concurrently executing applications unpredictably prolongs their execution. Hence, determination of the Worst Case Execution Time (Wcet) of applications executing on shared memory multi-core processors is hard to estimate. This hinders the adoption of Commercial Oﬀ The Shelf (Cots) multicore processors in hard real-time systems. The existing techniques opt for tailored multi-core architectures to provide high computation power at predictable execution time. However, this approach yields poor resource utilization and high costs. In this paper, we present a technique to measure the Wcet of applications on multi-core architectures using existing measurement based timing analysis tools. Our technique has a minor area impact (≈ 5%). However, this impact is limited to the emulation devices only and production chips remain unchanged. Thus, our technique does not impact performance of the Cots chips by any ways. The technique is demonstrated by measuring Wcet of benchmark applications using the RapiTime timing analysis tool. The tests are conducted on a quad-core NIOS II processor on an Altera Fpga.",
+      "date": "2014-10-08",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "https://dl.acm.org/doi/10.1145/2659787.2659819",
+      "accessDate": "2024-11-07T20:28:02Z",
+      "place": "Versaille France",
+      "publisher": "ACM",
+      "ISBN": "978-1-4503-2727-5",
+      "pages": "257-266",
+      "proceedingsTitle": "Proceedings of the 22nd International Conference on Real-Time Networks and Systems",
+      "conferenceName": "RTNS '14: 22nd International Conference on Real-Time Networks and Systems",
+      "DOI": "10.1145/2659787.2659819",
+      "creators": [
+        {
+          "firstName": "Hardik",
+          "lastName": "Shah",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Andrew",
+          "lastName": "Coombes",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Andreas",
+          "lastName": "Raabe",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Kai",
+          "lastName": "Huang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Alois",
+          "lastName": "Knoll",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {
+        "dc:replaces": [
+          "http://zotero.org/users/local/etxm3DPf/items/649HHB34"
+        ]
+      },
+      "dateAdded": "2024-11-07T20:25:27Z",
+      "dateModified": "2024-11-07T20:33:33Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/447VNUWV",
+      "itemID": 112,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {
+            "dc:replaces": [
+              "http://zotero.org/users/local/etxm3DPf/items/23352P5I"
+            ]
+          },
+          "dateAdded": "2024-11-07T20:26:57Z",
+          "dateModified": "2024-11-07T20:33:33Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/R5C36TPY",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\R5C36TPY\\Shah et al. - 2014 - Measurement based WCET Analysis for Multi-core Architectures.pdf",
+          "select": "zotero://select/library/items/R5C36TPY"
+        }
+      ],
+      "notes": [],
+      "citationKey": "shahMeasurementBasedWCET2014",
+      "itemKey": "447VNUWV",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/447VNUWV"
+    },
+    {
+      "key": "IUE7NGNK",
+      "version": 0,
+      "itemType": "conferencePaper",
+      "title": "Multiprocessor Synchronization of Periodic Real-Time Tasks Using Dependency Graphs",
+      "abstractNote": "When considering recurrent real-time tasks in multiprocessor systems, access to shared resources, via so-called critical sections, can jeopardize the schedulability of the system. The reason is that resource access is mutual exclusive and a task must ﬁnish its execution of the critical section before another task can access the same resource. Therefore, the problem of multiprocessor synchronization has been extensively studied since the 1990s, and a large number of multiprocessor resource sharing protocols have been developed and analyzed. Most protocols assume work-conserving scheduling algorithms which make it impossible to schedule task sets where a critical section of one task is longer than the relative deadline of another task that accesses the same resource. The only known exception to the work-conserving paradigm is the recently presented Dependency Graph Approach where the order in which tasks access a shared resource is not determined online, but based on a pre-computed dependency graph. Since the initial work only considers framebased task systems, this paper extends the Dependency Graph Approach to periodic task systems. We point out the connection to the uniprocessor non-preemptive scheduling problem and exploit the related algorithms to construct dependency graphs for each resource. To schedule the derived dependency graphs, List scheduling is combined with an earliest-deadline-ﬁrst heuristic. We evaluated the performance considering synthesized task sets under different conﬁgurations, where a signiﬁcant improvement of the acceptance ratio compared to other resource sharing protocols is observed. Furthermore, to show the applicability in real-world systems, we detail the implementation in LITMUSRT and report the resulting scheduling overheads.",
+      "date": "4/2019",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "https://ieeexplore.ieee.org/document/8743172/",
+      "accessDate": "2024-11-07T20:27:58Z",
+      "rights": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html",
+      "place": "Montreal, QC, Canada",
+      "publisher": "IEEE",
+      "ISBN": "978-1-7281-0678-6",
+      "pages": "279-292",
+      "proceedingsTitle": "2019 IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS)",
+      "conferenceName": "2019 IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS)",
+      "DOI": "10.1109/RTAS.2019.00031",
+      "creators": [
+        {
+          "firstName": "Junjie",
+          "lastName": "Shi",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Niklas",
+          "lastName": "Ueter",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Georg",
+          "lastName": "Von Der Bruggen",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jian-jia",
+          "lastName": "Chen",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-11-07T20:27:58Z",
+      "dateModified": "2024-11-07T20:27:58Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/IUE7NGNK",
+      "itemID": 110,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:26:55Z",
+          "dateModified": "2024-11-07T20:27:58Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/9M2YSSDF",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\9M2YSSDF\\Shi et al. - 2019 - Multiprocessor Synchronization of Periodic Real-Time Tasks Using Dependency Graphs.pdf",
+          "select": "zotero://select/library/items/9M2YSSDF"
+        }
+      ],
+      "notes": [],
+      "citationKey": "shiMultiprocessorSynchronizationPeriodic2019",
+      "itemKey": "IUE7NGNK",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/IUE7NGNK"
+    },
+    {
+      "key": "7ZA47DSX",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Comparison of Real Time Task Scheduling Algorithms",
+      "date": "2017-01-17",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "http://www.ijcaonline.org/archives/volume158/number6/shinde-2017-ijca-912832.pdf",
+      "accessDate": "2025-02-03T13:28:06Z",
+      "volume": "158",
+      "pages": "37-41",
+      "publicationTitle": "International Journal of Computer Applications",
+      "DOI": "10.5120/ijca2017912832",
+      "issue": "6",
+      "journalAbbreviation": "IJCA",
+      "ISSN": "09758887",
+      "creators": [
+        {
+          "firstName": "Vijayshree",
+          "lastName": "Shinde",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Seema",
+          "lastName": "C.",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-02-03T13:28:06Z",
+      "dateModified": "2025-02-03T13:28:06Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/7ZA47DSX",
+      "itemID": 215,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Volltext",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-03T13:28:08Z",
+          "dateModified": "2025-02-03T13:28:08Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/J4WXUIUU",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\J4WXUIUU\\Shinde und C. - 2017 - Comparison of Real Time Task Scheduling Algorithms.pdf",
+          "select": "zotero://select/library/items/J4WXUIUU"
+        }
+      ],
+      "notes": [],
+      "citationKey": "shindeComparisonRealTime2017",
+      "itemKey": "7ZA47DSX",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/7ZA47DSX"
+    },
+    {
+      "key": "AN2RQXB8",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "An optimized round robin scheduling algorithm for CPU scheduling",
+      "date": "2010",
+      "extra": "Publisher: Citeseer",
+      "volume": "2",
+      "pages": "2383-2385",
+      "publicationTitle": "International Journal on Computer Science and Engineering",
+      "issue": "07",
+      "journalAbbreviation": "International Journal on Computer Science and Engineering",
+      "creators": [
+        {
+          "firstName": "Ajit",
+          "lastName": "Singh",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Priyanka",
+          "lastName": "Goyal",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Sahil",
+          "lastName": "Batra",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-02-10T13:27:56Z",
+      "dateModified": "2025-02-10T13:27:56Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/AN2RQXB8",
+      "itemID": 219,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-10T13:28:25Z",
+          "dateModified": "2025-02-10T13:28:25Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/CQRG9Y6J",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\CQRG9Y6J\\Singh et al. - 2010 - An optimized round robin scheduling algorithm for CPU scheduling.pdf",
+          "select": "zotero://select/library/items/CQRG9Y6J"
+        }
+      ],
+      "notes": [],
+      "citationKey": "singhOptimizedRobinScheduling2010",
+      "itemKey": "AN2RQXB8",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/AN2RQXB8"
+    },
+    {
+      "key": "5HSJFE2P",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Real-time operating systems",
+      "date": "2004",
+      "extra": "Publisher: Springer Nature BV",
+      "volume": "28",
+      "pages": "237-253",
+      "publicationTitle": "Real-Time Systems",
+      "issue": "2-3",
+      "journalAbbreviation": "Real-Time Systems",
+      "ISSN": "0922-6443",
+      "creators": [
+        {
+          "firstName": "John A",
+          "lastName": "Stankovic",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Raj",
+          "lastName": "Rajkumar",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-02-13T20:18:12Z",
+      "dateModified": "2025-02-13T20:18:12Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/5HSJFE2P",
+      "itemID": 238,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-13T20:18:54Z",
+          "dateModified": "2025-02-13T20:18:54Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/4N5VUM4P",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\4N5VUM4P\\Stankovic und Rajkumar - 2004 - Real-time operating systems.pdf",
+          "select": "zotero://select/library/items/4N5VUM4P"
+        }
+      ],
+      "notes": [],
+      "citationKey": "stankovicRealtimeOperatingSystems2004",
+      "itemKey": "5HSJFE2P",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/5HSJFE2P"
+    },
+    {
+      "key": "XVPYU5EG",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Efficient offline scheduling of task-sets with complex constraints on large distributed time-triggered systems",
+      "abstractNote": "Modern real-time applications like avionics and Internet-of-Things are required to aggregate more features and functionality with less production costs. Future applications like CityAirbus and autonomous driving require large distributed systems to deliver expected services and performance. For such systems, scheduling large set of applications may lead to contradicting problems, e.g., resource scarcity and swap (size, weight and power). The time-triggered (TT) computation model has the potential to ease the way for solving all these issues. However, TT scheduling poses several challenges including complex network architectures, co-synthesis of allocation/scheduling and complex constraints (e.g., precedence, latency, reliability, etc.). Although stateof-the-art processor and network scheduling approaches can be used to generate TT schedules for small to medium sized systems, they fail to provide solutions for large distributed systems. In this paper, we discuss the design of a modular, scalable and ﬂexible scheduler for large distributed TT networked systems. We introduce a novel search-space pruning technique, based on the response-times to generate schedules for large systems within reasonable time. Based on our modular scheduler design, we also provide an extension for TTEthernet networks. Through extensive evaluation, we demonstrate that our scheduler is capable of fulﬁlling the demands of modern and future real-time applications and that it dominates the state-of-the-art TT scheduling approaches in terms of schedulability and run-times.",
+      "date": "4/2019",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "http://link.springer.com/10.1007/s11241-018-9320-0",
+      "accessDate": "2024-11-07T20:27:50Z",
+      "volume": "55",
+      "pages": "209-247",
+      "publicationTitle": "Real-Time Systems",
+      "DOI": "10.1007/s11241-018-9320-0",
+      "issue": "2",
+      "journalAbbreviation": "Real-Time Syst",
+      "ISSN": "0922-6443, 1573-1383",
+      "creators": [
+        {
+          "firstName": "Ali",
+          "lastName": "Syed",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Gerhard",
+          "lastName": "Fohler",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-11-07T20:27:50Z",
+      "dateModified": "2024-11-07T20:27:50Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/XVPYU5EG",
+      "itemID": 107,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:26:45Z",
+          "dateModified": "2024-11-07T20:27:50Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/2W74R2IU",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\2W74R2IU\\Syed und Fohler - 2019 - Efficient offline scheduling of task-sets with complex constraints on large distributed time-trigger.pdf",
+          "select": "zotero://select/library/items/2W74R2IU"
+        }
+      ],
+      "notes": [],
+      "citationKey": "syedEfficientOfflineScheduling2019",
+      "itemKey": "XVPYU5EG",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/XVPYU5EG"
+    },
+    {
+      "key": "8M9JB4LR",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Event-Triggered Real-Time Scheduling of Stabilizing Control Tasks",
+      "abstractNote": "In this note, we revisit the problem of scheduling stabilizing control tasks on embedded processors. We start from the paradigm that a real-time scheduler could be regarded as a feedback controller that decides which task is executed at any given instant. This controller has for objective guaranteeing that (control unrelated) software tasks meet their deadlines and that stabilizing control tasks asymptotically stabilize the plant. We investigate a simple event-triggered scheduler based on this feedback paradigm and show how it leads to guaranteed performance thus relaxing the more traditional periodic execution requirements.",
+      "date": "09/2007",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "http://ieeexplore.ieee.org/document/4303247/",
+      "accessDate": "2024-11-07T20:27:37Z",
+      "rights": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html",
+      "volume": "52",
+      "pages": "1680-1685",
+      "publicationTitle": "IEEE Transactions on Automatic Control",
+      "DOI": "10.1109/TAC.2007.904277",
+      "issue": "9",
+      "journalAbbreviation": "IEEE Trans. Automat. Contr.",
+      "ISSN": "0018-9286",
+      "creators": [
+        {
+          "firstName": "Paulo",
+          "lastName": "Tabuada",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2024-11-07T20:27:37Z",
+      "dateModified": "2024-11-07T20:27:37Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/8M9JB4LR",
+      "itemID": 97,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:26:34Z",
+          "dateModified": "2024-11-07T20:27:37Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/PDPH9PR9",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\PDPH9PR9\\Tabuada - 2007 - Event-Triggered Real-Time Scheduling of Stabilizing Control Tasks.pdf",
+          "select": "zotero://select/library/items/PDPH9PR9"
+        }
+      ],
+      "notes": [],
+      "citationKey": "tabuadaEventTriggeredRealTimeScheduling2007",
+      "itemKey": "8M9JB4LR",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/8M9JB4LR"
+    },
+    {
+      "key": "PJGB98JY",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Rate-monotonic vs early deadline first scheduling: A review",
+      "date": "2018",
+      "extra": "Publisher: University of Technology and Humanities",
+      "pages": "188-193",
+      "publicationTitle": "Proceeding of Education Technology-Computer science in building better future",
+      "creators": [
+        {
+          "firstName": "Chaman",
+          "lastName": "Verma",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Veronika",
+          "lastName": "Stoffová",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Zoltán",
+          "lastName": "Illés",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-02-03T08:36:24Z",
+      "dateModified": "2025-02-03T08:36:24Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/PJGB98JY",
+      "itemID": 209,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-03T08:37:06Z",
+          "dateModified": "2025-02-03T08:37:06Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/XHZ9WBKN",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\XHZ9WBKN\\Verma et al. - 2018 - Rate-monotonic vs early deadline first scheduling A review.pdf",
+          "select": "zotero://select/library/items/XHZ9WBKN"
+        }
+      ],
+      "notes": [],
+      "citationKey": "vermaRatemonotonicVsEarly2018",
+      "itemKey": "PJGB98JY",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/PJGB98JY"
+    },
+    {
+      "key": "KMJIJDPU",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "GenE: A Benchmark Generator for WCET Analysis",
+      "abstractNote": "The fact that many benchmarks for evaluating worst-case execution time (WCET) analysis tools are based on real-world applications greatly increases the value of their results. However, at the same time, the complexity of these programs makes it diﬃcult, sometimes even impossible, to obtain all corresponding ﬂow facts (i.e., loop bounds, infeasible paths, and input values triggering the WCET), which are essential for a comprehensive evaluation. In this paper, we address this problem by presenting GenE, a benchmark generator that in addition to source code also provides the ﬂow facts of the benchmarks created. To generate a new benchmark, the tool combines code patterns that are commonly found in real-time applications and are challenging for WCET analyzers. By keeping track of how patterns are put together, GenE is able to determine the ﬂow facts of the resulting benchmark based on the known ﬂow facts of the patterns used. Using this information, it is straightforward to synthesize the accurate WCET, which can then serve as a baseline for the evaluation of WCET analyzers.",
+      "date": "2015",
+      "language": "en",
+      "shortTitle": "GenE",
+      "libraryCatalog": "DOI.org (Datacite)",
+      "url": "https://drops.dagstuhl.de/entities/document/10.4230/OASIcs.WCET.2015.33",
+      "accessDate": "2024-11-07T20:25:42Z",
+      "rights": "Creative Commons Attribution 3.0 Unported license, info:eu-repo/semantics/openAccess",
+      "extra": "Artwork Size: 11 pages, 528337 bytes\nISBN: 9783939897958\nMedium: application/pdf\nPublisher: Schloss Dagstuhl – Leibniz-Zentrum für Informatik",
+      "volume": "47",
+      "pages": "33-43",
+      "publicationTitle": "OASIcs, Volume 47, WCET 2015",
+      "DOI": "10.4230/OASICS.WCET.2015.33",
+      "ISSN": "2190-6807",
+      "creators": [
+        {
+          "firstName": "Peter",
+          "lastName": "Wägemann",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Tobias",
+          "lastName": "Distler",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Timo",
+          "lastName": "Hönig",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Volkmar",
+          "lastName": "Sieh",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Wolfgang",
+          "lastName": "Schröder-Preikschat",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Francisco J.",
+          "lastName": "Cazorla",
+          "creatorType": "contributor"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "benchmark generation",
+          "type": 1
+        },
+        {
+          "tag": "flow facts",
+          "type": 1
+        },
+        {
+          "tag": "WCET",
+          "type": 1
+        },
+        {
+          "tag": "WCET Tool Challenge",
+          "type": 1
+        }
+      ],
+      "relations": {
+        "dc:replaces": [
+          "http://zotero.org/users/local/etxm3DPf/items/43ANPF57"
+        ]
+      },
+      "dateAdded": "2024-11-07T20:25:42Z",
+      "dateModified": "2024-11-07T20:33:23Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/KMJIJDPU",
+      "itemID": 27,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {
+            "dc:replaces": [
+              "http://zotero.org/users/local/etxm3DPf/items/P4EBBR5V"
+            ]
+          },
+          "dateAdded": "2024-11-07T20:25:15Z",
+          "dateModified": "2024-11-07T20:33:23Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/9AV576YF",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\9AV576YF\\Wägemann et al. - 2015 - GenE A Benchmark Generator for WCET Analysis.pdf",
+          "select": "zotero://select/library/items/9AV576YF"
+        }
+      ],
+      "notes": [
+        {
+          "key": "IGVUSSSD",
+          "version": 0,
+          "itemType": "note",
+          "parentItem": "KMJIJDPU",
+          "note": "<h2>SeriesInformation</h2>\nOASIcs, Vol. 47, 15th International Workshop on Worst-Case Execution Time Analysis (WCET 2015), pages 33-43",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:25:42Z",
+          "dateModified": "2024-11-07T20:25:42Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/IGVUSSSD"
+        },
+        {
+          "key": "BKXTN6QK",
+          "version": 0,
+          "itemType": "note",
+          "parentItem": "KMJIJDPU",
+          "note": "<h2>SeriesInformation</h2>\nOASIcs, Vol. 47, 15th International Workshop on Worst-Case Execution Time Analysis (WCET 2015), pages 33-43",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-11-07T20:27:40Z",
+          "dateModified": "2024-11-07T20:33:23Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/BKXTN6QK"
+        }
+      ],
+      "citationKey": "wagemannGenEBenchmarkGenerator2015",
+      "itemKey": "KMJIJDPU",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/KMJIJDPU"
+    },
+    {
+      "key": "MMHVRI5S",
+      "version": 0,
+      "itemType": "conferencePaper",
+      "title": "Harmonic Scheduling and Control Co-design",
+      "date": "8/2016",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "http://ieeexplore.ieee.org/document/7579954/",
+      "accessDate": "2025-01-26T17:57:51Z",
+      "place": "Daegu, South Korea",
+      "publisher": "IEEE",
+      "ISBN": "978-1-5090-2479-7",
+      "pages": "182-187",
+      "proceedingsTitle": "2016 IEEE 22nd International Conference on Embedded and Real-Time Computing Systems and Applications (RTCSA)",
+      "conferenceName": "2016 IEEE 22nd International Conference on Embedded and Real-Time Computing Systems and Applications (RTCSA)",
+      "DOI": "10.1109/RTCSA.2016.44",
+      "creators": [
+        {
+          "firstName": "Yang",
+          "lastName": "Xu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Anton",
+          "lastName": "Cervin",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Karl-Erik",
+          "lastName": "Arzen",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-01-26T17:57:51Z",
+      "dateModified": "2025-01-26T17:57:51Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/MMHVRI5S",
+      "itemID": 206,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Akzeptierte Version",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-01-26T17:57:53Z",
+          "dateModified": "2025-01-26T17:57:53Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/2QWPS2LU",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\2QWPS2LU\\Xu et al. - 2016 - Harmonic Scheduling and Control Co-design.pdf",
+          "select": "zotero://select/library/items/2QWPS2LU"
+        }
+      ],
+      "notes": [],
+      "citationKey": "xuHarmonicSchedulingControl2016",
+      "itemKey": "MMHVRI5S",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/MMHVRI5S"
+    }
+  ]
+}
