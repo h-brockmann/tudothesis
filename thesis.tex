@@ -43,10 +43,13 @@
 \usepackage{microtype}
 
 \usepackage{todonotes}
+
+\usepackage{listings} % added for code
+
 %% TODO remove this package before submitting
 % \usepackage{showkeys}
-% \usepackage{acronym}
 \usepackage[printonlyused,withpage]{acronym}
+% \acsetup{single} % use acronym only if used more than once.
 
 %------------------------------------------------------------------------------
 %------------------------ Math Packages and settings --------------------------
@@ -85,6 +88,7 @@
 %-------------------------------- tables  -------------------------------------
 %------------------------------------------------------------------------------
 
+\usepackage{tabularx} % added
 \usepackage{booktabs}       % \toprule, \midrule, \bottomrule, etc
 
 %------------------------------------------------------------------------------
@@ -158,6 +162,8 @@
 
 
 \begin{document}
+\usetikzlibrary{patterns} % Load patterns library
+
 \frontmatter
 % \input{content/hints.tex}
 \maketitle

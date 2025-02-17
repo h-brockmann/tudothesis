@@ -309,6 +309,73 @@
       "select": "zotero://select/library/items/99HK6TZD"
     },
     {
+      "key": "SU7YKHTV",
+      "version": 0,
+      "itemType": "conferencePaper",
+      "title": "On the Comparison of Deterministic and Probabilistic WCET Estimation Techniques",
+      "date": "7/2014",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "http://ieeexplore.ieee.org/document/6932608/",
+      "accessDate": "2025-02-14T20:36:36Z",
+      "place": "Madrid, Spain",
+      "publisher": "IEEE",
+      "pages": "266-275",
+      "proceedingsTitle": "2014 26th Euromicro Conference on Real-Time Systems",
+      "conferenceName": "2014 26th Euromicro Conference on Real-Time Systems (ECRTS)",
+      "DOI": "10.1109/ECRTS.2014.16",
+      "creators": [
+        {
+          "firstName": "Jaume",
+          "lastName": "Abella",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Damien",
+          "lastName": "Hardy",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Isabelle",
+          "lastName": "Puaut",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Eduardo",
+          "lastName": "Quinones",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Francisco J.",
+          "lastName": "Cazorla",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-02-14T20:36:36Z",
+      "dateModified": "2025-02-14T20:36:36Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/SU7YKHTV",
+      "itemID": 250,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-14T20:36:57Z",
+          "dateModified": "2025-02-14T20:36:57Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/HVUUR8TC",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\HVUUR8TC\\Abella et al. - 2014 - On the Comparison of Deterministic and Probabilistic WCET Estimation Techniques.pdf",
+          "select": "zotero://select/library/items/HVUUR8TC"
+        }
+      ],
+      "notes": [],
+      "citationKey": "abellaComparisonDeterministicProbabilistic2014",
+      "itemKey": "SU7YKHTV",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/SU7YKHTV"
+    },
+    {
       "key": "KZUSAE7T",
       "version": 0,
       "itemType": "conferencePaper",
@@ -795,6 +862,67 @@
       "itemKey": "Y5L9LT5H",
       "libraryID": 1,
       "select": "zotero://select/library/items/Y5L9LT5H"
+    },
+    {
+      "key": "7WL8PXYY",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Precise, efficient, and context-sensitive cache analysis",
+      "date": "03/2022",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "https://link.springer.com/10.1007/s11241-021-09372-5",
+      "accessDate": "2025-02-16T18:41:24Z",
+      "volume": "58",
+      "pages": "36-84",
+      "publicationTitle": "Real-Time Systems",
+      "DOI": "10.1007/s11241-021-09372-5",
+      "issue": "1",
+      "journalAbbreviation": "Real-Time Syst",
+      "ISSN": "0922-6443, 1573-1383",
+      "creators": [
+        {
+          "firstName": "Florian",
+          "lastName": "Brandner",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Camille",
+          "lastName": "Noûs",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "cache"
+        },
+        {
+          "tag": "memory"
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2025-02-16T18:41:24Z",
+      "dateModified": "2025-02-16T18:48:32Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/7WL8PXYY",
+      "itemID": 277,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-16T18:41:40Z",
+          "dateModified": "2025-02-16T18:41:40Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/842KMIJR",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\842KMIJR\\Brandner und Noûs - 2022 - Precise, efficient, and context-sensitive cache analysis.pdf",
+          "select": "zotero://select/library/items/842KMIJR"
+        }
+      ],
+      "notes": [],
+      "citationKey": "brandnerPreciseEfficientContextsensitive2022",
+      "itemKey": "7WL8PXYY",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/7WL8PXYY"
     },
     {
       "key": "P3F33FEF",
@@ -1322,6 +1450,60 @@
       "select": "zotero://select/library/items/R2S4SQDN"
     },
     {
+      "key": "LHNERTGY",
+      "version": 0,
+      "itemType": "conferencePaper",
+      "title": "Abstract interpretation: a unified lattice model for static analysis of programs by construction or approximation of fixpoints",
+      "date": "1977",
+      "language": "en",
+      "shortTitle": "Abstract interpretation",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "http://portal.acm.org/citation.cfm?doid=512950.512973",
+      "accessDate": "2025-02-15T13:00:25Z",
+      "place": "Los Angeles, California",
+      "publisher": "ACM Press",
+      "pages": "238-252",
+      "proceedingsTitle": "Proceedings of the 4th ACM SIGACT-SIGPLAN symposium on Principles of programming languages  - POPL '77",
+      "conferenceName": "the 4th ACM SIGACT-SIGPLAN symposium",
+      "DOI": "10.1145/512950.512973",
+      "creators": [
+        {
+          "firstName": "Patrick",
+          "lastName": "Cousot",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Radhia",
+          "lastName": "Cousot",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-02-15T13:00:25Z",
+      "dateModified": "2025-02-15T13:00:25Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/LHNERTGY",
+      "itemID": 259,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-15T13:00:32Z",
+          "dateModified": "2025-02-15T13:00:32Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/QDXU5FNV",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\QDXU5FNV\\Cousot und Cousot - 1977 - Abstract interpretation a unified lattice model for static analysis of programs by construction or.pdf",
+          "select": "zotero://select/library/items/QDXU5FNV"
+        }
+      ],
+      "notes": [],
+      "citationKey": "cousotAbstractInterpretationUnified1977",
+      "itemKey": "LHNERTGY",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/LHNERTGY"
+    },
+    {
       "key": "GG5Y8SSA",
       "version": 0,
       "itemType": "journalArticle",
@@ -1356,10 +1538,23 @@
           "creatorType": "author"
         }
       ],
-      "tags": [],
+      "tags": [
+        {
+          "tag": "task graph"
+        },
+        {
+          "tag": "tree"
+        },
+        {
+          "tag": "RMS"
+        },
+        {
+          "tag": "harmonic"
+        }
+      ],
       "relations": {},
       "dateAdded": "2024-11-07T20:27:28Z",
-      "dateModified": "2024-11-07T20:27:28Z",
+      "dateModified": "2025-02-17T19:09:32Z",
       "uri": "http://zotero.org/users/local/etxm3DPf/items/GG5Y8SSA",
       "itemID": 94,
       "attachments": [
@@ -1380,6 +1575,94 @@
       "itemKey": "GG5Y8SSA",
       "libraryID": 1,
       "select": "zotero://select/library/items/GG5Y8SSA"
+    },
+    {
+      "key": "C4FY7CS5",
+      "version": 0,
+      "itemType": "book",
+      "title": "Automata, Languages and Programming: Seventh Colloquium Noordwijkerhout, the Netherlands July 14–18, 1980",
+      "date": "1980",
+      "language": "en",
+      "shortTitle": "Automata, Languages and Programming",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "http://link.springer.com/10.1007/3-540-10003-2",
+      "accessDate": "2025-02-15T12:53:11Z",
+      "rights": "http://www.springer.com/tdm",
+      "extra": "DOI: 10.1007/3-540-10003-2",
+      "volume": "85",
+      "place": "Berlin, Heidelberg",
+      "publisher": "Springer Berlin Heidelberg",
+      "ISBN": "978-3-540-10003-4 978-3-540-39346-7",
+      "series": "Lecture Notes in Computer Science",
+      "creators": [
+        {
+          "firstName": "Jaco",
+          "lastName": "De Bakker",
+          "creatorType": "editor"
+        },
+        {
+          "firstName": "Jan",
+          "lastName": "Van Leeuwen",
+          "creatorType": "editor"
+        },
+        {
+          "firstName": "G.",
+          "lastName": "Goos",
+          "creatorType": "seriesEditor"
+        },
+        {
+          "firstName": "J.",
+          "lastName": "Hartmanis",
+          "creatorType": "seriesEditor"
+        },
+        {
+          "firstName": "W.",
+          "lastName": "Brauer",
+          "creatorType": "seriesEditor"
+        },
+        {
+          "firstName": "P.",
+          "lastName": "Brinch Hansen",
+          "creatorType": "seriesEditor"
+        },
+        {
+          "firstName": "D.",
+          "lastName": "Gries",
+          "creatorType": "seriesEditor"
+        },
+        {
+          "firstName": "C.",
+          "lastName": "Moler",
+          "creatorType": "seriesEditor"
+        },
+        {
+          "firstName": "G.",
+          "lastName": "Seegmüller",
+          "creatorType": "seriesEditor"
+        },
+        {
+          "firstName": "J.",
+          "lastName": "Stoer",
+          "creatorType": "seriesEditor"
+        },
+        {
+          "firstName": "N.",
+          "lastName": "Wirth",
+          "creatorType": "seriesEditor"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-02-15T12:53:11Z",
+      "dateModified": "2025-02-15T12:53:11Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/C4FY7CS5",
+      "itemID": 258,
+      "attachments": [],
+      "notes": [],
+      "citationKey": "debakkerAutomataLanguagesProgramming1980",
+      "itemKey": "C4FY7CS5",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/C4FY7CS5"
     },
     {
       "key": "C4TWUDMS",
@@ -2875,6 +3158,46 @@
       "select": "zotero://select/library/items/S8Z2PLTQ"
     },
     {
+      "key": "C5DDAZV4",
+      "version": 0,
+      "itemType": "book",
+      "title": "Real-time systems",
+      "date": "2006",
+      "publisher": "Pearson Education India",
+      "ISBN": "81-7758-575-4",
+      "creators": [
+        {
+          "firstName": "Jane WS",
+          "lastName": "Liu",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-02-14T19:59:22Z",
+      "dateModified": "2025-02-14T19:59:22Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/C5DDAZV4",
+      "itemID": 244,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-14T20:02:01Z",
+          "dateModified": "2025-02-14T20:02:01Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/NPLICR58",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\NPLICR58\\Liu - 2006 - Real-time systems.pdf",
+          "select": "zotero://select/library/items/NPLICR58"
+        }
+      ],
+      "notes": [],
+      "citationKey": "liuRealtimeSystems2006",
+      "itemKey": "C5DDAZV4",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/C5DDAZV4"
+    },
+    {
       "key": "PW8GP3V9",
       "version": 0,
       "itemType": "journalArticle",
@@ -3463,6 +3786,85 @@
       "select": "zotero://select/library/items/L6MERHWB"
     },
     {
+      "key": "GQ8T4MT7",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Worst-Case Performance for Real-Time Systems",
+      "abstractNote": "Abstract\n            Real-time systems need to be built out of tasks for which the worst-case execution time is known. To enable accurate estimates of worst-case execution time, some researchers propose to build processors that simplify that analysis. These architectures are called precision-timed machines or time-predictable architectures. However, what does this term mean? This paper explores the meaning of time predictability and how it can be quantified. We show that time predictability is hard to quantify. Rather, the worst-case performance as the combination of a processor, a compiler, and a worst-case execution time analysis tool is an important property in the context of real-time systems. Note that the actual software has implications as well on the worst-case performance. We propose to define a standard set of benchmark programs that can be used to evaluate a time-predictable processor, a compiler, and a worst-case execution time analysis tool. We define worst-case performance as the geometric mean of worst-case execution time bounds on a standard set of benchmark programs.",
+      "date": "2025-01-30",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "https://www.cambridge.org/core/product/identifier/S2753851625000019/type/journal_article",
+      "accessDate": "2025-02-16T18:57:04Z",
+      "rights": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "pages": "1-9",
+      "publicationTitle": "Research Directions: Cyber-Physical Systems",
+      "DOI": "10.1017/cbp.2025.1",
+      "journalAbbreviation": "Res. dir. Cyber phys. syst.",
+      "ISSN": "2753-8516",
+      "creators": [
+        {
+          "firstName": "Martin",
+          "lastName": "Schoeberl",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Erling",
+          "lastName": "Jellum",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Shaokai",
+          "lastName": "Lin",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Chadlia",
+          "lastName": "Jerad",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Emad Jacob",
+          "lastName": "Maroun",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Marten",
+          "lastName": "Lohstroh",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Edward A",
+          "lastName": "Lee",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-02-16T18:57:04Z",
+      "dateModified": "2025-02-16T18:57:04Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/GQ8T4MT7",
+      "itemID": 280,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-16T18:57:22Z",
+          "dateModified": "2025-02-16T18:57:22Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/RQT69TMM",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\RQT69TMM\\Schoeberl et al. - 2025 - Worst-Case Performance for Real-Time Systems.pdf",
+          "select": "zotero://select/library/items/RQT69TMM"
+        }
+      ],
+      "notes": [],
+      "citationKey": "schoeberlWorstCasePerformanceRealTime2025",
+      "itemKey": "GQ8T4MT7",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/GQ8T4MT7"
+    },
+    {
       "key": "447VNUWV",
       "version": 0,
       "itemType": "conferencePaper",
@@ -4045,6 +4447,200 @@
       "itemKey": "KMJIJDPU",
       "libraryID": 1,
       "select": "zotero://select/library/items/KMJIJDPU"
+    },
+    {
+      "key": "ZC4BNQZI",
+      "version": 0,
+      "itemType": "conferencePaper",
+      "title": "On harmonic fixed-priority scheduling of periodic real-time tasks with constrained deadlines",
+      "date": "2016-06-05",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "https://dl.acm.org/doi/10.1145/2897937.2898055",
+      "accessDate": "2025-02-17T20:12:22Z",
+      "place": "Austin Texas",
+      "publisher": "ACM",
+      "ISBN": "978-1-4503-4236-0",
+      "pages": "1-6",
+      "proceedingsTitle": "Proceedings of the 53rd Annual Design Automation Conference",
+      "conferenceName": "DAC '16: The 53rd Annual Design Automation Conference 2016",
+      "DOI": "10.1145/2897937.2898055",
+      "creators": [
+        {
+          "firstName": "Tianyi",
+          "lastName": "Wang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Qiushi",
+          "lastName": "Han",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Shi",
+          "lastName": "Sha",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Wujie",
+          "lastName": "Wen",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Gang",
+          "lastName": "Quan",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Meikang",
+          "lastName": "Qiu",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-02-17T20:12:22Z",
+      "dateModified": "2025-02-17T20:12:22Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/ZC4BNQZI",
+      "itemID": 289,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Volltext",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-17T20:12:24Z",
+          "dateModified": "2025-02-17T20:12:24Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/EB58NBGM",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\EB58NBGM\\Wang et al. - 2016 - On harmonic fixed-priority scheduling of periodic real-time tasks with constrained deadlines.pdf",
+          "select": "zotero://select/library/items/EB58NBGM"
+        }
+      ],
+      "notes": [],
+      "citationKey": "wangHarmonicFixedpriorityScheduling2016",
+      "itemKey": "ZC4BNQZI",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/ZC4BNQZI"
+    },
+    {
+      "key": "696HUDS9",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "The worst-case execution-time problem—overview of methods and survey of tools",
+      "abstractNote": "The determination of upper bounds on execution times, commonly called worst-case execution times (WCETs), is a necessary step in the development and validation process for hard real-time systems. This problem is hard if the underlying processor architecture has components, such as caches, pipelines, branch prediction, and other speculative components. This article describes different approaches to this problem and surveys several commercially available tools\n              1\n              and research prototypes.",
+      "date": "04/2008",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "https://dl.acm.org/doi/10.1145/1347375.1347389",
+      "accessDate": "2025-02-14T20:41:52Z",
+      "volume": "7",
+      "pages": "1-53",
+      "publicationTitle": "ACM Transactions on Embedded Computing Systems",
+      "DOI": "10.1145/1347375.1347389",
+      "issue": "3",
+      "journalAbbreviation": "ACM Trans. Embed. Comput. Syst.",
+      "ISSN": "1539-9087, 1558-3465",
+      "creators": [
+        {
+          "firstName": "Reinhard",
+          "lastName": "Wilhelm",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jakob",
+          "lastName": "Engblom",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Andreas",
+          "lastName": "Ermedahl",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Niklas",
+          "lastName": "Holsti",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Stephan",
+          "lastName": "Thesing",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "David",
+          "lastName": "Whalley",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Guillem",
+          "lastName": "Bernat",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Christian",
+          "lastName": "Ferdinand",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Reinhold",
+          "lastName": "Heckmann",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Tulika",
+          "lastName": "Mitra",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Frank",
+          "lastName": "Mueller",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Isabelle",
+          "lastName": "Puaut",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Peter",
+          "lastName": "Puschner",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jan",
+          "lastName": "Staschulat",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Per",
+          "lastName": "Stenström",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-02-14T20:41:52Z",
+      "dateModified": "2025-02-14T20:41:52Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/696HUDS9",
+      "itemID": 254,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-14T20:41:59Z",
+          "dateModified": "2025-02-14T20:41:59Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/MDX68EDT",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\MDX68EDT\\Wilhelm et al. - 2008 - The worst-case execution-time problem—overview of methods and survey of tools.pdf",
+          "select": "zotero://select/library/items/MDX68EDT"
+        }
+      ],
+      "notes": [],
+      "citationKey": "wilhelmWorstcaseExecutiontimeProblem2008",
+      "itemKey": "696HUDS9",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/696HUDS9"
     },
     {
       "key": "MMHVRI5S",

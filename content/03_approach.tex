@@ -1,10 +1,69 @@
 \chapter{Approach}
-\section{Model}
+\section{System-model}
 \label{sec:model}
-periodic tasks
-hard deadlines
-preemption
-inter-task communication
+In this section, we define the system model that serves as the foundation for the concept of the generated task-sets.
+
+\subsection{Task Model}
+\label{sec:task_model}
+Part of the system model is a harmonic set of periodic tasks $\Tau=\{\Tau_i: i = 1, 2, \ldots, n\}$.
+Due to being a harmonic task-set and its properties (see \cref{sec:scheduling}) the \textit{planning cycle}\cite{dar-tzenpengAssignmentSchedulingCommunicating1997} of $\Tau$ is defined by the \textit{\ac{LCM}} of all tasks' periods $\{P_1, \ldots, P_n\}$, resulting in the period $P_{max}$ of the task with the highest period.
+Each task $\Tau_i$ is characterized by its period $P_i$, its list of possible execution times $\{CP_{i_1}, CP_{i_2}, \ldots\}$, and the set of related jobs $\tau_i=\{\tau_{i_0}, \tau_{i_1}, \dots, \tau_{i_m}; m = \frac{P_{max}}{P_i} - 1\}$.
+
+Each job $\tau_{i_j}$ is described by the release time $r_{i_m}$, the implicit deadline of $d_{i_m} = r_{i_m} + P_i$ as the next period $P_i+1$ begins, the jobs computational time $C_{i_m}$
+
+\subsection{Hardware Model}
+\label{sec:hardware_model}
+The generated model is designed to be a meta model with no constraints on hardware specifications, making it hardware independent.
+No further details about the hardware are provided.
+
+\subsection{Execution Model}
+\label{sec:execution_model}
+In the execution model, a preemptive scheduler using \ac{RMS} (see \cref{sec:scheduling}) is employed to manage the periodic tasks. 
+The scheduler operates by assigning each task $\Tau_i$ a priority inversely proportional to its period $P_i$ \ref{liuSchedulingAlgorithmsMultiprogramming1973}.
+Tasks with shorter periods receive higher priorities and are scheduled more frequently.
+Higher-priority tasks can preempt lower-priority tasks.
+If a higher-priority task becomes ready to execute while a lower-priority task is running, the scheduler will interrupt the lower-priority task and allocate the processor to the higher-priority task.
+The generated schedule is represented by a list of time frames associated to a job being run in that time frame $sched = {begin, end, \tau_{i_j}}$.
+
+Making use of the \ac{RMS} in combination with the in \cref{sec:task_model} mentioned harmonic task-set it is possible to reach utilizations up to $1$ \cite{liuSchedulingAlgorithmsMultiprogramming1973}.
+
+
+\cite{dar-tzenpengAssignmentSchedulingCommunicating1997}
+
+
+\section{Concept}
+\label{sec:concept}
+The general workflow involves several key steps. 
+\begin{enumerate}
+	\item Generate period times based on the server model.
+	\item Create task chains and identify any missing links within these chains.
+	\item Distribute the load across each period and generate tasks with lower execution times to balance the workload.
+	\item Connect tasks and create conditions, considering the idea of workloads with resources attached, such as inter-task communication.
+	\item Spread the server model into multiple server instances.
+	\item Build a scheduler and perform a schedulability test using the tree structure of the previously built server instances.
+	\item Export the generated task-set for further use.
+\end{enumerate}
+% how to generate period times (serverModel)
+
+% generate chains
+% missing links in chain
+
+% spread load per period
+
+% generate load with lower execution times
+
+% connecting tasks, creating conditions
+% idea of workloads with resources attached (inter-task communication)
+
+% spread serverModel into serverInstances
+
+% building a scheduler (schedulability test)
+% using tree structure of previous build server instances
+
+% exporting task-set 
+
+\section{Implementation}
+\label{sec:implementation}
 
 
 \section{Tasks with Release Times and Execution Times}

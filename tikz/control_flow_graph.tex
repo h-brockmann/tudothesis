@@ -1,0 +1,22 @@
+\begin{tikzpicture}
+	\node[circle, draw, thick] (n1) at (0, 0) {1};
+	\node[circle, draw, thick] (n2) at (0, -1) {2};
+	\node[circle, draw, thick] (n3) at (0, -2.5) {3};
+	\node[circle, draw, thick] (n4) at (-1, -3.75) {4};
+	\node[circle, draw, thick] (n5) at (1, -3.75) {5};
+	\node[circle, draw, thick] (n6) at (1, -4.75) {6};
+	\node[circle, draw, thick] (n7) at (0, -6) {7};
+	\node[circle, draw, thick] (n8) at (0, -7) {8};
+	\node[circle, draw, thick] (n9) at (0, -8) {9};
+
+	\draw[->,thick] (n1) -- (n2);
+	\draw[->,thick] (n2) -- (n3) node[midway,anchor=east] {$n\ne1$};
+	\draw[->,thick] (n2) -- (-2.5,-2) node[midway,anchor=south east,fill=white] {$n=1$} -- (-2.5,-7) -- (n9);
+	\draw[->,thick] (n3) -- (-1,-3) node[midway,anchor=south east,fill=white] {$n\%2=0$} -- (n4);
+	\draw[->,thick] (n3) -- (1,-3)node[midway,anchor=south west,fill=white] {$n\%2\ne0$} -- (n5);
+	\draw[->,thick] (n5) -- (n6);
+	\draw[->,thick] (n4) -- (-1,-5.5) -- (n7);
+	\draw[->,thick] (n6) -- (1,-5.5) -- (n7);
+	\draw[->,thick] (n7) -- (n8);
+	\draw[->,thick] (n8) -- (2.5,-6) -- (2.5,-2) -- (n2);
+\end{tikzpicture}
