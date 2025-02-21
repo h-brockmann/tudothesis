@@ -4699,6 +4699,83 @@
       "itemKey": "MMHVRI5S",
       "libraryID": 1,
       "select": "zotero://select/library/items/MMHVRI5S"
+    },
+    {
+      "key": "I7946NCS",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Machine learning–based integration develops a stress response stated T cell (Tstr)–related score for predicting outcomes in clear cell renal cell carcinoma",
+      "date": "2024",
+      "extra": "Publisher: Elsevier",
+      "volume": "132",
+      "pages": "112017",
+      "publicationTitle": "International Immunopharmacology",
+      "journalAbbreviation": "International Immunopharmacology",
+      "ISSN": "1567-5769",
+      "creators": [
+        {
+          "firstName": "Shuai",
+          "lastName": "Yang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Zhaodong",
+          "lastName": "Han",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Zeheng",
+          "lastName": "Tan",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Zhenjie",
+          "lastName": "Wu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jianheng",
+          "lastName": "Ye",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Shanghua",
+          "lastName": "Cai",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yuanfa",
+          "lastName": "Feng",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Huichan",
+          "lastName": "He",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Biyan",
+          "lastName": "Wen",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Xuejin",
+          "lastName": "Zhu",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-02-19T20:52:01Z",
+      "dateModified": "2025-02-19T20:52:01Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/I7946NCS",
+      "itemID": 293,
+      "attachments": [],
+      "notes": [],
+      "citationKey": "yangMachineLearningBased2024",
+      "itemKey": "I7946NCS",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/I7946NCS"
     }
   ]
 }

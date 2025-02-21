@@ -1,0 +1,90 @@
+% \usetikzlibrary{patterns} % Load patterns library
+\begin{tikzpicture}
+	\node[draw, circle, inner sep=1mm] (L1-00) at (23 , 8) {$P2_-00$};
+
+	\node[draw, circle, inner sep=1mm] (L2-00) at (11 , 6) {$P1_-00$};
+	\node[draw, circle, inner sep=1mm] (L2-01) at (35 , 6) {$P1_-01$};
+
+	\node[draw, circle, inner sep=1mm] (L3-00) at ( 5 , 4) {$P6_00$};
+	\node[draw, circle, inner sep=1mm] (L3-01) at (17 , 4) {$P6_01$};
+	\node[draw, circle, inner sep=1mm] (L3-02) at (29 , 4) {$P6_02$};
+	\node[draw, circle, inner sep=1mm] (L3-03) at (41 , 4) {$P6_03$};
+
+	\node[draw, circle, inner sep=1mm] (L4-00) at ( 2 , 2) {$P3_00$};
+	\node[draw, circle, inner sep=1mm] (L4-01) at ( 8 , 2) {$P3_01$};
+	\node[draw, circle, inner sep=1mm] (L4-02) at (14 , 2) {$P3_02$};
+	\node[draw, circle, inner sep=1mm] (L4-03) at (20 , 2) {$P3_03$};
+	\node[draw, circle, inner sep=1mm] (L4-04) at (26 , 2) {$P3_04$};
+	\node[draw, circle, inner sep=1mm] (L4-05) at (32 , 2) {$P3_05$};
+	\node[draw, circle, inner sep=1mm] (L4-06) at (38 , 2) {$P3_06$};
+	\node[draw, circle, inner sep=1mm] (L4-07) at (44 , 2) {$P3_07$};
+
+	\node[draw, circle, inner sep=1mm] (L5-00) at ( 0 , 0) {$P1_00$};
+	\node[draw, circle, inner sep=1mm] (L5-01) at ( 2 , 0) {$P1_01$};
+	\node[draw, circle, inner sep=1mm] (L5-02) at ( 4 , 0) {$P1_02$};
+	\node[draw, circle, inner sep=1mm] (L5-03) at ( 6 , 0) {$P1_03$};
+	\node[draw, circle, inner sep=1mm] (L5-04) at ( 8 , 0) {$P1_04$};
+	\node[draw, circle, inner sep=1mm] (L5-05) at (10 , 0) {$P1_05$};
+	\node[draw, circle, inner sep=1mm] (L5-06) at (12 , 0) {$P1_06$};
+	\node[draw, circle, inner sep=1mm] (L5-07) at (14 , 0) {$P1_07$};
+	\node[draw, circle, inner sep=1mm] (L5-08) at (16 , 0) {$P1_08$};
+	\node[draw, circle, inner sep=1mm] (L5-09) at (18 , 0) {$P1_09$};
+	\node[draw, circle, inner sep=1mm] (L5-10) at (20 , 0) {$P1_10$};
+	\node[draw, circle, inner sep=1mm] (L5-11) at (22 , 0) {$P1_11$};
+	\node[draw, circle, inner sep=1mm] (L5-12) at (24 , 0) {$P1_12$};
+	\node[draw, circle, inner sep=1mm] (L5-13) at (26 , 0) {$P1_13$};
+	\node[draw, circle, inner sep=1mm] (L5-14) at (28 , 0) {$P1_14$};
+	\node[draw, circle, inner sep=1mm] (L5-15) at (30 , 0) {$P1_15$};
+	\node[draw, circle, inner sep=1mm] (L5-16) at (32 , 0) {$P1_16$};
+	\node[draw, circle, inner sep=1mm] (L5-17) at (34 , 0) {$P1_17$};
+	\node[draw, circle, inner sep=1mm] (L5-18) at (36 , 0) {$P1_18$};
+	\node[draw, circle, inner sep=1mm] (L5-19) at (38 , 0) {$P1_19$};
+	\node[draw, circle, inner sep=1mm] (L5-20) at (40 , 0) {$P1_20$};
+	\node[draw, circle, inner sep=1mm] (L5-21) at (42 , 0) {$P1_21$};
+	\node[draw, circle, inner sep=1mm] (L5-22) at (44 , 0) {$P1_22$};
+	\node[draw, circle, inner sep=1mm] (L5-23) at (46 , 0) {$P1_23$};
+
+	\draw[->] (L1-00) to (L2-00);
+	\draw[->] (L1-00) to (L2-01);
+
+	\draw[->] (L2-00) to (L3-00);
+	\draw[->] (L2-00) to (L3-01);
+	\draw[->] (L2-01) to (L3-02);
+	\draw[->] (L2-01) to (L3-03);
+
+	\draw[->] (L3-00) to (L4-00);
+	\draw[->] (L3-00) to (L4-01);
+	\draw[->] (L3-01) to (L4-02);
+	\draw[->] (L3-01) to (L4-03);
+	\draw[->] (L3-02) to (L4-04);
+	\draw[->] (L3-02) to (L4-05);
+	\draw[->] (L3-03) to (L4-06);
+	\draw[->] (L3-03) to (L4-07);
+
+	\draw[->] (L4-00) to (L5-00);
+	\draw[->] (L4-00) to (L5-01);
+	\draw[->] (L4-00) to (L5-02);
+	\draw[->] (L4-01) to (L5-03);
+	\draw[->] (L4-01) to (L5-04);
+	\draw[->] (L4-01) to (L5-05);
+	\draw[->] (L4-02) to (L5-06);
+	\draw[->] (L4-02) to (L5-07);
+	\draw[->] (L4-02) to (L5-08);
+	\draw[->] (L4-03) to (L5-09);
+	\draw[->] (L4-03) to (L5-10);
+	\draw[->] (L4-03) to (L5-11);
+	\draw[->] (L4-04) to (L5-12);
+	\draw[->] (L4-04) to (L5-13);
+	\draw[->] (L4-04) to (L5-14);
+	\draw[->] (L4-05) to (L5-15);
+	\draw[->] (L4-05) to (L5-16);
+	\draw[->] (L4-05) to (L5-17);
+	\draw[->] (L4-06) to (L5-18);
+	\draw[->] (L4-06) to (L5-19);
+	\draw[->] (L4-06) to (L5-20);
+	\draw[->] (L4-07) to (L5-21);
+	\draw[->] (L4-07) to (L5-22);
+	\draw[->] (L4-07) to (L5-23);
+
+	\draw[line width=2mm, loosely dotted, pattern=none] plot[] coordinates { (-1, -1) (11, -1) (11, 5) (-1, 5) } -- cycle;
+\end{tikzpicture}

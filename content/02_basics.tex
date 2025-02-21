@@ -59,23 +59,15 @@ These phases are \textit{control-flow analysis}, \textit{processor behavior anal
 
 \begin{figure}[h]
 	\begin{subfigure}[c]{0.45\textwidth}
-		\resizebox{\textwidth}{!}{%
-		\begin{minipage}[c]{\textwidth}
-			\input{./listings/collatz_conjecture.tex}
-			\caption{Collatz Conjecture Code}
-			\label{fig:collatz_code}
-		\end{minipage}
-		}
+		\input{./listings/collatz_conjecture.tex}
+		\caption{Collatz Conjecture Code}
+		\label{fig:collatz_code}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[c]{0.45\textwidth}
-        \resizebox{\textwidth}{!}{%
-		\begin{minipage}[c]{\textwidth}
-			\input{./tikz/control_flow_graph.tex}
-			\caption{\ac{CFG} for \cref{fig:collatz_code}}
-			\label{fig:cfg}
-		\end{minipage}
-		}
+		\input{./tikz/control_flow_graph.tex}
+		\caption{\ac{CFG} for \cref{fig:collatz_code}}
+		\label{fig:cfg}
 	\end{subfigure}
 	\caption{Example code showing the calculation of the Collatz conjecture and its representation with a \acf{CFG}.}
 	\label{fig:collatz_and_cfg}

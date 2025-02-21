@@ -1,0 +1,24 @@
+% \usetikzlibrary{patterns} % Load patterns library
+\begin{tikzpicture}
+	% \node[draw, rectangle, outer sep=2mm] (n1) at (0,0) {1};
+	% \node[draw, rectangle, outer sep=2mm] (n2) at (2,0) {3};
+	% \node[draw, rectangle, outer sep=2mm] (n3) at (4,0) {6};
+	% \node[outer sep=2mm] (n4) at (6,0) {\ldots};
+	% \node[draw, rectangle, outer sep=2mm] (n5) at (8,0) {x};
+
+	% \draw[->, bend left] (n1) tonode[midway,below] {$m_1$} node[midway,above] {$\times 3$} (n2);
+	% \draw[->, bend left] (n2) tonode[midway,below] {$m_2$} node[midway,above] {$\times 2$} (n3);
+	% \draw[->, bend left] (n3) tonode[midway,below] {$m_3$}  (n4);
+	% \draw[->, bend left] (n4) tonode[midway,below] {$m_{n-1}$}  (n5);
+	
+	\node[draw, rectangle, outer sep=2mm] (n1) at (0,0) {1};
+	\node[draw, rectangle, outer sep=2mm] (n2) at (2,0) {3};
+	\node[draw, rectangle, outer sep=2mm] (n3) at (4,0) {6};
+	\node[draw, rectangle, outer sep=2mm] (n4) at (6,0) {12};
+	\node[draw, rectangle, outer sep=2mm] (n5) at (8,0) {24};
+
+	\draw[->, bend left] (n1) to node[midway,below] {$m_1$} node[midway,above] {$\times 3$} (n2);
+	\draw[->, bend left] (n2) to node[midway,below] {$m_2$} node[midway,above] {$\times 2$} (n3);
+	\draw[->, bend left] (n3) to node[midway,below] {$m_3$} node[midway,above] {$\times 2$} (n4);
+	\draw[->, bend left] (n4) to node[midway,below] {$m_4$} node[midway,above] {$\times 2$} (n5);
+\end{tikzpicture}
