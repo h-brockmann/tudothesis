@@ -105,7 +105,7 @@
     }
   },
   "version": {
-    "zotero": "7.0.11",
+    "zotero": "7.0.12",
     "bbt": "7.0.5"
   },
   "collections": {
@@ -1071,6 +1071,54 @@
       "select": "zotero://select/library/items/TBPYWEBE"
     },
     {
+      "key": "LPLHBZ6G",
+      "version": 0,
+      "itemType": "book",
+      "title": "Hard Real-Time Computing Systems: Predictable Scheduling Algorithms and Applications",
+      "date": "2024",
+      "language": "en",
+      "shortTitle": "Hard Real-Time Computing Systems",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "https://link.springer.com/10.1007/978-3-031-45410-3",
+      "accessDate": "2025-02-22T07:43:58Z",
+      "rights": "https://www.springernature.com/gp/researchers/text-and-data-mining",
+      "extra": "DOI: 10.1007/978-3-031-45410-3",
+      "place": "Cham",
+      "publisher": "Springer Nature Switzerland",
+      "ISBN": "978-3-031-45409-7 978-3-031-45410-3",
+      "creators": [
+        {
+          "firstName": "Giorgio",
+          "lastName": "Buttazzo",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-02-22T07:43:58Z",
+      "dateModified": "2025-02-22T07:43:58Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/LPLHBZ6G",
+      "itemID": 300,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-22T07:44:30Z",
+          "dateModified": "2025-02-22T07:44:30Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/7Y8PQY2D",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\7Y8PQY2D\\Buttazzo - 2024 - Hard Real-Time Computing Systems Predictable Scheduling Algorithms and Applications.pdf",
+          "select": "zotero://select/library/items/7Y8PQY2D"
+        }
+      ],
+      "notes": [],
+      "citationKey": "buttazzoHardRealTimeComputing2024",
+      "itemKey": "LPLHBZ6G",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/LPLHBZ6G"
+    },
+    {
       "key": "273N53MD",
       "version": 0,
       "itemType": "journalArticle",
@@ -1575,6 +1623,61 @@
       "itemKey": "GG5Y8SSA",
       "libraryID": 1,
       "select": "zotero://select/library/items/GG5Y8SSA"
+    },
+    {
+      "key": "FGBKFZKU",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "A survey of hard real-time scheduling for multiprocessor systems",
+      "abstractNote": "This survey covers hard real-time scheduling algorithms and schedulability analysis techniques for homogeneous multiprocessor systems. It reviews the key results in this field from its origins in the late 1960s to the latest research published in late 2009. The survey outlines fundamental results about multiprocessor real-time scheduling that hold independent of the scheduling algorithms employed. It provides a taxonomy of the different scheduling methods, and considers the various performance metrics that can be used for comparison purposes. A detailed review is provided covering partitioned, global, and hybrid scheduling algorithms, approaches to resource sharing, and the latest results from empirical investigations. The survey identifies open issues, key research challenges, and likely productive research directions.",
+      "date": "10/2011",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "https://dl.acm.org/doi/10.1145/1978802.1978814",
+      "accessDate": "2025-02-22T08:12:07Z",
+      "volume": "43",
+      "pages": "1-44",
+      "publicationTitle": "ACM Computing Surveys",
+      "DOI": "10.1145/1978802.1978814",
+      "issue": "4",
+      "journalAbbreviation": "ACM Comput. Surv.",
+      "ISSN": "0360-0300, 1557-7341",
+      "creators": [
+        {
+          "firstName": "Robert I.",
+          "lastName": "Davis",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Alan",
+          "lastName": "Burns",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-02-22T08:12:07Z",
+      "dateModified": "2025-02-22T08:12:07Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/FGBKFZKU",
+      "itemID": 304,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-22T08:12:45Z",
+          "dateModified": "2025-02-22T08:12:45Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/CDI6JHEL",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\CDI6JHEL\\Davis und Burns - 2011 - A survey of hard real-time scheduling for multiprocessor systems.pdf",
+          "select": "zotero://select/library/items/CDI6JHEL"
+        }
+      ],
+      "notes": [],
+      "citationKey": "davisSurveyHardRealtime2011",
+      "itemKey": "FGBKFZKU",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/FGBKFZKU"
     },
     {
       "key": "C4FY7CS5",
@@ -2396,6 +2499,99 @@
       "select": "zotero://select/library/items/FID5ZK5L"
     },
     {
+      "key": "7PNTKEAQ",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "The Mälardalen WCET Benchmarks: Past, Present And Future",
+      "abstractNote": "Modelling of real-time systems requires accurate and tight estimates of the Worst-Case Execution Time (WCET) of each task scheduled to run. In the past two decades, two main paradigms have emerged within the field of WCET analysis: static analysis and hybrid measurement-based analysis. These techniques have been succesfully implemented in prototype and commercial toolsets. Yet, comparison among the WCET estimates derived by such tools remains somewhat elusive as it requires a common set of benchmarks which serve a multitude of needs.\r\n\r\nThe Maelardalen WCET research group maintains a large number of WCET benchmark programs for this purpose. This paper describes properties of the existing benchmarks, including their relative strengths and weaknesses. We propose extensions to the benchmarks which will allow any type of WCET tool evaluate its results against other state-of-the-art tools, thus setting a high standard for future research and development.\r\n\r\nWe also propose an organization supporting the future work with the benchmarks. We suggest to form a committee with a responsibility for the benchmarks, and that the benchmark web site is transformed to an open wiki, with possibility for the WCET community to easily update the benchmarks.",
+      "date": "2012",
+      "language": "en",
+      "shortTitle": "The Mälardalen WCET Benchmarks",
+      "libraryCatalog": "DOI.org (Datacite)",
+      "url": "https://drops.dagstuhl.de/entities/document/10.4230/OASIcs.WCET.2010.136",
+      "accessDate": "2025-02-22T08:35:21Z",
+      "rights": "Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported license, info:eu-repo/semantics/openAccess",
+      "extra": "Artwork Size: 11 pages, 471453 bytes\nISBN: 9783939897217\nMedium: application/pdf\nPublisher: Schloss Dagstuhl – Leibniz-Zentrum für Informatik",
+      "volume": "15",
+      "pages": "136-146",
+      "publicationTitle": "OASIcs, Volume 15, WCET 2010",
+      "DOI": "10.4230/OASICS.WCET.2010.136",
+      "ISSN": "2190-6807",
+      "creators": [
+        {
+          "firstName": "Jan",
+          "lastName": "Gustafsson",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Adam",
+          "lastName": "Betts",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Andreas",
+          "lastName": "Ermedahl",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Björn",
+          "lastName": "Lisper",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Björn",
+          "lastName": "Lisper",
+          "creatorType": "contributor"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "WCET analysis",
+          "type": 1
+        },
+        {
+          "tag": "benchmark",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2025-02-22T08:35:21Z",
+      "dateModified": "2025-02-22T08:35:21Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/7PNTKEAQ",
+      "itemID": 309,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-22T08:36:30Z",
+          "dateModified": "2025-02-22T08:36:30Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/424U9BJH",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\424U9BJH\\Gustafsson et al. - 2012 - The Mälardalen WCET Benchmarks Past, Present And Future.pdf",
+          "select": "zotero://select/library/items/424U9BJH"
+        }
+      ],
+      "notes": [
+        {
+          "key": "GEMNCTT4",
+          "version": 0,
+          "itemType": "note",
+          "parentItem": "7PNTKEAQ",
+          "note": "<h2>SeriesInformation</h2>\nOASIcs, Vol. 15, 10th International Workshop on Worst-Case Execution Time Analysis (WCET 2010), pages 136-146",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-22T08:35:21Z",
+          "dateModified": "2025-02-22T08:35:21Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/GEMNCTT4"
+        }
+      ],
+      "citationKey": "gustafssonMalardalenWCETBenchmarks2012",
+      "itemKey": "7PNTKEAQ",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/7PNTKEAQ"
+    },
+    {
       "key": "5MA8TVYN",
       "version": 0,
       "itemType": "conferencePaper",
@@ -2859,6 +3055,139 @@
       "select": "zotero://select/library/items/SVTWNYWA"
     },
     {
+      "key": "ZJDJ4DIX",
+      "version": 0,
+      "itemType": "bookSection",
+      "title": "The WCET Analysis Tool CalcWcet167",
+      "date": "2012",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "http://link.springer.com/10.1007/978-3-642-34032-1_17",
+      "accessDate": "2025-02-22T07:57:36Z",
+      "extra": "Series Title: Lecture Notes in Computer Science\nDOI: 10.1007/978-3-642-34032-1_17",
+      "volume": "7610",
+      "place": "Berlin, Heidelberg",
+      "publisher": "Springer Berlin Heidelberg",
+      "ISBN": "978-3-642-34031-4 978-3-642-34032-1",
+      "pages": "158-172",
+      "bookTitle": "Leveraging Applications of Formal Methods, Verification and Validation. Applications and Case Studies",
+      "creators": [
+        {
+          "firstName": "David",
+          "lastName": "Hutchison",
+          "creatorType": "seriesEditor"
+        },
+        {
+          "firstName": "Takeo",
+          "lastName": "Kanade",
+          "creatorType": "seriesEditor"
+        },
+        {
+          "firstName": "Josef",
+          "lastName": "Kittler",
+          "creatorType": "seriesEditor"
+        },
+        {
+          "firstName": "Jon M.",
+          "lastName": "Kleinberg",
+          "creatorType": "seriesEditor"
+        },
+        {
+          "firstName": "Friedemann",
+          "lastName": "Mattern",
+          "creatorType": "seriesEditor"
+        },
+        {
+          "firstName": "John C.",
+          "lastName": "Mitchell",
+          "creatorType": "seriesEditor"
+        },
+        {
+          "firstName": "Moni",
+          "lastName": "Naor",
+          "creatorType": "seriesEditor"
+        },
+        {
+          "firstName": "Oscar",
+          "lastName": "Nierstrasz",
+          "creatorType": "seriesEditor"
+        },
+        {
+          "firstName": "C.",
+          "lastName": "Pandu Rangan",
+          "creatorType": "seriesEditor"
+        },
+        {
+          "firstName": "Bernhard",
+          "lastName": "Steffen",
+          "creatorType": "seriesEditor"
+        },
+        {
+          "firstName": "Madhu",
+          "lastName": "Sudan",
+          "creatorType": "seriesEditor"
+        },
+        {
+          "firstName": "Demetri",
+          "lastName": "Terzopoulos",
+          "creatorType": "seriesEditor"
+        },
+        {
+          "firstName": "Doug",
+          "lastName": "Tygar",
+          "creatorType": "seriesEditor"
+        },
+        {
+          "firstName": "Moshe Y.",
+          "lastName": "Vardi",
+          "creatorType": "seriesEditor"
+        },
+        {
+          "firstName": "Gerhard",
+          "lastName": "Weikum",
+          "creatorType": "seriesEditor"
+        },
+        {
+          "firstName": "Tiziana",
+          "lastName": "Margaria",
+          "creatorType": "editor"
+        },
+        {
+          "firstName": "Bernhard",
+          "lastName": "Steffen",
+          "creatorType": "editor"
+        },
+        {
+          "firstName": "Raimund",
+          "lastName": "Kirner",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-02-22T07:57:36Z",
+      "dateModified": "2025-02-22T07:57:36Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/ZJDJ4DIX",
+      "itemID": 302,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-22T08:02:00Z",
+          "dateModified": "2025-02-22T08:02:00Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/Y4E8XK2G",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\Y4E8XK2G\\Kirner - 2012 - The WCET Analysis Tool CalcWcet167.pdf",
+          "select": "zotero://select/library/items/Y4E8XK2G"
+        }
+      ],
+      "notes": [],
+      "citationKey": "kirnerWCETAnalysisTool2012",
+      "itemKey": "ZJDJ4DIX",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/ZJDJ4DIX"
+    },
+    {
       "key": "UIW2WZZU",
       "version": 0,
       "itemType": "conferencePaper",
@@ -3297,6 +3626,43 @@
       "itemKey": "YJBIMURY",
       "libraryID": 1,
       "select": "zotero://select/library/items/YJBIMURY"
+    },
+    {
+      "key": "2U2G29BW",
+      "version": 0,
+      "itemType": "document",
+      "title": "Naumann",
+      "creators": [
+        {
+          "firstName": "Yannick",
+          "lastName": "Naumann",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-02-22T07:14:03Z",
+      "dateModified": "2025-02-22T07:14:16Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/2U2G29BW",
+      "itemID": 298,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-22T07:14:46Z",
+          "dateModified": "2025-02-22T07:14:46Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/BK6IDPGF",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\BK6IDPGF\\Naumann - Naumann.pdf",
+          "select": "zotero://select/library/items/BK6IDPGF"
+        }
+      ],
+      "notes": [],
+      "citationKey": "naumannNaumann",
+      "itemKey": "2U2G29BW",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/2U2G29BW"
     },
     {
       "key": "Y3K923Q7",

@@ -1,11 +1,12 @@
 \chapter{Approach}
 \section{System-model}\label{sec:model}
 In this section, we define the system model that serves as the foundation for the concept of the generated task-sets.
+It is reduced to a description of the task model and the execution model without further defining a hardware model, since the generated model is designed to be a meta model with no constraints on hardware specifications, making it hardware independent.
 
 \subsection{Task Model}\label{sec:task_model}
 Part of the system model is a harmonic set of periodic tasks $\Tau=\{\Tau_i: i = 1, 2, \ldots, n\}$.
 Due to being a harmonic task-set and its properties (see \cref{sec:scheduling}) the \textit{planning cycle}\cite{dar-tzenpengAssignmentSchedulingCommunicating1997} of $\Tau$ is defined by the \textit{\ac{LCM}} of all tasks' periods $\{P_1, \ldots, P_n\}$, resulting in the period $P_{max}$ of the task with the highest period.
-Each task $\Tau_i$ is characterized by its period $P_i$, its list of possible execution times $\{CP_{i_1}, CP_{i_2}, \ldots\}$, and the set of related jobs $\tau_i=\{\tau_{i_0}, \tau_{i_1}, \dots, \tau_{i_m}; m = \frac{P_{max}}{P_i} - 1\}$.
+Each task $\Tau_i$ is characterized by its period $P_i$, its list of possible execution times (C Possible) $\{CP_{i_1}, CP_{i_2}, \ldots\}$, and the set of related jobs $\tau_i=\{\tau_{i_0}, \tau_{i_1}, \dots, \tau_{i_m}; m = \frac{P_{max}}{P_i} - 1\}$.
 
 Each job $\tau_{i_j}$ is described by the release time $r_{i_m}$, the begin of the next period $P_i+1$ is equal to the implicit deadline $d_i$, the jobs computational time $C_{i_m}$.
 The release time $r_{i_m}$ per job is set to be aligned with the period beginning with $0$.
@@ -14,10 +15,6 @@ The release time $r_{i_m}$ per job is set to be aligned with the period beginnin
 	$d_{i_m} = P_i + r_{i_m}$
 \end{center}
 \todo{explain chains and their length}
-
-\subsection{Hardware Model}\label{sec:hardware_model}
-The generated model is designed to be a meta model with no constraints on hardware specifications, making it hardware independent.
-No further details about the hardware are provided.
 
 \subsection{Execution Model}\label{sec:execution_model}
 In the execution model, a preemptive scheduler using \ac{RMS} (see \cref{sec:scheduling}) is employed to manage the periodic tasks. 
@@ -33,15 +30,14 @@ Making use of the \ac{RMS} in combination with the in \cref{sec:task_model} ment
 \cite{dar-tzenpengAssignmentSchedulingCommunicating1997}
 
 
-\section{Concept}
-\label{sec:concept}
+\section{Concept}\label{sec:concept}
 The general workflow involves several key steps. 
 \begin{enumerate}
-	\item Generate period times based on the server model.
-	\item Create task chains and identify any missing links within these chains.
+	\item Generate period times based on the server model. \todo{what is a server model?}
+	\item Create task chains and identify any missing links within these chains. \todo{what is a chain?}
 	\item Distribute the load across each period and generate tasks with lower execution times to balance the workload.
-	\item Connect tasks and create conditions, considering the idea of workloads with resources attached, such as inter-task communication.
-	\item Spread the server model into multiple server instances.
+	\item Connect tasks and create conditions, considering the idea of workloads with resources attached, such as inter-task communication. \todo{what is a connection?}
+	\item Spread the server model into multiple server instances. \todo{server models / server instances. what is this?}
 	\item Build a scheduler and perform a schedulability test using the tree structure of the previously built server instances.
 	\item Export the generated task-set for further use.
 \end{enumerate}
@@ -91,7 +87,7 @@ Hence the planning cycle matches with the highest period of the task-set, in the
 	\caption{Generation of periods and task-set with tasks with given period}
 \end{figure}
 
-\subsection{Generating Task Chains}\label{sec:generating_task_chains}
+\subsection{Generating Task Chains}\label{sec:concept_task_chains}
 To generate the task-set multiple tasks will be iteratively added and assigned to the already generated periods.
 By iterating about given period values a natural order of the tasks' periods is assured.
 With choosing the \ac{RMS} as scheduling method it is an descending order of priority, since the higher periods will result in lower priorities.
@@ -99,9 +95,6 @@ Knowing this the tasks can be connected with its successor (if one does exist) t
 Doing so the sender is assured to run earlier in respect to the receiver, if no locking or priority inversion is apparent. \todo{priority inversion and resource locking in model}
 By skipping a period while generating the tasks, the chains are built to vary the length and distribution of their associated tasks.
 The skip may be done at random. \todo{explain random as random with seed}
-
-\subsection{Creating Conditions}\label{sec:creating_conditions}
-\todo{conditions}
 
 \subsection{Spreading Server Model into Instances}\label{sec:spreading_server_model_into_instances}
 By using a harmonic task-set it is possible to fan out the given list of periods as seen in \cref{fig:chain_of_periods} into a tree structure as seen in \cref{fig:graph_of_periods}.
@@ -120,30 +113,50 @@ Taking that utilization, each period may be assigned a combined execution time t
 The planning cycle's time frame, multiplied by the predefined utilization, determines the total amount of execution time that can be distributed across the tasks.
 This means that for each layer of period nodes in the tree structure, the sum of the execution times of all tasks must not exceed the product of the planning cycle's time frame and the predefined utilization.
 
-For example, if the planning cycle's time frame is 24 units and the predefined utilization is 0.75, the total execution time available for all tasks in that planning cycle is \(24 \times 0.75 = 18\) units.
+For example, if the planning cycle's time frame is $24$ units and the targeted utilization is $0.75$, the total execution time available for all tasks in that planning cycle is \(24 \times 0.75 = 18\) units.
 This 18 units of execution time must be spread across all tasks in the tree, ensuring that the sum of the execution times of tasks associated with each period node does not exceed this limit.
 
 The total execution time for each period layer is then distributed among the tasks assigned to that period. This is done by randomly assigning execution times to each task such that the sum of the execution times equals the total execution time for the period layer.
 
-For example, if a period layer of $P1$ has a total execution time of 6 units and there are 3 tasks $T_1$, $T_3$ and $T_9$ assigned to that period, the execution times could be randomly assigned as $CP_{1_1} = 1$, $CP_{3_1} = 2$, and $CP_{9_1} = 3$, ensuring that the sum is \( CP_{1_1} + $CP_{3_1} + $CP_{9_1} = 6 \) units.
+For example, if a period layer of $P1$ has a total execution time of $6$ units and there are three tasks $T_1$, $T_3$ and $T_9$ assigned to that period, the execution times could be randomly assigned as $CP_{1_1} = 1$, $CP_{3_1} = 2$, and $CP_{9_1} = 3$, ensuring that the sum is \( CP_{1_1} + CP_{3_1} + CP_{9_1} = 6 \) units.
 
 By randomly distributing the execution times in this manner, the system ensures that the overall utilization remains within the desired bounds, maintaining the schedulability and efficiency of the task set.
 \todo{check utilization use}
 \todo{make sure the times fit. CT<1/2period}
 
-\subsection{Generating Load with Lower Execution Times}\label{sec:concept_lower_execution_times}
+\subsection{Variation of Execution Times}\label{sec:concept_lower_execution_times}
 For the system to not only represent all tasks \ac{WCET} a variation of execution times per task need to be created.
 Since the generated tasks with full load still have schedulability, the execution time of the tasks may be reduced without compromising the schedulability.
 For that reason the execution time of each task is multiplied with a random value between zero and one until a sufficient amount of different values is generated.
 Keeping the increasing complexity in mind, the system is designed to use a discrete distribution instead of continuous value functions. \todo{value functions more complex than discrete? source}
+
+
+\subsection{Creating Conditions}\label{sec:creating_conditions}
+With multiple possible execution times per task, these variants need to be conditioned to ensure deterministic behavior.
+This can be achieved by defining conditions that link the execution times of tasks within a chain, ensuring that the execution time of one task influences the execution time of subsequent tasks in the chain, as described in \cref{sec:concept_task_chains}.
+The conditions are supposed to mimic the data-flow between two tasks and the influence between these two.
+Every variation
+
+For example, consider a chain of tasks \( \tau_1 \{ CP: \{3, 4, 5\}\}, \tau_2 \{ CP: \{2, 3\}\}, \tau_3 CP: \{1, 2, 3\} \).
+We can define conditions such that the execution time of \( \tau_1 \) affects the execution time of \( \tau_2 \), and the execution time of \( \tau_2 \) affects the execution time of \( \tau_3 \). For instance:
+\begin{itemize}
+	\item If \( \tau_1 \) executes for 3 units, then \( \tau_2 \) can execute for 2 or 3 units.
+	\item If \( \tau_1 \) executes for 4 units, then \( \tau_2 \) can only execute for 2 units.
+	\item If \( \tau_1 \) executes for 5 units, then \( \tau_2 \) can only execute for 2 units, and \( \tau_3 \) can only execute for 1 unit.
+\end{itemize}
+
+By defining such conditions, we ensure that the execution times are linked and the overall behavior of the system remains predictable and deterministic. This approach helps in maintaining the schedulability and efficiency of the task set while accommodating variations in execution times.
+
+
 
 \subsection{Building a Scheduler and Performing Schedulability Test}\label{sec:concept_scheduler}
 The schedule can be generated by performing a depth-first traversal of the previously described tree structure.
 The leaves of the tree represent the tasks with the highest priority and are processed first during the traversal.
 As the traversal continues, tasks in higher layers with lower priorities are processed until the root is reached.
 Starting with an empty schedule for the given planning cycle the execution times of the highest prioritized tasks can simply be added.
-If one layer is added to the schedule, the next layer with the next next higher priority is added to fill the remaining idle time.
-Since the time and utilization are previously calculated it is ensured the 
+If one layer is added to the schedule, the next layer with the next next higher priority is added into the remaining idle time slots.
+Since the time and utilization are previously calculated it is ensured the task set is scheduable.
+
 
 \todo{prio for equal periods -> arbritrary, but predictable order.}
 
@@ -152,8 +165,6 @@ Since the time and utilization are previously calculated it is ensured the
 \subsection{Exporting Task-Set}\label{sec:exporting_task_set}
 \todo{exporting task-set}
 
-\section{Implementation}
-\label{sec:implementation}
 
 
 \section{Tasks with Release Times and Execution Times}
@@ -190,3 +201,8 @@ By analyzing the release times and execution times, we can develop strategies to
 
 \section{Representation}
 \label{sec:representation}
+
+
+
+\section{Implementation}
+\label{sec:implementation}

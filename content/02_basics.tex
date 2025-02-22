@@ -1,14 +1,13 @@
 \chapter{Basics}
 This chapter provides a collection of basic knowledge as a foundation for this work.
 
-\section{Real Time Operating Systems}
-\label{sec:rtos}
+\section{Real Time Operating Systems}\label{sec:rtos}
 A \ac{RTOS} is designed with precise timing and high reliability in mind for running applications \textcite{stankovicRealtimeOperatingSystems2004}.
 Such systems are used in a wide range of applications, from multimedia systems and smart home systems to automotive and medical sectors, such as pacemakers \cite{hambardeSurveyRealTime2014}.
-In all these systems, the correctness and timeliness of the applications are of utmost importance \cite{hambardeSurveyRealTime2014}.
-\subsection{Tasks and Jobs}
-\label{sec:tasks_and_jobs}
-According to the \citetitle{IEEEStandardRealTime}, a task is defined as the "basic logical unit of concurrent program execution" that contains code. The standard also states that while the code within a task is executed sequentially, the tasks themselves may run in parallel with other tasks.
+In all these systems, the correctness and timeliness of the applications are of utmost importance\cite{hambardeSurveyRealTime2014}.
+
+\subsection{Tasks and Jobs}\label{sec:tasks_and_jobs}
+According to the \textcite{IEEEStandardRealTime}, a task is defined as the "basic logical unit of concurrent program execution" that contains code. The standard also states that while the code within a task is executed sequentially, the tasks themselves may run in parallel with other tasks.
 
 Tasks can have deadlines based on their importance and the nature of their work. If a task misses its deadline due to insufficient computational time, the system and results may be affected differently. It is common to categorize task deadlines into three types \cite{dengSchedulingRealtimeApplications1997,abeniIntegratingMultimediaApplications1998,shindeComparisonRealTime2017}:
 \begin{enumerate}
@@ -20,8 +19,7 @@ Tasks can have deadlines based on their importance and the nature of their work.
 	      Missing a soft deadline reduces the task's utility, but the result can still be used. The system can tolerate some deadline misses without significant impact on overall performance.
 \end{enumerate}
 
-\subsection{Real-time Scheduling}
-\label{sec:scheduling}
+\subsection{Real-time Scheduling}\label{sec:scheduling}
 Creating the schedule of given tasks to be executed some aspects
 
 Generating a task set with known \ac{WCET} and \ac{WCRT} requires knowledge about the schedule.
@@ -40,22 +38,19 @@ There are some scheduling techniques to determine the priority of tasks to be sc
 	\item \textbf{Earliest Deadline First:} With the earliest deadline first scheduling algorithm, the priority of the tasks is not fixed, but dynamic. As the name implies, the tasks get a priority assigned in a way to ensure the tasks with the nearest upcoming deadline get to run first. \cite{lehoczkyPerformanceRealtimeBus1986}
 \end{itemize}
 
-\section{Timing Analysis}
-\label{sec:timing_analysis}
+\section{Timing Analysis}\label{sec:timing_analysis}
 For real-time systems it is desired to keep up the reliability and predictability of the given tasks to ensure their timely execution respectively to their deadlines.
 To deduce a task's worst execution time without underestimating, \ac{WCET} analysis is employed.
-Various approaches are currently used to determine the possible execution times of tasks, including static analysis, measurement-based analysis, and probabilistic analysis, which will be discussed in the upcoming sections \cref{sec:static_analysis,sec:measurement_analysis,sec:probabilistic_analysis}.
+Various approaches are currently used to determine the possible execution times of tasks, including static analysis, measurement-based analysis, and probabilistic analysis, which will be discussed in the upcoming \cref{sec:static_analysis,sec:measurement_analysis,sec:probabilistic_analysis}.
 
-\subsection{Static Analysis}
-\label{sec:static_analysis}
+\subsection{Static Analysis}\label{sec:static_analysis}
 Static analysis makes use of several techniques to generate a model of the given hardware and software to gain knowledge about the executional behavior of the inspected code.
 One key benefit of the static analysis is that the code does not need to be executed.
 
 \textcite{wilhelmWorstcaseExecutiontimeProblem2008} describe the static analysis in multiple phases.
 These phases are \textit{control-flow analysis}, \textit{processor behavior analysis} and \textit{path analysis}.
 
-\subsubsection{Control-Flow Analysis}
-\label{sec:cfa}
+\subsubsection{Control-Flow Analysis}\label{sec:cfa}
 
 \begin{figure}[h]
 	\begin{subfigure}[c]{0.45\textwidth}
@@ -69,7 +64,7 @@ These phases are \textit{control-flow analysis}, \textit{processor behavior anal
 		\caption{\ac{CFG} for \cref{fig:collatz_code}}
 		\label{fig:cfg}
 	\end{subfigure}
-	\caption{Example code showing the calculation of the Collatz conjecture and its representation with a \acf{CFG}.}
+	\caption{Example code showing the calculation of the Collatz conjecture and its representation with a \ac{CFG}.}
 	\label{fig:collatz_and_cfg}
 \end{figure}
 
@@ -79,14 +74,15 @@ When analyzing a given task, a \ac{CFG} is built to represent the execution path
 
 \todo{flow facts Chen 04 20/83}
 
-\subsection{Data Flow Analysis}
-\label{sec:dfa}
-\ac{DFA} is 
+\subsection{Data Flow Analysis}\label{sec:dfa}
+\ac{DFA} is used to analyse the flow of data in a program to detect dependencies and bottlenecks.
+Some bottlenecks may be cache misses, e.g. because of a \ac{LRU} entry got overwritten.
+\ref{fig:collatz_and_cfg} displays the control flow, which is guided by the value of variable $x$.
 
 \todo{timing accidents - Chen 04 10/53}
 Key techniques used in static analysis include:
 \begin{itemize}
-	\item \textbf{Control Flow Analysis:} This technique involves constructing a control flow graph (CFG) of the program, which represents all possible paths that the program execution can take. Nodes in the CFG represent basic blocks of code, and edges represent the flow of control between them.
+	\item \textbf{Control Flow Analysis:} This technique involves constructing a \ac{CFG} of the program, which represents all possible paths that the program execution can take. Nodes in the CFG represent basic blocks of code, and edges represent the flow of control between them.
 	\item \textbf{Data Flow Analysis:} This technique analyzes the flow of data within the program to determine how values are propagated and transformed. It helps in identifying dependencies and potential bottlenecks in the code.
 	\item \textbf{Abstract Interpretation:} This technique involves creating an abstract model of the program that simplifies its behavior while preserving essential properties. The abstract model can use various representations, including control flow graphs, to analyze and derive bounds on execution times and other properties.
 	\item \textbf{Path Analysis:} This technique involves identifying and evaluating all possible execution paths in the program. It helps in determining the longest path, which corresponds to the WCET
@@ -101,7 +97,7 @@ Static analysis is advantageous because it does not require actual execution of 
 \subsection{Probabilistic Analysis}
 \label{sec:probabilistic_analysis}
 
-Early flowcharts and \ac{AI}s describes by \textcite{cousotAbstractInterpretationUnified1977}
+Early flowcharts and \ac{AI}s described by \textcite{cousotAbstractInterpretationUnified1977}
 
 \todo{cache misses}
 \todo{overestimation \& pessimism}
@@ -128,9 +124,9 @@ Static analysis is a proper and safe way to get information about the execution 
 
 To evaluate analysis techniques benchmarks play a significant role.
 Providing multiple task sets with known execution scenarios and the tasks behavior the analysis techniques can be tested for its effectiveness. 
-Benchmarks commonly used are for example the Mälardalen \ac{WCET} benchmark and the TACLeBench benchmark suite \cite{falkTACLeBenchBenchmarkCollection2016}.
+Benchmarks commonly used are for example the Mälardalen \ac{WCET} benchmark and the TACLeBench benchmark suite\cite{falkTACLeBenchBenchmarkCollection2016}.
 
-Accurate \ac{WCET} analysis is critical for the design and verification of real-time systems, ensuring that all tasks can be scheduled and executed within their deadlines, thereby maintaining the system's overall reliability and performance \cite{kelterWCETAnalysisOptimization}.
+Accurate \ac{WCET} analysis is critical for the design and verification of real-time systems, ensuring that all tasks can be scheduled and executed within their deadlines, thereby maintaining the system's overall reliability and performance\cite{kelterWCETAnalysisOptimization}.
 \textcite{kelterWCETAnalysisOptimization} states further that \ac{WCET} analyses are no longer sufficient for newer and complex systems and need to analyze delays and preemptions between tasks as well, resulting in \ac{WCRT}.
 
 \subsection{Critical Instant Theorem}
