@@ -1,0 +1,37 @@
+% \usetikzlibrary{patterns} % Load patterns library
+\begin{tikzpicture}
+	
+	\node (A0) [draw, minimum width=1cm, minimum height=1cm, label={[font=\tiny, anchor=north west]north west:0}] {10};
+	\node (A1) [draw, minimum width=1cm, minimum height=1cm, right=0cm of A0, label={[font=\tiny, anchor=north west]north west:1}] {25};
+	\node (A2) [draw, minimum width=1cm, minimum height=1cm, right=0cm of A1, label={[font=\tiny, anchor=north west]north west:2}] {33};
+	\node (A3) [draw, minimum width=1cm, minimum height=1cm, right=0cm of A2, label={[font=\tiny, anchor=north west]north west:3}] {79};
+	\node (A4) [draw, minimum width=1cm, minimum height=1cm, right=0cm of A3, label={[font=\tiny, anchor=north west]north west:4}] {110};
+
+	\node (B0) [draw, minimum width=1cm, minimum height=1cm, below=2cm of A0, label={[font=\tiny, anchor=north west]north west:0}] {7};
+	\node (B1) [draw, minimum width=1cm, minimum height=1cm, right=0cm of B0, label={[font=\tiny, anchor=north west]north west:1}] {12};
+	\node (B2) [draw, minimum width=1cm, minimum height=1cm, right=0cm of B1, label={[font=\tiny, anchor=north west]north west:2}] {21};
+	\node (B3) [draw, minimum width=1cm, minimum height=1cm, right=0cm of B2, label={[font=\tiny, anchor=north west]north west:3}] {46};
+	\node (B4) [draw, minimum width=1cm, minimum height=1cm, right=0cm of B3, label={[font=\tiny, anchor=north west]north west:4}] {70};
+
+	\node (C0) [draw, minimum width=1cm, minimum height=1cm, below=2cm of B0, label={[font=\tiny, anchor=north west]north west:0}] {18};
+	\node (C1) [draw, minimum width=1cm, minimum height=1cm, right=0cm of C0, label={[font=\tiny, anchor=north west]north west:1}] {30};
+	\node (C2) [draw, minimum width=1cm, minimum height=1cm, right=0cm of C1, label={[font=\tiny, anchor=north west]north west:2}] {35};
+	\node (C3) [draw, minimum width=1cm, minimum height=1cm, right=0cm of C2, label={[font=\tiny, anchor=north west]north west:3}] {42};
+	\node (C4) [draw, minimum width=1cm, minimum height=1cm, right=0cm of C3, label={[font=\tiny, anchor=north west]north west:4}] {75};
+ 
+	\node (TA) [minimum width=1cm, minimum height=0.5cm, left=0cm of A0] {$CP_i$ of $T_0$};
+	\node (TB) [minimum width=1cm, minimum height=0.5cm, left=0cm of B0] {$CP_i$ of $T_1$};
+	\node (TC) [minimum width=1cm, minimum height=0.5cm, left=0cm of C0] {$CP_i$ of $T_2$};
+  
+	\draw[->] (A0.south) -- (B3.north);
+	\draw[->] (A1.south) -- (B0.north);
+	\draw[->] (A2.south) -- (B4.north);
+	\draw[->] (A3.south) -- (B2.north);
+	\draw[->] (A4.south) -- (B1.north);
+	
+	\draw[->] (B0.south) -- (C4.north);
+	\draw[->] (B1.south) -- (C3.north);
+	\draw[->] (B2.south) -- (C1.north);
+	\draw[->] (B3.south) -- (C2.north);
+	\draw[->] (B4.south) -- (C0.north);
+\end{tikzpicture}

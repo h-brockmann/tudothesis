@@ -1,0 +1,13 @@
+% \usetikzlibrary{patterns} % Load patterns library
+\begin{tikzpicture}
+	\draw[dashed] (0,0) rectangle (4,3);
+	\node[align=center] at (2,2.5) {Bounded Execution Time \\ (BET Model)};
+	\draw[-{Triangle[length=3mm, width=1.75mm]}] (0.25,0.75) -- +(3.5,0) node[below, anchor=north east] {time};
+	\draw[dashed] (0.5,1.5) -- (1.25,1.5);
+	\draw[-{Stealth[open,length=3mm, width=1.75mm]}] (1.25,1.5) -- (2.25,1.5);
+	\draw[dashed] (2.25,1.5) -- (2.75,1.5);
+	\draw[{Latex[open]}-{Latex[open]}] (.5,0.25) -- +(0,1) ;
+	\draw[{Latex[open]}-{Latex[open]}] (2.75,0.25) -- +(0,1) ;
+	
+	
+\end{tikzpicture}

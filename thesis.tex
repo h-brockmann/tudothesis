@@ -51,6 +51,7 @@
 \usepackage[printonlyused,withpage]{acronym}
 % \acsetup{single} % use acronym only if used more than once.
 
+
 %------------------------------------------------------------------------------
 %------------------------ Math Packages and settings --------------------------
 %------------------------------------------------------------------------------
@@ -72,7 +73,6 @@
 
 % nice, small fracs for the text with \sfrac{}{}
 \usepackage{xfrac}
-
 
 %------------------------------------------------------------------------------
 %---------------------------- Numbers and Units -------------------------------
@@ -162,7 +162,7 @@
 
 
 \begin{document}
-\usetikzlibrary{patterns} % Load patterns library
+\usetikzlibrary{ patterns, calc, arrows.meta } % Load libraries
 
 \frontmatter
 % \input{content/hints.tex}
@@ -193,8 +193,8 @@
 
 \appendix
 % Hier beginnt der Anhang, nummeriert in lateinischen Buchstaben
-\input{content/a_anhang.tex}
 \input{content/b_acronyms.tex}
+\input{content/c_notation.tex}
 
 \backmatter
 \printbibliography

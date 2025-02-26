@@ -26,6 +26,30 @@
 			]
 		},
 		{
+			"label": "Build TIKZ",
+			"type": "shell",
+			"command": "latexmk",
+			"args": [
+				"--lualatex",
+				"--output-directory=tikz/tests/build",
+				"tikz/tests/tikz.tex",
+				// "-interaction=nonstopmode",
+				// "-file-line-error",
+				// "thesis.tex"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"presentation": {
+				// "reveal": "silent",
+				// "panel": "shared"
+			},
+			"problemMatcher": [
+				// "$latex"
+			]
+		},
+		{
 			"label": "Build and Open PDF",
 			"type": "shell",
 			"dependsOn": "Build LaTeX",

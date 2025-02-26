@@ -105,10 +105,21 @@
     }
   },
   "version": {
-    "zotero": "7.0.12",
+    "zotero": "7.0.13",
     "bbt": "7.0.5"
   },
   "collections": {
+    "EW88SDPL": {
+      "key": "EW88SDPL",
+      "parent": "",
+      "name": "Chains",
+      "collections": [],
+      "items": [
+        332,
+        338,
+        339
+      ]
+    },
     "ZQBD9B7Y": {
       "key": "ZQBD9B7Y",
       "parent": "",
@@ -309,6 +320,58 @@
       "select": "zotero://select/library/items/99HK6TZD"
     },
     {
+      "key": "9VR6XHJB",
+      "version": 0,
+      "itemType": "conferencePaper",
+      "title": "Worst-case cause-effect reaction latency in systems with non-blocking communication",
+      "date": "2019",
+      "publisher": "IEEE",
+      "ISBN": "3-9819263-2-3",
+      "pages": "1625-1630",
+      "conferenceName": "2019 Design, Automation & Test in Europe Conference & Exhibition (DATE)",
+      "creators": [
+        {
+          "firstName": "Jakaria",
+          "lastName": "Abdullah",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Gaoyang",
+          "lastName": "Dai",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Wang",
+          "lastName": "Yi",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-02-26T13:12:20Z",
+      "dateModified": "2025-02-26T13:12:20Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/9VR6XHJB",
+      "itemID": 338,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-26T13:14:07Z",
+          "dateModified": "2025-02-26T13:14:07Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/QB3PSWA8",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\QB3PSWA8\\Abdullah et al. - 2019 - Worst-case cause-effect reaction latency in systems with non-blocking communication.pdf",
+          "select": "zotero://select/library/items/QB3PSWA8"
+        }
+      ],
+      "notes": [],
+      "citationKey": "abdullahWorstcaseCauseeffectReaction2019",
+      "itemKey": "9VR6XHJB",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/9VR6XHJB"
+    },
+    {
       "key": "SU7YKHTV",
       "version": 0,
       "itemType": "conferencePaper",
@@ -427,6 +490,49 @@
       "itemKey": "KZUSAE7T",
       "libraryID": 1,
       "select": "zotero://select/library/items/KZUSAE7T"
+    },
+    {
+      "key": "QJWKCTAF",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Wcet analysis for preemptive scheduling",
+      "date": "2008",
+      "creators": [
+        {
+          "firstName": "Sebastian",
+          "lastName": "Altmeyer",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Gernot",
+          "lastName": "Gebhard",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-02-26T11:40:29Z",
+      "dateModified": "2025-02-26T11:40:29Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/QJWKCTAF",
+      "itemID": 323,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-26T11:40:39Z",
+          "dateModified": "2025-02-26T11:40:39Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/HT9L57VT",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\HT9L57VT\\Altmeyer und Gebhard - 2008 - Wcet analysis for preemptive scheduling.pdf",
+          "select": "zotero://select/library/items/HT9L57VT"
+        }
+      ],
+      "notes": [],
+      "citationKey": "altmeyerWcetAnalysisPreemptive2008",
+      "itemKey": "QJWKCTAF",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/QJWKCTAF"
     },
     {
       "key": "R4C4GZIJ",
@@ -572,6 +678,68 @@
       "itemKey": "WEHF2SLE",
       "libraryID": 1,
       "select": "zotero://select/library/items/WEHF2SLE"
+    },
+    {
+      "key": "ENSYTZWA",
+      "version": 0,
+      "itemType": "conferencePaper",
+      "title": "Synthesizing job-level dependencies for automotive multi-rate effect chains",
+      "date": "2016",
+      "publisher": "IEEE",
+      "ISBN": "1-5090-2479-4",
+      "pages": "159-169",
+      "conferenceName": "2016 IEEE 22nd International Conference on Embedded and Real-Time Computing Systems and Applications (RTCSA)",
+      "creators": [
+        {
+          "firstName": "Matthias",
+          "lastName": "Becker",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Dakshina",
+          "lastName": "Dasari",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Saad",
+          "lastName": "Mubeen",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Moris",
+          "lastName": "Behnam",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Thomas",
+          "lastName": "Nolte",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-02-26T13:12:39Z",
+      "dateModified": "2025-02-26T13:12:39Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/ENSYTZWA",
+      "itemID": 339,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-26T13:14:01Z",
+          "dateModified": "2025-02-26T13:14:01Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/6AXN97NX",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\6AXN97NX\\Becker et al. - 2016 - Synthesizing job-level dependencies for automotive multi-rate effect chains.pdf",
+          "select": "zotero://select/library/items/6AXN97NX"
+        }
+      ],
+      "notes": [],
+      "citationKey": "beckerSynthesizingJoblevelDependencies2016",
+      "itemKey": "ENSYTZWA",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/ENSYTZWA"
     },
     {
       "key": "5LWQ9VL6",
@@ -1191,6 +1359,58 @@
       "select": "zotero://select/library/items/273N53MD"
     },
     {
+      "key": "3VLQFQCE",
+      "version": 0,
+      "itemType": "book",
+      "title": "Advances in Real-Time Systems",
+      "date": "2012",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "https://link.springer.com/10.1007/978-3-642-24349-3",
+      "accessDate": "2025-02-26T21:40:34Z",
+      "rights": "https://www.springernature.com/gp/researchers/text-and-data-mining",
+      "extra": "DOI: 10.1007/978-3-642-24349-3",
+      "place": "Berlin, Heidelberg",
+      "publisher": "Springer Berlin Heidelberg",
+      "ISBN": "978-3-642-24348-6 978-3-642-24349-3",
+      "creators": [
+        {
+          "firstName": "Samarjit",
+          "lastName": "Chakraborty",
+          "creatorType": "editor"
+        },
+        {
+          "firstName": "Jörg",
+          "lastName": "Eberspächer",
+          "creatorType": "editor"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-02-26T21:40:34Z",
+      "dateModified": "2025-02-26T21:40:34Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/3VLQFQCE",
+      "itemID": 350,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-26T21:40:46Z",
+          "dateModified": "2025-02-26T21:40:46Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/E7CK4PJK",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\E7CK4PJK\\Chakraborty und Eberspächer - 2012 - Advances in Real-Time Systems.pdf",
+          "select": "zotero://select/library/items/E7CK4PJK"
+        }
+      ],
+      "notes": [],
+      "citationKey": "chakrabortyAdvancesRealTimeSystems2012",
+      "itemKey": "3VLQFQCE",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/3VLQFQCE"
+    },
+    {
       "key": "93HE3YD5",
       "version": 0,
       "itemType": "presentation",
@@ -1496,6 +1716,65 @@
       "itemKey": "R2S4SQDN",
       "libraryID": 1,
       "select": "zotero://select/library/items/R2S4SQDN"
+    },
+    {
+      "key": "EXCRFBR2",
+      "version": 0,
+      "itemType": "conferencePaper",
+      "title": "Chain-Based Fixed-Priority Scheduling of Loosely-Dependent Tasks",
+      "date": "10/2020",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "https://ieeexplore.ieee.org/document/9283617/",
+      "accessDate": "2025-02-26T13:07:28Z",
+      "rights": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html",
+      "place": "Hartford, CT, USA",
+      "publisher": "IEEE",
+      "ISBN": "978-1-7281-9710-4",
+      "pages": "631-639",
+      "proceedingsTitle": "2020 IEEE 38th International Conference on Computer Design (ICCD)",
+      "conferenceName": "2020 IEEE 38th International Conference on Computer Design (ICCD)",
+      "DOI": "10.1109/ICCD50377.2020.00109",
+      "creators": [
+        {
+          "firstName": "Hyunjong",
+          "lastName": "Choi",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Mohsen",
+          "lastName": "Karimi",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Hyoseung",
+          "lastName": "Kim",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-02-26T13:07:28Z",
+      "dateModified": "2025-02-26T13:07:28Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/EXCRFBR2",
+      "itemID": 332,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-26T13:07:39Z",
+          "dateModified": "2025-02-26T13:07:39Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/ZE6ZP9PR",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\ZE6ZP9PR\\Choi et al. - 2020 - Chain-Based Fixed-Priority Scheduling of Loosely-Dependent Tasks.pdf",
+          "select": "zotero://select/library/items/ZE6ZP9PR"
+        }
+      ],
+      "notes": [],
+      "citationKey": "choiChainBasedFixedPriorityScheduling2020",
+      "itemKey": "EXCRFBR2",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/EXCRFBR2"
     },
     {
       "key": "LHNERTGY",
@@ -3188,6 +3467,111 @@
       "select": "zotero://select/library/items/ZJDJ4DIX"
     },
     {
+      "key": "XYAVRQUW",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "The logical execution time paradigm",
+      "date": "2012",
+      "extra": "Publisher: Springer",
+      "pages": "103-120",
+      "publicationTitle": "Advances in Real-Time Systems",
+      "journalAbbreviation": "Advances in Real-Time Systems",
+      "ISSN": "3642243487",
+      "creators": [
+        {
+          "firstName": "Christoph M",
+          "lastName": "Kirsch",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Ana",
+          "lastName": "Sokolova",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "LET"
+        }
+      ],
+      "relations": {
+        "dc:relation": [
+          "http://zotero.org/users/local/etxm3DPf/items/D78E2S9D"
+        ]
+      },
+      "dateAdded": "2025-02-26T14:16:49Z",
+      "dateModified": "2025-02-26T14:17:03Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/XYAVRQUW",
+      "itemID": 349,
+      "attachments": [],
+      "notes": [],
+      "citationKey": "kirschLogicalExecutionTime2012",
+      "itemKey": "XYAVRQUW",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/XYAVRQUW"
+    },
+    {
+      "key": "D78E2S9D",
+      "version": 0,
+      "itemType": "book",
+      "title": "Real-Time Systems: Design Principles for Distributed Embedded Applications",
+      "date": "2022",
+      "language": "en",
+      "shortTitle": "Real-Time Systems",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "https://link.springer.com/10.1007/978-3-031-11992-7",
+      "accessDate": "2025-02-26T14:05:08Z",
+      "rights": "https://www.springer.com/tdm",
+      "extra": "DOI: 10.1007/978-3-031-11992-7",
+      "place": "Cham",
+      "publisher": "Springer International Publishing",
+      "ISBN": "978-3-031-11991-0 978-3-031-11992-7",
+      "creators": [
+        {
+          "firstName": "Hermann",
+          "lastName": "Kopetz",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Wilfried",
+          "lastName": "Steiner",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "LET"
+        }
+      ],
+      "relations": {
+        "dc:relation": [
+          "http://zotero.org/users/local/etxm3DPf/items/XYAVRQUW"
+        ]
+      },
+      "dateAdded": "2025-02-26T14:05:08Z",
+      "dateModified": "2025-02-26T14:05:31Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/D78E2S9D",
+      "itemID": 342,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-26T14:07:49Z",
+          "dateModified": "2025-02-26T14:07:49Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/ISZQB2VQ",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\ISZQB2VQ\\Kopetz und Steiner - 2022 - Real-Time Systems Design Principles for Distributed Embedded Applications.pdf",
+          "select": "zotero://select/library/items/ISZQB2VQ"
+        }
+      ],
+      "notes": [],
+      "citationKey": "kopetzRealTimeSystemsDesign2022",
+      "itemKey": "D78E2S9D",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/D78E2S9D"
+    },
+    {
       "key": "UIW2WZZU",
       "version": 0,
       "itemType": "conferencePaper",
@@ -3359,6 +3743,65 @@
       "itemKey": "75J8GATM",
       "libraryID": 1,
       "select": "zotero://select/library/items/75J8GATM"
+    },
+    {
+      "key": "VSIFRENR",
+      "version": 0,
+      "itemType": "conferencePaper",
+      "title": "Cache modeling for real-time software: beyond direct mapped instruction caches",
+      "date": "1996",
+      "shortTitle": "Cache modeling for real-time software",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "http://ieeexplore.ieee.org/document/563722/",
+      "accessDate": "2025-02-23T19:47:41Z",
+      "place": "Los Alamitos, CA, USA",
+      "publisher": "IEEE Comput. Soc. Press",
+      "ISBN": "978-0-8186-7689-5",
+      "pages": "254-263",
+      "proceedingsTitle": "17th IEEE Real-Time Systems Symposium",
+      "conferenceName": "17th IEEE Real-Time Systems Symposium",
+      "DOI": "10.1109/REAL.1996.563722",
+      "creators": [
+        {
+          "firstName": "Y.-T. S.",
+          "lastName": "Li",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "S.",
+          "lastName": "Malik",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "A.",
+          "lastName": "Wolfe",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-02-23T19:47:41Z",
+      "dateModified": "2025-02-23T19:47:41Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/VSIFRENR",
+      "itemID": 314,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-23T19:47:56Z",
+          "dateModified": "2025-02-23T19:47:56Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/S3686DYH",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\S3686DYH\\Li et al. - 1996 - Cache modeling for real-time software beyond direct mapped instruction caches.pdf",
+          "select": "zotero://select/library/items/S3686DYH"
+        }
+      ],
+      "notes": [],
+      "citationKey": "liCacheModelingRealtime1996",
+      "itemKey": "VSIFRENR",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/VSIFRENR"
     },
     {
       "key": "LS7CLJ36",
@@ -4426,6 +4869,47 @@
       "itemKey": "7ZA47DSX",
       "libraryID": 1,
       "select": "zotero://select/library/items/7ZA47DSX"
+    },
+    {
+      "key": "DT6KTBAX",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "A reservation-based algorithm for scheduling both periodic and aperiodic real-time tasks",
+      "date": "Dec./1995",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "http://ieeexplore.ieee.org/document/477246/",
+      "accessDate": "2025-02-25T11:12:38Z",
+      "rights": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html",
+      "volume": "44",
+      "pages": "1405-1419",
+      "publicationTitle": "IEEE Transactions on Computers",
+      "DOI": "10.1109/12.477246",
+      "issue": "12",
+      "journalAbbreviation": "IEEE Trans. Comput.",
+      "ISSN": "00189340",
+      "creators": [
+        {
+          "firstName": "K.G.",
+          "lastName": "Shin",
+          "creatorType": "author"
+        },
+        {
+          "name": "Yi-Chieh Chang",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-02-25T11:12:38Z",
+      "dateModified": "2025-02-25T11:12:38Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/DT6KTBAX",
+      "itemID": 316,
+      "attachments": [],
+      "notes": [],
+      "citationKey": "shinReservationbasedAlgorithmScheduling1995",
+      "itemKey": "DT6KTBAX",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/DT6KTBAX"
     },
     {
       "key": "AN2RQXB8",
