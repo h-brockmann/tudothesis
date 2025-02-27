@@ -1,4 +1,4 @@
-\chapter{Basics}
+\chapter{Basics}\label{ch:basics}
 This chapter provides a collection of basic knowledge as a foundation for this work.
 
 \section{Real Time Operating Systems}\label{sec:rtos}
@@ -7,9 +7,9 @@ Such systems are used in a wide range of applications, from multimedia systems a
 In all these systems, the correctness and timeliness of the applications are of utmost importance\cite{hambardeSurveyRealTime2014}.
 
 \subsection{Tasks and Jobs}\label{sec:tasks_and_jobs}
-According to the \textcite{IEEEStandardRealTime}, a task is defined as the "basic logical unit of concurrent program execution" that contains code. The standard also states that while the code within a task is executed sequentially, the tasks themselves may run in parallel with other tasks.
+According to the \textcite{IEEEStandardRealTime}, a task is defined as the ``basic logical unit of concurrent program execution'' that contains code. The standard also states that while the code within a task is executed sequentially, the tasks themselves may run in parallel with other tasks.
 
-Tasks can have deadlines based on their importance and the nature of their work. If a task misses its deadline due to insufficient computational time, the system and results may be affected differently. It is common to categorize task deadlines into three types \cite{dengSchedulingRealtimeApplications1997,abeniIntegratingMultimediaApplications1998,shindeComparisonRealTime2017}:
+Tasks can have deadlines based on their importance and the nature of their work. If a task misses its deadline due to insufficient computational time, the system and results may be affected differently. It is common to categorize task deadlines into three types\cite{dengSchedulingRealtimeApplications1997,abeniIntegratingMultimediaApplications1998,shindeComparisonRealTime2017}:
 \begin{enumerate}
 	\item \textbf{Hard Deadline:}
 	      Missing a hard deadline is considered a system failure. The task must complete by its deadline; otherwise, the system may enter an unsafe state.
@@ -18,6 +18,11 @@ Tasks can have deadlines based on their importance and the nature of their work.
 	\item \textbf{Soft Deadline:}
 	      Missing a soft deadline reduces the task's utility, but the result can still be used. The system can tolerate some deadline misses without significant impact on overall performance.
 \end{enumerate}
+
+A job is the specific execution instance of a given task when scheduled.
+One task may be assigned with multiple jobs.
+If a task is scheduled to execute every $x$ time units, the total number of jobs will be equal to the number of times $x$ fits within the inspection cycle.
+For a more comprehensive description on tasks and jobs, refer to \cref{sec:task}.
 
 \subsection{Real-time Scheduling}\label{sec:scheduling}
 Creating the schedule of given tasks to be executed some aspects
@@ -43,7 +48,7 @@ There are some scheduling techniques to determine the priority of tasks to be sc
 \subsection{\ac{LET}}\label{sec:let}
 
 \begin{figure}[ht]
-	\begin{subfigure}[c]{0.45\textwidth}
+	\begin{subfigure}[c]{0.32\textwidth}
 		\resizebox{\textwidth}{!}{%
 			\label{fig:model_ZET}
 			\input{./tikz/model_ZET.tex}
@@ -51,30 +56,34 @@ There are some scheduling techniques to determine the priority of tasks to be sc
 		\caption{Zero Execution Time}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[c]{0.45\textwidth}
+	\begin{subfigure}[c]{0.32\textwidth}
 		\resizebox{\textwidth}{!}{%
 			\label{fig:model_LET}
 			\input{./tikz/model_LET.tex}
 			}
 		\caption{Logical Execution Time}
 	\end{subfigure}
-	\begin{subfigure}[c]{0.450\textwidth}
+	\hfill
+	\begin{subfigure}[c]{0.32\textwidth}
 		\resizebox{\textwidth}{!}{%
 			\label{fig:model_BET}
 			\input{./tikz/model_BET.tex}
 		}
 		\caption{Bounded Execution Time}
 	\end{subfigure}
-	\caption{Display of three different }
+	\caption{Display of three different programming abstractions\cite{chakrabortyAdvancesRealTimeSystems2012}.}
+	\label{fig:model_ZET_LET_BET}
 \end{figure}
-\ac{LET} is a programming model used in real-time systems to decouple the timing behavior of tasks from the actual execution on the hardware. In the \ac{LET} model, the execution time of a task is defined logically rather than physically. This means that a task is considered to start and finish at predefined logical times, regardless of when it actually starts and finishes on the hardware.
+\cref{fig:model_ZET_LET_BET} displays three different approaches to create an abstraction of timing models: \ac{ZET}, \ac{LET} and \ac{BET}.
+With the approach of \ac{ZET} the assumption is to completely ignore the timing aspects of reading and writing output and just assume instantiations effects\cite{chakrabortyAdvancesRealTimeSystems2012}.
+\ac{LET} is a programming model used in real-time systems to decouple the timing behavior of tasks from the actual execution on the hardware. In the \ac{LET} model, the execution time of a task is defined logically rather than physically. This means that a task is considered to start and finish at predefined logical times, regardless of when it actually starts and finishes on the hardware\cite{chakrabortyAdvancesRealTimeSystems2012}.
+The \ac{BET} approach takes a step away from the abstraction of execution times by bounding them in time frames using deadlines marking upper bounds in which the interaction has to be finished\cite{chakrabortyAdvancesRealTimeSystems2012}.
 
-The \ac{LET} model provides several benefits:
-\begin{itemize}
-	\item \textbf{Predictability:} By defining the execution times logically, the \ac{LET} model ensures that the timing behavior of tasks is predictable and consistent, which is crucial for real-time systems.
-	\item \textbf{Determinism:} The \ac{LET} model allows for deterministic behavior, as the \ac{LET}s are fixed and do not depend on the actual execution times.
-	\item \textbf{Decoupling:} The \ac{LET} model decouples the timing behavior of tasks from the underlying hardware, making it easier to port the system to different hardware platforms.
-\end{itemize}
+The \ac{LET} model provides several benefits. Firstly, it ensures predictability by defining the execution times logically. This predictability is crucial for real-time systems as it guarantees that the timing behavior of tasks remains consistent and reliable.
+
+Secondly, the \ac{LET} model allows for deterministic behavior. Since the logical execution times are fixed and do not depend on the actual execution times, the system's behavior remains deterministic, which is essential for safety-critical applications.
+
+Lastly, the \ac{LET} model decouples the timing behavior of tasks from the underlying hardware. This decoupling makes it easier to port the system to different hardware platforms, enhancing the system's flexibility and adaptability.
 
 The \ac{LET} model is commonly used in safety-critical systems, such as automotive and aerospace applications, where predictability and determinism are essential.
 

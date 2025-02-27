@@ -1385,10 +1385,24 @@
           "creatorType": "editor"
         }
       ],
-      "tags": [],
-      "relations": {},
+      "tags": [
+        {
+          "tag": "LET"
+        },
+        {
+          "tag": "BET"
+        },
+        {
+          "tag": "ZET"
+        }
+      ],
+      "relations": {
+        "dc:relation": [
+          "http://zotero.org/users/local/etxm3DPf/items/NNA29DU2"
+        ]
+      },
       "dateAdded": "2025-02-26T21:40:34Z",
-      "dateModified": "2025-02-26T21:40:34Z",
+      "dateModified": "2025-02-26T22:19:04Z",
       "uri": "http://zotero.org/users/local/etxm3DPf/items/3VLQFQCE",
       "itemID": 350,
       "attachments": [
@@ -3003,6 +3017,63 @@
       "select": "zotero://select/library/items/C9RAYUET"
     },
     {
+      "key": "3KPU2DWL",
+      "version": 0,
+      "itemType": "conferencePaper",
+      "title": "A better polynomial-time schedulability test for real-time fixed-priority scheduling algorithms",
+      "date": "1997",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "http://ieeexplore.ieee.org/document/641267/",
+      "accessDate": "2025-02-27T09:58:28Z",
+      "place": "San Francisco, CA, USA",
+      "publisher": "IEEE Comput. Soc",
+      "ISBN": "978-0-8186-8268-1",
+      "pages": "36-45",
+      "proceedingsTitle": "Proceedings Real-Time Systems Symposium",
+      "conferenceName": "Real-Time Systems Symposium",
+      "DOI": "10.1109/REAL.1997.641267",
+      "creators": [
+        {
+          "firstName": "C.-C.",
+          "lastName": "Han",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "H.-Y.",
+          "lastName": "Tyan",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "harmonic"
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2025-02-27T09:58:28Z",
+      "dateModified": "2025-02-27T11:04:25Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/3KPU2DWL",
+      "itemID": 360,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-27T10:22:03Z",
+          "dateModified": "2025-02-27T10:22:03Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/A5IKNJJI",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\A5IKNJJI\\Han und Tyan - 1997 - A better polynomial-time schedulability test for real-time fixed-priority scheduling algorithms.pdf",
+          "select": "zotero://select/library/items/A5IKNJJI"
+        }
+      ],
+      "notes": [],
+      "citationKey": "hanBetterPolynomialtimeSchedulability1997",
+      "itemKey": "3KPU2DWL",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/3KPU2DWL"
+    },
+    {
       "key": "NDNYAHPG",
       "version": 0,
       "itemType": "bookSection",
@@ -3632,6 +3703,63 @@
       "select": "zotero://select/library/items/UIW2WZZU"
     },
     {
+      "key": "XCTTVJCB",
+      "version": 0,
+      "itemType": "conferencePaper",
+      "title": "Load adjustment in adaptive real-time systems",
+      "date": "1991",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "http://ieeexplore.ieee.org/document/160369/",
+      "accessDate": "2025-02-27T11:07:45Z",
+      "place": "San Antonio, TX, USA",
+      "publisher": "IEEE Comput. Soc. Press",
+      "ISBN": "978-0-8186-2450-6",
+      "pages": "160-170",
+      "proceedingsTitle": "[1991] Proceedings Twelfth Real-Time Systems Symposium",
+      "conferenceName": "Twelfth Real-Time Systems Symposium",
+      "DOI": "10.1109/REAL.1991.160369",
+      "creators": [
+        {
+          "firstName": "T.-W.",
+          "lastName": "Kuo",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "A.K.",
+          "lastName": "Mok",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "harmonic"
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2025-02-27T11:07:45Z",
+      "dateModified": "2025-02-27T11:59:03Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/XCTTVJCB",
+      "itemID": 364,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-27T11:25:34Z",
+          "dateModified": "2025-02-27T11:25:34Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/FRT8PGDF",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\FRT8PGDF\\Kuo und Mok - 1991 - Load adjustment in adaptive real-time systems.pdf",
+          "select": "zotero://select/library/items/FRT8PGDF"
+        }
+      ],
+      "notes": [],
+      "citationKey": "kuoLoadAdjustmentAdaptive1991",
+      "itemKey": "XCTTVJCB",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/XCTTVJCB"
+    },
+    {
       "key": "DPFLHCVN",
       "version": 0,
       "itemType": "conferencePaper",
@@ -3994,10 +4122,14 @@
           "creatorType": "author"
         }
       ],
-      "tags": [],
+      "tags": [
+        {
+          "tag": "harmonic"
+        }
+      ],
       "relations": {},
       "dateAdded": "2025-02-13T06:27:28Z",
-      "dateModified": "2025-02-13T06:27:28Z",
+      "dateModified": "2025-02-27T12:01:37Z",
       "uri": "http://zotero.org/users/local/etxm3DPf/items/PW8GP3V9",
       "itemID": 227,
       "attachments": [
@@ -4353,7 +4485,11 @@
         }
       ],
       "tags": [],
-      "relations": {},
+      "relations": {
+        "dc:relation": [
+          "http://zotero.org/users/local/etxm3DPf/items/3VLQFQCE"
+        ]
+      },
       "dateAdded": "2024-11-07T20:27:19Z",
       "dateModified": "2024-11-07T20:27:19Z",
       "uri": "http://zotero.org/users/local/etxm3DPf/items/NNA29DU2",

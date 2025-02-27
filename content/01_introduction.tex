@@ -1,70 +1,50 @@
 \chapter{Introduction}\label{ch:introduction}
 \section{Background and Context}\label{sec:background}
-The use of embedded systems is in current times more and more ubiquitous and is used in a wide range of applications. 
-Mostly, but not solely, known for their use in the automotive industry, embedded systems are used on a daily by many people.
-Since the uses are often in situations in which the system has to react in real-time, the systems have to be designed with a high level of reliability and efficiency.
-This is especially true for systems that are used in the automotive industry, where the system has to react in real-time to the environment and has to be able to make decisions in a fraction of a second.
-The use of embedded systems in the automotive industry is not only limited to the control of the engine or the transmission, but also includes the control of the infotainment system, the climate control, and the driver assistance systems.
-To ensure that the system is able to react in real-time, the system has to be designed to be able to handle the required tasks in a timely manner.
-The scheduling of the tasks need to consider the longest run times of given tasks, also known as the \ac{WCET}.
-The \ac{WCET} is the maximum time that a task needs to execute on the system.
-Determining the \ac{WCET} is a complex task to be done in different ways.
-One way is the use of static analysis, which is done by analyzing the source code of the system.
-Another way is the use of dynamic analysis, which is done by executing the system and measuring the time that the system needs to execute the task.
-Either way the analysis has to be checked for its correctness and the results have to be validated.
-To be able to do this, the analysis methods are tested against a set of benchmarks, which are designed in a way that the \ac{WCET} is known.
-Each benchmark has it's own characteristics and is used to test the analysis methods for dealing with these characteristics and patterns.
-For example do many benchmarks have their own limitation in the aspects of operating systems, compilers and system configurations.\cite{falk_taclebench_2016}
-
-\subsection{RTOS}\label{subsec:rtos}
-
-\subsection{\ac{WCET} and \ac{WCRT}}\label{subsec:wcet_wcrt}
-Two critical aspects of timing analysis are a tasks \ac{WCET} and \ac{WCRT}.
-
-The \ac{WCET} is the maximum time that a task requires to complete its execution on a specific hardware platform.
-It is a critical parameter in the design and analysis of real-time systems, as it helps in ensuring that tasks will meet their deadlines under all possible conditions.
-The \ac{WCET} is determined through various methods, including static analysis, which involves examining the source code and the hardware characteristics, and dynamic analysis, which involves measuring the execution time of tasks during system operation\cite{wilhelmWorstcaseExecutiontimeProblem2008}.
-Accurate determination of \ac{WCET} is essential for the reliability and safety of real-time systems, especially in safety-critical applications such as automotive and aerospace industries\cite{kirnerWCETAnalysisTool2012}.
-
-On the other hand, the \ac{WCRT} is the maximum time it takes for a task to respond to an event or interrupt.
-This includes not only the execution time of the task itself but also any delays caused by other tasks or system overheads, such as context switching, interrupt handling, and scheduling delays\cite{buttazzoHardRealTimeComputing2024}.
-The \ac{WCRT} is an important metric for evaluating the responsiveness of real-time systems, as it provides a comprehensive view of the system's ability to handle events within specified time constraints.
-Analyzing \ac{WCRT} involves considering the interactions between tasks, the scheduling policy, and the system's architecture\cite{davisSurveyHardRealtime2011}.
-Ensuring that the \ac{WCRT} meets the required deadlines is crucial for the correct functioning of real-time systems, particularly in environments where timely responses are critical.
-
-\subsection{Benchmarks}\label{subsec:benchmarks}
-Benchmarks are vital for analysis tools.
-They provide known environments with known characteristics and timing aspects to enable validation, improvement and comparison of given analysis tools.
-Some widely known benchmarks are the Mälardalen WCET Benchmark Suite and TACLeBench. 
-The Mälardalen WCET Benchmark Suite consists of a collection of real-time programs with known WCETs. It is widely used in the research community to evaluate WCET analysis methods\cite{gustafssonMalardalenWCETBenchmarks2012}. 
-TACLeBench includes a variety of programs from different application domains and is designed to test the performance of timing analysis tools under diverse conditions\cite{falkTACLeBenchBenchmarkCollection2016}.
+In current times, embedded systems are more ubiquitous and are used in a wide range of applications. 
+Mostly, but not solely, known for their use in the automotive industry, many people use embedded systems daily.
+Since the uses are often in situations where the system must react in real-time, the systems must be designed with high reliability and efficiency.
+For many systems promptly decision making and immediate reaction is crucial, like in the automotive industry, where for example the break control or airbag system must react in a fraction of a second to safe lives. 
+Staying at the example of the automotive industry, the use of embedded systems is not only limited to the control of the engine or the transmission, but also includes the control of the infotainment system, the climate control, and the driver assistance systems.
+To ensure that the system can react in real-time, the system has to be designed to handle the required tasks on time.
+Since many variables of the circumstances are inconsistent, but may be crucial for a system to react in time, the system must be designed to handle the worst-case scenario.
+This also means that the system must be designed to handle the longest time a task needs to execute on the given system, also known as the \ac{WCET}.
+With the \ac{WCET} not known, it is the goal of analysis tools to bound the \ac{WCET} as precise as possible while not over- or underestimating the time too much.
+Determining the \ac{WCET} is a complex task in different ways.
+One way is the use of static code analysis, which is done by analyzing the system's source code and deriving the needed execution time\cite{buttazzoHardRealTimeComputing2024}.
+Another way is dynamic and measurement based analysis, which is done by executing and tracing the functions of the system deriving the time that the system needed to execute the task\cite{buttazzoHardRealTimeComputing2024}.
+Either way, the analysis has to be checked for correctness, and the results must be validated.
+To do this, the analysis methods are tested against a set of benchmarks, standardized pieces of software to portrait different software designs and patterns, like recursion, loops, memory access, and so on.
+Some collections of benchmark software like the Mälardalen benchmark\cite{gustafssonMalardalenWCETBenchmarks2012} or the TACLeBench\cite{falk_taclebench_2016} are used to present a broad collection of benchmarks to test the analysis tools.
+But even with the benchmark collections, there exist some restrictions like limitations in operating systems, compilers and system configurations.\cite{falk_taclebench_2016,gustafssonMalardalenWCETBenchmarks2012}
 
 \section{Problem Statement}\label{sec:problem_statement}
 Existing tools often do lack some parts of occurring problems in real life.
 For most parts of the analysis, the benchmarks do not cover all possible scenarios and system configurations.
-For example, TASKers\cite{eichler_taskers_2018} is built in a way to only construct a single chain of tasks in the resulting task set.
-This limitation means that the resulting task set is the sum of all \ac{WCET} of each task in the chain, which does not reflect the complexity of real-world systems where multiple chains and interactions between tasks are common.
-Additionally, many benchmarks do not account for variations in operating systems, compilers, and hardware configurations, which can significantly impact the \ac{WCET} and \ac{WCRT} of tasks.
+The Mälardalen benchmark\cite{gustafssonMalardalenWCETBenchmarks2012} for example is lacking bigger benchmark software to represent the complexity of real-world systems.
+And TASKers\cite{eichler_taskers_2018} is built in a way to only construct a single chain of tasks in the resulting task set.
+Additionally, many benchmarks do not account for variations in operating systems, compilers\cite{gustafssonMalardalenWCETBenchmarks2012}, and hardware configurations, which can significantly impact the \ac{WCET} and \ac{WCRT} of tasks.
 These limitations highlight the need for more comprehensive benchmarks that can better represent the diverse and complex nature of real-time systems.
 
-\section{Research Questions}\label{sec:research_questions}
-This thesis aims to address the following research questions:
+\section{Research Questions and Objective}\label{sec:research_questions_objectives}
+This thesis aims to address several key research questions related to the generation of task sets with known timing characteristics:
 
 \begin{enumerate}
-	\item How can we generate task sets with known \ac{WCET} and \ac{WCRT} that accurately reflect the complexity of real-world systems?
-	\item What methods can be employed to ensure the generated task sets are flexible and diverse, allowing for variations in system configurations, operating systems, and hardware platforms?
-	\item How can we validate the correctness and reliability of the generated task sets in terms of their timing characteristics?
-	\item How can the generated task sets be used to improve the accuracy and efficiency of \ac{WCET} and \ac{WCRT} analysis methods?
+	\item How can task sets with known \ac{WCET} and \ac{WCRT} be generated to accurately reflect the complexity of real-world systems?
+	\item What methods can be employed to ensure that the generated task sets are flexible and diverse, allowing for variations in system configurations, operating systems, and hardware platforms?
+	\item How can the correctness and reliability of the generated task sets be validated in terms of their timing characteristics?
+	\item How can the generated task sets be utilized to improve the accuracy and efficiency of \ac{WCET} and \ac{WCRT} analysis methods?
 \end{enumerate}
 
-This thesis plans to tackle the generation of systems with known task sets and thus known \ac{WCET} and \ac{WCRT} for each task.
-Besides that the generator shall create an opportunity for flexible variations in generating different systems.
-To create diversity the generation 
+By addressing these questions, this thesis aims to develop a framework for generating task sets with known \ac{WCET} and \ac{WCRT}, providing a valuable resource for the evaluation and improvement of timing analysis tools.
+Besides that the generator shall create an opportunity for flexible variations in generating different systems by not limiting itself to a single target compiler, but targeting a meta-model of a system to later on allow for diverse porting to different compilers and operating systems.
 
-\section{Research Objectives}\label{sec:research_objectives}
-This work targets this weaknesses with the goal to add a new approach to the existing concepts to tackle the problem of generating systems with known response times.
-In order to overcome known problems the plan is to create the resulting system configuration from the other end
+Since in real-life situations it is near impossible to derive all possible scenarios and branches of a piece of software 
+In order to overcome known problems the plan is to create the resulting system configuration bottom up to instantiate conditions 
 
-\section{Structure of the Thesis}\label{sec:structure}
-
-\todo{insight in the following chapters}
+\section{Structure of the Thesis}\label{sec:structure} \todo{möglichst vollständiger Überblick über die Arbeit}
+The first chapter of this thesis is the introduction, which provides an overview of the background, context, problem statement, research questions, and research objectives.
+The chapter \cref{ch:basics} presents a review of the literature on real-time systems, \ac{WCET} and \ac{WCRT} analysis, and benchmarking.
+Further some basic concepts are introduced to provide a foundation for the subsequent chapters.
+The chapter \cref{ch:approach} outlines the proposed approach for generating task sets with known \ac{WCET} and \ac{WCRT}, including the methods and techniques used in the generation process.
+The chapter \cref{ch:conclusion_and_discussion} gives some insight in what has been developed in this thesis, what has been achieved and what can be done in the future.
+The thesis concludes with a summary of the findings and a discussion of the implications of the research.
