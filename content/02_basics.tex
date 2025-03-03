@@ -133,7 +133,9 @@ Cache misses can significantly impact the execution time of a task, as accessing
 This can lead to increased execution times and variability in the timing behavior of tasks.
 For this reason it is of interest to depict the cache's status to know if the data access results in a cache miss or a cache hit.
 
-\todo{timing accidents - Chen 04 10/53}
+To tackle the problem of keeping track of cache contents \ac{AI}s may be used.
+With such interpretation of examined programs it is possible to formalize the memory accesses and assignments\cite{cousotAbstractInterpretationUnified1977}.
+This being a great chance, it is still needed to have knowledge of the caches status at the point where the program is started, to decide whether a cache miss or cache hit is expectable. 
 
 Static analysis is advantageous because it does not require actual execution of the code, making it suitable for early stages of development. However, it can be overly conservative, leading to pessimistic WCET estimates due to the need to account for all possible execution paths and hardware behaviors.
 
@@ -148,11 +150,6 @@ This is particularly useful for complex systems where static analysis may be ove
 However, measurement-based analysis also has limitations, such as the difficulty in guaranteeing that the worst-case scenario has been observed during testing. 
 Additionally, this approach may not be suitable for early stages of development when the hardware is not yet available, in which case appropriate simulators are used trying to mimic real hardware.\cite{wilhelmWorstcaseExecutiontimeProblem2008}
 To address these challenges, hybrid approaches that combine measurement-based and static analysis techniques are often employed to achieve more accurate and reliable WCET estimates\cite{kelterWCETAnalysisOptimization}.
-
-Early flowcharts and \ac{AI}s described by \textcite{cousotAbstractInterpretationUnified1977}
-
-\todo{cache misses}
-\todo{overestimation \& pessimism}
 
 \begin{figure}[htbp]
 	\centering

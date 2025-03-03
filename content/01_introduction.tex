@@ -2,37 +2,37 @@
 \section{Background and Context}\label{sec:background}
 In current times, embedded systems are more ubiquitous and are used in a wide range of applications. 
 Mostly, but not solely, known for their use in the automotive industry, many people use embedded systems daily.
-Since the uses are often in situations where the system must react in real-time, the systems must be designed with high reliability and efficiency.
-For many systems promptly decision making and immediate reaction is crucial, like in the automotive industry, where for example the break control or airbag system must react in a fraction of a second to safe lives. 
-Staying at the example of the automotive industry, the use of embedded systems is not only limited to the control of the engine or the transmission, but also includes the control of the infotainment system, the climate control, and the driver assistance systems.
+Since the use cases are often in situations where the system must react in real-time, the systems must be designed with high reliability and efficiency.
+For many systems, prompt decision-making and immediate reaction are crucial, like in the automotive industry, where, for example, the break control or airbag system must react in a fraction of a second to save lives. 
+Staying at the example of the automotive industry, the use of embedded systems is not only limited to the control of the engine or the transmission but also includes the control of the infotainment system, the climate control, and the driver assistance systems.
 To ensure that the system can react in real-time, the system has to be designed to handle the required tasks on time.
-Since many variables of the circumstances are inconsistent, but may be crucial for a system to react in time, the system must be designed to handle the worst-case scenario.
+Since many variables are inconsistent but may be crucial for a system to react in time, the system must be designed to handle the worst-case scenario.
 This also means that the system must be designed to handle the longest time a task needs to execute on the given system, also known as the \ac{WCET}.
-With the \ac{WCET} not known, it is the goal of analysis tools to bound the \ac{WCET} as precise as possible while not over- or underestimating the time too much.
+With the \ac{WCET} not known, analysis tools aim to bound the \ac{WCET} as precisely as possible while not over- or underestimating the time too much.
 Determining the \ac{WCET} is a complex task in different ways.
 One way is the use of static code analysis, which is done by analyzing the system's source code and deriving the needed execution time\cite{buttazzoHardRealTimeComputing2024}.
-Another way is dynamic and measurement based analysis, which is done by executing and tracing the functions of the system deriving the time that the system needed to execute the task\cite{buttazzoHardRealTimeComputing2024}.
+Another way is dynamic and measurement-based analysis, which is done by executing and tracing the system's functions, deriving the time that the system needed to execute the task\cite{buttazzoHardRealTimeComputing2024}.
 Either way, the analysis has to be checked for correctness, and the results must be validated.
-To do this, the analysis methods are tested against a set of benchmarks, standardized pieces of software to portrait different software designs and patterns, like recursion, loops, memory access, and so on.
+To do this, the analysis methods are tested against a set of benchmarks and standardized pieces of software to portray different software designs and patterns, like recursion, loops, memory access, and so on.
 Some collections of benchmark software like the Mälardalen benchmark\cite{gustafssonMalardalenWCETBenchmarks2012} or the TACLeBench\cite{falkTACLeBenchBenchmarkCollection2016} are used to present a broad collection of benchmarks to test the analysis tools.
-But even with the benchmark collections, there exist some restrictions like limitations in operating systems, compilers and system configurations.\cite{falkTACLeBenchBenchmarkCollection2016,gustafssonMalardalenWCETBenchmarks2012}
+However, even with the benchmark collections, some restrictions exist, such as limitations in operating systems, compilers, and system configurations.\cite{falkTACLeBenchBenchmarkCollection2016,gustafssonMalardalenWCETBenchmarks2012}
 
 \section{Problem Statement}\label{sec:problem_statement}
-Existing tools often do lack some parts of occurring problems in real life.
+Existing tools often lack some parts of the problems that occur in real life.
 For most parts of the analysis, the benchmarks do not cover all possible scenarios and system configurations.
-\textcite{gustafssonMalardalenWCETBenchmarks2012} listed some weak-points to be improved in the Mälardalen benchmarks.
+\textcite{gustafssonMalardalenWCETBenchmarks2012} listed some weak points to be improved in the Mälardalen benchmarks.
 The size of the benchmarks is one aspect \citeauthor{gustafssonMalardalenWCETBenchmarks2012} see as a point of interest.
-While the smaller sized benchmarks are fine to check for a specific type of programming construct, they do not show how tools will handle with bigger programs.
-Due to the size and lack of complexity the Mälardalen benchmarks can not compare with real-time industrial applications.
-With few exceptions the algorithms and programs to not represent the code size and code constructs, that would be used in an industrial use case.
-Further is explained the focus relies mostly on flow analysis while the influence of e.g.~caches, data caches and other hardware effects is not depicted by the benchmarks.
+While the smaller-sized benchmarks are acceptable to check for a specific type of programming construct, they do not show how tools will handle bigger programs.
+Due to the size and lack of complexity, the Mälardalen benchmarks can not be compared with real-time industrial applications.
+With few exceptions, the algorithms and programs do not represent the code size and code constructs that would be used in an industrial use case.
+Further, it is explained the focus relies mainly on flow analysis while the influence of, e.g.~caches, data caches, and other hardware effects is not depicted by the benchmarks.
 While not depicting hardware effects, the benchmarks of the Mälardalen project are only written in C.
 
-With the Mälardalen benchmark project as example it shows a broad range of aspects benchmarks ideally represent.
+The Mälardalen benchmark project, for example, shows a broad range of aspects that benchmarks ideally represent.
 
-Other researchers have chosen to tackle the problem by building generators that create systems presenting interesting problems with known response times. 
-These generators are designed to produce synthetic task sets trying to mimic the behavior and complexity of real-world applications. 
-By controlling the parameters and characteristics of the generated tasks, researchers can create benchmarks that are tailored to specific analysis needs.
+Other researchers have tackled the problem by building generators that create systems presenting interesting problems with known response times. 
+With use of these generators task sets are generated, that are meant to  depict real-world applications' behavior and complexity as close as possible and feasible. 
+By controlling the parameters and characteristics of the generated tasks, researchers can create benchmarks tailored to specific analysis needs.
 Some well known generators are TASKers\cite{eichlerTASKersWholeSystemGenerator2018}, \textit{Sys}WCET\cite{dietrichSysWCETWholeSystemResponseTime} or GenEE\cite{eichlerGENEEBenchmarkGenerator2019}.
 
 These approaches highlight the importance of having flexible and configurable generators that can produce diverse and representative task sets for benchmarking purposes.
@@ -40,32 +40,31 @@ These approaches highlight the importance of having flexible and configurable ge
 \section{Research Questions and Objective}\label{sec:research_questions_objectives}
 This thesis aims to address several key research questions related to the generation of task sets with known timing characteristics:
 
+\todo{REWRITE}
 \begin{enumerate}
-	\item How can task sets with known response times be generated to accurately reflect the complexity of real-world systems?
+	\item How can task sets with known response times be generated to reflect the complexity of real-world systems accurately?
 	\item What methods can be employed to ensure that the generated task sets are flexible and diverse, allowing for variations in system configurations, operating systems, and hardware platforms?
 	\item How can the correctness and reliability of the generated task sets be validated in terms of their timing characteristics?
 	\item How can the generated task sets be utilized to improve the accuracy and efficiency of timing analysis methods?
 \end{enumerate}
 
-By addressing these questions, this thesis aims to develop a framework for generating task sets with known \ac{WCET} and \ac{WCRT}, providing a valuable resource for the evaluation and improvement of timing analysis tools.
-Besides that the generator shall create an opportunity for flexible variations in generating different systems by not limiting itself to a single target compiler, but targeting a meta-model of a system to later on allow for diverse porting to different compilers and operating systems.
+With these questions in mind, this thesis is an approach to help expand the foundation of benchmarks to be used in the world of timing analysis.
+Besides that, the generator shall create an opportunity for flexible variations in generating different systems by not limiting itself to a single target compiler but targeting a meta-model of a system to allow for diverse porting to different compilers and operating systems later on.
 
-Since in real-life situations it is near impossible to derive all possible scenarios and branches of a piece of software 
-In order to overcome known problems the plan is to create the resulting system configuration bottom up.
+In real-life situations, it is nearly impossible to derive all possible scenarios and branches of a piece of software. 
+To overcome known problems, the plan is to create the resulting system configuration bottom-up.
 This approach is intended to allow for a more flexible and diverse generation of task sets that can better represent the complexity of real-world systems.
 
-
 \section{Structure of the Thesis}\label{sec:structure}
-This thesis is structured into several chapters, each building upon the previous to provide a comprehensive understanding of the research conducted.
+This thesis is structured into the following five chapters.
 
 \cref{ch:basics} delves into the fundamental concepts and literature review related to real-time systems, \ac{WCET} and \ac{WCRT} analysis, and benchmarking. 
 This chapter introduces essential concepts and theories that form the basis for the subsequent chapters.
 
-In \cref{ch:concept} the proposed approach for \textit{Generating Real-Time System Specifications with Known Response Times} is outlined. 
+In \cref{ch:concept}, the proposed approach for \textit{Generating Real-Time System Specifications with Known Response Times} is outlined. 
 This chapter details the methods and techniques employed in the generation process, providing a clear understanding of the research methodology.
 
-The \cref{ch:implementation} provides an in-depth look at the implementation of the proposed approach. 
-It describes the practical aspects of the research, including the tools, technologies, and processes used to bring the theoretical concepts to life.
-
-Finally \cref{ch:summary_discussion}, concludes the thesis with a summary of the findings and a discussion of their implications for the research. 
+The \cref{ch:implementation} provides an in-depth look at the implementation of the concept described in \cref{ch:concept}.
+ 
+Finally, \cref{ch:summary_discussion} concludes the thesis with a summary of the findings and a discussion of their implications for the research. 
 This chapter reflects on the research questions and objectives, evaluates the success of the proposed approach, and suggests areas for future work.
