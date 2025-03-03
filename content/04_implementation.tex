@@ -88,9 +88,9 @@ Varying the amount per repetition burdens many checks to ensure the represented 
 Some checks are simple, but challenging in combination, here is an example of two conditions that must be met.
 
 \begin{enumerate}
-    \item Every period instance shall be assigned a computational value above or equal to $1$.
-    \item Every period instance shall be assigned a computational value lower or equal to the period itself.
-    \item The assigned computational values of all children of a parent node shall not equal or exceed the period of the parent node.
+\item Every period instance shall be assigned a computational value above or equal to $1$.
+\item Every period instance shall be assigned a computational value lower or equal to the period itself.
+\item The assigned computational values of all children of a parent node shall not equal or exceed the period of the parent node.
 \end{enumerate}
 
 The first and second condition are simple checks to ensure that the computational time assigned to a period is schedulable within the period itself and contain any time to be assigned to the later generated tasks.
@@ -100,9 +100,9 @@ It limits the computational amount the children of a node may have to ensure tha
 If no such check was in place, the parent node would be assigned a computational time that would not fit into the period itself, making the parent node unschedulable.
 For example, consider a small tree consisting of seven nodes:
 \begin{itemize}
-    \item A root node with a period of 4000ms.
-    \item Two children nodes with a period of 2000ms.
-    \item Four leaf nodes with a period of 1000ms.
+\item A root node with a period of 4000ms.
+\item Two children nodes with a period of 2000ms.
+\item Four leaf nodes with a period of 1000ms.
 \end{itemize}
 With a hyperperiod of 4000ms and an utilization of $1$, the computational time to distributed equals 4000ms.
 Assume a distribution of 250ms for the top-most layer, 750ms for the second layer, 3000ms for the last layer.
