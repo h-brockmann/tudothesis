@@ -34,10 +34,10 @@ The initial starting value is set to $1$, and all subsequent periods are calcula
 This factor $f$ is an integer value to ensure the harmonic property of the generated set of tasks (see \cref{sec:taskset}).
 
 The selection of the factor is designed to be a result of a \ac{RNG}, which can be configured in two different ways currently.
-One way the \ac{RNG} can be configured is for it to have a mean value and use a Poisson distribution to select the factor.
+One way the \ac{RNG} can be configured is to have a mean value and use a Poisson distribution to select the factor.
 This approach keeps the periods in a certain range while allowing outliers and some variation.
-The other way is to provide a list of possible values with a manual distribution from which the factor randomly is selected.
-For example, if the list of possible values is \{2, 2, 2, 2, 2, 2, 2, 3, 3, 4\}, statistically every tenth every value will be a 4, every fifth value a 3 and the rest will be 2.
+The other way is to provide a list of possible values with a manual distribution from which the factor is randomly selected.
+For example, if the list of possible values is \{2, 2, 2, 2, 2, 2, 2, 3, 3, 4\}, statistically, every tenth every value will be a 4, every fifth value a 3 and the rest will be 2.
 This approach is designed to allow for a more controlled generation of the periods, keeping the exponential growth of the periods and thus allowing the graph to be built at bay.
 The values and size of the list may be varied to fit the current needs of the generation process.
 
