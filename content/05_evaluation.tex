@@ -1,0 +1,79 @@
+\chapter{Summary and Discussion}\label{ch:summary_discussion}
+In this chapter, we summarize the key findings and discuss their implications. The chapter is structured as follows:
+
+\cref{sec:summary} provides a summary of the thesis, highlighting the main contributions and results.
+
+\cref{sec:discussion} discusses the research questions presented in the introduction, addressing each question in detail.
+
+\cref{sec:future_work} outlines potential future work and improvements that can be made to the current implementation.
+
+\section{Summary}\label{sec:summary}
+The motivation for this thesis was to address the limitation of existing benchmarks.
+These benchmarks often do lack a complexity, e.g.~inter-task communication and size of variation between the given programs.
+The Thesis presents an idea to enable the generation of complex task-sets while keeping the utilization of the generated task-set at bay to stay schedulable.
+This is ensured by starting the generation process at the other as previously presented generators.
+By selecting \ac{RMS} as the scheduling algorithm for a harmonic task-set the generation can start with a final utilization up to $1$, which would occur if every job is executed with the task's \ac{WCET}, it still is assured to fit into the task-set's hyperperiod and be schedulable.
+Splitting the desired full load onto generated tasks a variation of different task variants is created.
+These tasks linked into chains enable a complex conditional string of effects.
+Whilst not presented with an implementation of the conditional construct, the portrayed concept is a base for future work.
+With a task-set containing multiple chains, while being independent of hardware there is a great chance to built on this to create a multi-platform generator that may be used for many benchmarking tests.
+
+\section{Discussion}\label{sec:discussion}
+In the introduction four research questions were presented, which are addressed in the following \cref{subsec:summary:Q1,subsec:summary:Q2,subsec:summary:Q3,subsec:summary:Q4}.
+
+\subsection{How can task sets with known response times be generated to accurately reflect the complexity of real-world systems?}\label{subsec:summary:Q1}
+The presented generation process leaves room for improvement, but some aspects make the process very dynamic and allows for big and complex systems to be generated.
+A configurable amount of chains of tasks with inter-task communication, as described in \cref{sec:concept_job_chains}, gives the generator the possibility to create a set of tasks representing multiple different programs to be run on a single core.
+Further would the generator highly benefit from using the different run times generated per task.
+% The in \cref{}
+\todo{Workload splits erklären?}
+
+\subsection{What methods can be employed to ensure that the generated task sets are flexible and diverse, allowing for variations in system configurations, operating systems, and hardware platforms?}\label{subsec:summary:Q2}
+Due to the hardware independent modelling this generator will allow the use on different platforms and system with different configurations, while being restricted to the in \cref{sec:model} presented model.
+This independence allows for a broad use of the task-set, but may be no solution for the problem the Mälardalen benchmarks\cref{gustafssonMalardalenWCETBenchmarks2012} have as well, the bad support for measurement-based analysis.
+The effects of the hardware are currently not considered.
+
+\subsection{How can the correctness and reliability of the generated task sets be validated in terms of their timing characteristics?}\label{subsec:summary:Q3}
+With taking the concept of \ac{LET} in consideration, the conditions described in \cref{sec:concept_job_chains} shall be selected in a way to restrict the schedule to only allow the \ac{WCRT} per chain to occur with one specific input configuration per chain.
+With the in \cref{sec:chains} presented idea it is assured for the maximum chains and chain-prefixes to be chosen.
+
+By knowing all possible execution times it is a task of eliminating the theoretically existing variant chains to be impossible to appear in a schedule with any other configuration.
+Sadly this thesis may not show this in effect, but eliminating combinations of longer execution times is a doable task.
+The easiest solution would be added conditions to only allow for jobs with shorter execution times if the input configuration does not match, to keep the own generated solution the maximum.
+All in all the key of the concept is the overarching knowledge of the execution times, even without any conditions applied the absolute worst case is known due to limiting it beforehand by deciding what utilization has to be met.
+
+\subsection{How can the generated task sets be utilized to improve the accuracy and efficiency of timing analysis methods?}\label{subsec:summary:Q4}
+The task set itself won't be applicable to be tested by existing analysis methods, since no code is produced.
+This thesis targets to be the first step in a walk towards a chain of generators leading finally to a system-generator containing hardware specifications and runnable code to be executed and tested.
+With the next steps to be built it will enable the fast generation of new benchmarks with different execution paths and limitation to test against.
+
+\section{Future Work}\label{sec:future_work}
+While the current implementation has its limitations and unimplemented planned features it leaves possibilities for future work.
+
+\subsection{Conditional Chains}\label{subsec:future_work:conditional_chains}
+The elephant in the room has to be the missing use of conditional restrictions on the chains.
+With the idea described in \cref{sec:chains} it is a foreseeable solution to be implemented.
+
+\subsection{Multi-core support}\label{subsec:future_work:multicore}
+Since current developments is strengthening the use of multi core processors for embedded systems, the generation process has to reevaluated to accommodate for multi-core implications given.
+The communication and shared access to memory would be topics to address as well as the scheduling aspect of multiple cores to be concerned while creating the task-set.
+
+\subsection{Harmonic Task Sets}\label{subsec:future_work:harmonic_task_sets}
+The current implementation of the task set generator is limited to harmonic task sets.
+To expand the generator to non-harmonic task sets, the generator must be extended to support the generation of arbitrary task sets.
+This extension would require a more complex algorithm, since the overlapping of timing windows complicate the planning by a great margin.
+The benefit of using a tree would no longer be applicable, since the tree would not be able to represent the overlapping of timing windows.
+Maybe by splitting the overlap and mapping them with the corresponding period frames, a modified tree could be used to represent the task set.
+
+\subsection{Export to System Model}\label{subsec:future_work:export_to_amalthea}
+One step getting towards portable system models employing the task-sets generated with the presented generator could be an export function to comply with a modeling framework.
+
+One example of such framework is \textit{AMALTHEA}\cite{itea2officeAMALTHEAProjectResults2015} or respectively its successor project \textit{AMALTHEA4public}\cite{johan.van.der.heide[at]itea4.orgITEA4Project}.
+AMALTHEA is an open-source framework for modeling and analyzing embedded multi-core systems, primarily used in the automotive industry. 
+It provides a standardized way to describe hardware and software components, their interactions, and timing constraints, facilitating the development and validation of complex embedded systems.
+
+Going forward from here existing software like \textit{MATERIAL}\cite{beckerMATERIALFrameworkModeling2024} could enable the use of the generated task-set with different hardware models.
+
+% Add more dependencies and used resources.
+% The in \cref{subsec:impl:spanning-the-tree} presented distribution of computational time among instances of the same period still is a simple uniform distribution.
+% Whilst working fine, there may be a need for a more complex distribution depending on future requirements.

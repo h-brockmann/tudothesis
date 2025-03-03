@@ -1,0 +1,170 @@
+\chapter{Implementation}\label{ch:implementation}
+With the concept described in the previous \cref{ch:concept}, the implementation of the generator is described in this chapter.
+
+\section{Overview}\label{sec:overview}
+This section provides an overview of the implementation structure and main components of the generator.
+The implementation is done in Java~21 using the JGraphT library to create the graph described in \cref(sec:concept).
+Java was mainly selected to allow later extensibility with an eye toward a possible integration into the AMALTHEA model, a model for representing real-time systems, using one of their libraries (see \cref{sec:future_work}).
+
+The generator is designed to flexible and versatile while creating deterministic and repeatable results.
+For this reason the main application takes commandline arguments referencing configuration files.
+In the configuration is a given seed value for the random number generator used in the generation process.
+Every use of random numbers is based on this seed value, which allows for the reproduction of the results whilst keeping the generation process flexible.
+
+\section{Main Application}\label{sec:main-application}
+The main application is a simple bootstrapping class that initializes the generator, runs the generation process, and outputs the results.
+For the generation the previous mentioned configuration files are read and used to instantiate the desired input values.
+
+\section{Graph Builder}\label{sec:graph_builder}
+The main component of the generator is the graph builder, which designed with a builder pattern in mind.
+It is employed to build a unidirectional graph without cycles in multiple steps, representing the graph described in \cref{sec:taskset}, especially with \cref{fig:graph} in mind.
+This graph is represented by a class named \textit{TaskGraph}, a wrapping subclass of the \textit{JGraphT} library's DirectedMultigraph.
+
+The graph is built in multiple steps, each changing and morphing the existing graph to result in a final tree containing the complete set of tasks $\Gamma$ and the associated jobs.
+The graph builder is designed to be flexible and extensible, allowing for easy modification and extension of the generation process.
+Each step of the process is represented by a class implementing the \textit{TaskGraphOperation} interface, which is then executed in sequence to build the final graph.
+The interface is kept simple by taking an existing TaskGraph, running modifications on the given graph and returning the modified graph.
+
+The current implementation includes the following operations described by upcoming \cref{subsec:impl:periods,subsec:impl:assigning-computational-time,subsec:impl:spanning-the-tree,subsec:impl:tasks-and-chains,subsec:impl:creating-jobs}.
+
+\section{Creating harmonic periods}\label{subsec:impl:periods}
+% ServerModelGeneratorOperation
+Using an empty graph as input, the operation creates nodes in the graph each representing a period used in the task-set.
+The initial starting value is set to $1$ and all subsequent periods are calculated by multiplying the previous period by a factor $f$.
+This factor $f$ is an integer value to ensure the harmonic property of the generated set of tasks (see \cref{sec:taskset}).
+
+The selection of the factor is designed to be a result of a \ac{RNG}, which can be configured in two different ways currently.
+One way the \ac{RNG} can be configured it for it to have a mean value and using a Poisson distribution to select the factor.
+This is an approach to keep the periods in a certain range while allowing outliers and some variation.
+The other way is to provide a list of possible values with a manual distribution from which the factor randomly is selected.
+For example, if the list of possible values is \{2, 2, 2, 2, 2, 2, 2, 3, 3, 4\}, statistically every tenth every value will be a 4, every fifth value a 3 and the rest will be 2.
+This approach is designed to allow for a more controlled generation of the periods, keeping the exponential grow of the periods, and thus of the graph being built, at bay.
+The values and size of the list may be varied to fit the current needs of the generation process.
+
+All generated periods are inserted into the graph as nodes, connected by edges in descending order.
+The resulting graph is a tree with the root node representing the highest period and the leaf nodes representing the smallest period.
+
+Another configuration option is a global factor for all generated periods to multiply all periods by.
+This allows for a way to avoid handling floating point numbers in the generation process, which can lead to rounding errors and other issues.
+For the following a global factor of $1000$ is used to keep the periods in the range of milliseconds.
+
+\section{Assigning computational Time}\label{subsec:impl:assigning-computational-time}
+% ReserveServerTimeOperation
+With the root node of the graph as the highest period, it does represent the hyper-period of the task-set equaling the total amount of computational time available to use, assuming a utilization of $1$.
+This value is then multiplied by a configured value between 0 and 1 to represent the execution time of the tasks.
+Knowing this amount will satisfy the targeted utilization of the system, the execution time of the tasks can be calculated, while yet now generated, represented by the periods.
+
+Each period node in the graph gets a randomly chosen part of the total computational time assigned to it.
+Distributing the value may be done in three different ways.
+Firstly a uniform distribution, where the total computational time is divided by the number of periods.
+Secondly a pure random distribution, where the total computational time is randomly distributed to the periods.
+Lastly a manual configured distribution with an array of percentages, where the total computational time is distributed to the periods according to the given percentages.
+
+When distributing the computational time, the user shall keep in mind that the value per period is getting split among the repetitions during the planning cycle.
+Meaning with an example of a period of 1000ms and a computational time of 500ms, the computational time is split among the repetitions of the period.
+In a case of a hyper-period of 16000ms, the period of 1000ms is repeated 16 times, and the computational time of 500ms is split among the repetitions.
+Resulting in a computational time of 31.25ms per repetition of the period, in which case the computational time is rounded down to 31ms.
+This may be a slight differ from the expected value that should be kept in mind, when checking for the utilization of the system.
+
+Another point to consider is the possible lack of of variation if each layer gets very small values assigned.
+Since per period multiple tasks may be generated, the assigned value shall be high enough to encompass these tasks.
+
+The result of this operation is a graph with the periods and the computational time assigned to each period.
+
+\section{Spanning the tree}\label{subsec:impl:spanning-the-tree}
+% PeriodSpreadOperation
+% ConnectServerInstancesOperation
+Having until now a tree with the periods and the computational time assigned to each period, the next step is to span the tree.
+This is done by calculating the amount of repetitions of each period and inserting a new node per repetition into the graph.
+Due to each node representing a time slot of the planning cycle, each repetition gets assigned an index to be able to keep them in order.
+
+To connect the nodes into a tree, all nodes per period are compared to all nodes of the next higher period.
+Knowing the factor between these periods it is a simple modulo calculation to assign the nodes in order to mirror their association between each other.
+Clearly visible in \cref{fig:graph_of_tasks} the higher period gets as many children of the lower period as the factor between the periods is.
+
+Having the graph spanned, the result is a tree with the time slots of each period represented by a node and its subtree, yet without any assigned computational time to any instance of a period.
+Due to the many layers to far for randomly assigning values and amounts, it is a difficile challenge to take the computational time assigned to the periods and distribute it among the repetitions.
+Varying the amount per repetition burdens many checks to ensure the represented part of the planning cycle is still schedulable.
+Some checks are simple, but challenging in combination, here is an example of two conditions that must be met.
+
+\begin{enumerate}
+	\item Every period instance shall be assigned a computational value above or equal to $1$.
+	\item Every period instance shall be assigned a computational value lower or equal to the period itself.
+	\item The assigned computational values of all children of a parent node shall not equal or exceed the period of the parent node.
+\end{enumerate}
+
+The first and second condition are simple checks to ensure that the computational time assigned to a period is schedulable within the period itself and contain any time to be assigned to the later generated tasks.
+
+The third condition is a bit more complex, but still simple to understand.
+It limits the computational amount the children of a node may have, to ensure that the parent node is schedulable.
+If no such check would be in place, the parent node would be assigned a computational time that would not fit into the period itself, hence making the parent node unschedulable.
+As example consider a small tree, consisting out of seven nodes:
+\begin{itemize}
+	\item A root node with a period of 4000ms.
+	\item Two children nodes with a period of 2000ms.
+	\item Four leaf nodes with a period of 1000ms.
+\end{itemize}
+With a hyperperiod of 4000ms and an utilization of $1$, the computational time to distributed equals 4000ms.
+Assume a distribution of 250ms for the top-most layer, 750ms for the second layer, 3000ms for the last layer.
+In the last layer a problematic distribution would be one, in which all period instances with the same parent node would be assigned a computational time of 1000ms.
+If the first two nodes in the last layer get assigned 1000ms, the first node in the second layer would not have any time left to get this scheduled in any way.
+This would result in a non-schedulable system, which is not the goal of the generation process.
+
+While this is a simple and comprehensible problem with easy solutions in this small example, it gets more complex with more layers and nodes, since each added layer would at least add double the amount of leaf nodes.
+For this reason the distribution among instances of the same period is done in this implementation by a simple uniform distribution.
+
+The result is a tree representing the planning cycle and the time slots in which the in \cref{subsec:impl:tasks-and-chains} generated tasks, respectively jobs, have to be scheduled, including their assigned \ac{WCET}.
+
+\section{Tasks and Chains}\label{subsec:impl:tasks-and-chains}
+% CreateChainsOperation
+% CreateJobsFromTasksOperation
+The next step is to generate chains of tasks, that communicate between each other and their respective task-set including the jobs to be scheduled, based on the idea presented in \cref{sec:concept_task_chains}.
+
+The process of generating tasks and chains begins by iterating over all represented periods in the tree.
+For each period, a new and empty task is added to the first chain.
+This ensures that every period has a corresponding task in the initial chain.
+Subsequent chains are created with a random skip variable, which is a configuration parameter that determines whether a period should be skipped.
+This introduces variability in the task generation process.
+
+The random skip variable is configured to control the likelihood of skipping a period.
+This can be adjusted to achieve the desired level of randomness in the task chains.
+By varying the skip parameter, different task sets can be generated, each with unique characteristics.
+This flexibility allows for the creation of diverse benchmark programs that can be used to evaluate the performance of scheduling algorithms.
+
+For now the generated tasks and chains are mere placeholders without being usable for anything else.
+To correct this, each task, associated with its period, is assigned a random \ac{WCET} value.
+This is done by taking the in \cref{subsec:impl:spanning-the-tree} assigned computational time per period and splitting it randomly among its assigned tasks.
+
+For now each task has assigned a \ac{WCET} value, the task-set is per definition schedulable while keeping the utilization of the system at $1$, or the desired value.
+The task-set is schedulable, since all previous steps assured to keep the computational time at a maximum within its limits defined by the range of the period.
+More on scheduling in the next \cref{subsec:impl:creating-schedule}.
+
+For now this task-set is the same result as if each tasks \ac{WCET} has been estimated by a \ac{WCET} analysis tool.
+But to create a model, that can be used to test and validate real-time scheduling algorithms, the tasks need to be assigned with a variation of execution times based on the idea presented in \cref{sec:concept_lower_execution_times}.
+Since it is known for the \ac{WCET} of the task to be schedulable, every lower execution time has to be schedulable as well.
+For that reason each tasks \ac{WCET} is split into a range of values and assigned as a possible execution time that a job of the task may have.
+
+To implement the concept of conditional runtimes presented in \cref{sec:concept_lower_execution_times}, each tasks and its successors of the corresponding chain list of possible execution times are laid next to each other, with one list shuffled, and iterated over to create random combinations of possible predecessor and successor.
+If one of the lists is shorter than the other, the shorter list is repeated until the longer list is exhausted.
+The intention was to repeat this for certain configurable amount to create a known multiple of possible follow ups and chain variations.
+
+Sadly the current implementation does not yet support the use of that conditions in the schedule, but it is planned to be implemented in the future.
+Furthermore is the use of task independent input values planned to simulate the use of sensors and other external influences on the tasks execution time.
+
+% Once the chains are created, jobs are generated from the tasks.
+% Each task is assigned a set of jobs that need to be scheduled within the planning cycle.
+% The jobs are created based on the periods and computational times assigned to the tasks.
+% This ensures that the generated jobs are consistent with the overall system utilization and scheduling constraints.
+% The result is a set of tasks and jobs that can be used to test and validate real-time scheduling algorithms.
+
+\section{Results and Output}\label{sec:creating-schedule}
+\todo{simple image depicting the filling?}
+Like described in the concept of flattening the tree into a schedule in \cref{sec:concept_scheduler} the tree is traversed depth-first while creating schedule entries for each node.
+For each leaf node, representing the highest period a separate schedule container is created.
+This container is filled with the jobs of the leaf node, which are then scheduled in the time slots of the planning cycle.
+After every leaf node is inserted in such schedule, the schedule is passed to the parent node, which then inserts its own jobs into the child schedules in order of the time slots.
+If a child schedule still has idle time slots, the jobs of the parents node are inserted into the child schedule until all time slots are occupied or the parent node has no jobs left to insert.
+After one child schedule is filled, the next child's schedule is appended to the previous schedule, repeating the insertion of jobs until all child schedules are processed or the parent node has no jobs left to insert.
+The result is a combined schedule of the child nodes and the parent node, which is then passed to the parent node, repeating the process until the root node is reached.
+
+The result is a list representing the planning cycle with the jobs scheduled, exported as a CSV for further use.

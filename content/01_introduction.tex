@@ -14,37 +14,58 @@ One way is the use of static code analysis, which is done by analyzing the syste
 Another way is dynamic and measurement based analysis, which is done by executing and tracing the functions of the system deriving the time that the system needed to execute the task\cite{buttazzoHardRealTimeComputing2024}.
 Either way, the analysis has to be checked for correctness, and the results must be validated.
 To do this, the analysis methods are tested against a set of benchmarks, standardized pieces of software to portrait different software designs and patterns, like recursion, loops, memory access, and so on.
-Some collections of benchmark software like the Mälardalen benchmark\cite{gustafssonMalardalenWCETBenchmarks2012} or the TACLeBench\cite{falk_taclebench_2016} are used to present a broad collection of benchmarks to test the analysis tools.
-But even with the benchmark collections, there exist some restrictions like limitations in operating systems, compilers and system configurations.\cite{falk_taclebench_2016,gustafssonMalardalenWCETBenchmarks2012}
+Some collections of benchmark software like the Mälardalen benchmark\cite{gustafssonMalardalenWCETBenchmarks2012} or the TACLeBench\cite{falkTACLeBenchBenchmarkCollection2016} are used to present a broad collection of benchmarks to test the analysis tools.
+But even with the benchmark collections, there exist some restrictions like limitations in operating systems, compilers and system configurations.\cite{falkTACLeBenchBenchmarkCollection2016,gustafssonMalardalenWCETBenchmarks2012}
 
 \section{Problem Statement}\label{sec:problem_statement}
 Existing tools often do lack some parts of occurring problems in real life.
 For most parts of the analysis, the benchmarks do not cover all possible scenarios and system configurations.
-The Mälardalen benchmark\cite{gustafssonMalardalenWCETBenchmarks2012} for example is lacking bigger benchmark software to represent the complexity of real-world systems.
-And TASKers\cite{eichler_taskers_2018} is built in a way to only construct a single chain of tasks in the resulting task set.
-Additionally, many benchmarks do not account for variations in operating systems, compilers\cite{gustafssonMalardalenWCETBenchmarks2012}, and hardware configurations, which can significantly impact the \ac{WCET} and \ac{WCRT} of tasks.
-These limitations highlight the need for more comprehensive benchmarks that can better represent the diverse and complex nature of real-time systems.
+\textcite{gustafssonMalardalenWCETBenchmarks2012} listed some weak-points to be improved in the Mälardalen benchmarks.
+The size of the benchmarks is one aspect \citeauthor{gustafssonMalardalenWCETBenchmarks2012} see as a point of interest.
+While the smaller sized benchmarks are fine to check for a specific type of programming construct, they do not show how tools will handle with bigger programs.
+Due to the size and lack of complexity the Mälardalen benchmarks can not compare with real-time industrial applications.
+With few exceptions the algorithms and programs to not represent the code size and code constructs, that would be used in an industrial use case.
+Further is explained the focus relies mostly on flow analysis while the influence of e.g.~caches, data caches and other hardware effects is not depicted by the benchmarks.
+While not depicting hardware effects, the benchmarks of the Mälardalen project are only written in C.
+
+With the Mälardalen benchmark project as example it shows a broad range of aspects benchmarks ideally represent.
+
+Other researchers have chosen to tackle the problem by building generators that create systems presenting interesting problems with known response times. 
+These generators are designed to produce synthetic task sets trying to mimic the behavior and complexity of real-world applications. 
+By controlling the parameters and characteristics of the generated tasks, researchers can create benchmarks that are tailored to specific analysis needs.
+Some well known generators are TASKers\cite{eichlerTASKersWholeSystemGenerator2018}, \textit{Sys}WCET\cite{dietrichSysWCETWholeSystemResponseTime} or GenEE\cite{eichlerGENEEBenchmarkGenerator2019}.
+
+These approaches highlight the importance of having flexible and configurable generators that can produce diverse and representative task sets for benchmarking purposes.
 
 \section{Research Questions and Objective}\label{sec:research_questions_objectives}
 This thesis aims to address several key research questions related to the generation of task sets with known timing characteristics:
 
 \begin{enumerate}
-	\item How can task sets with known \ac{WCET} and \ac{WCRT} be generated to accurately reflect the complexity of real-world systems?
+	\item How can task sets with known response times be generated to accurately reflect the complexity of real-world systems?
 	\item What methods can be employed to ensure that the generated task sets are flexible and diverse, allowing for variations in system configurations, operating systems, and hardware platforms?
 	\item How can the correctness and reliability of the generated task sets be validated in terms of their timing characteristics?
-	\item How can the generated task sets be utilized to improve the accuracy and efficiency of \ac{WCET} and \ac{WCRT} analysis methods?
+	\item How can the generated task sets be utilized to improve the accuracy and efficiency of timing analysis methods?
 \end{enumerate}
 
 By addressing these questions, this thesis aims to develop a framework for generating task sets with known \ac{WCET} and \ac{WCRT}, providing a valuable resource for the evaluation and improvement of timing analysis tools.
 Besides that the generator shall create an opportunity for flexible variations in generating different systems by not limiting itself to a single target compiler, but targeting a meta-model of a system to later on allow for diverse porting to different compilers and operating systems.
 
 Since in real-life situations it is near impossible to derive all possible scenarios and branches of a piece of software 
-In order to overcome known problems the plan is to create the resulting system configuration bottom up to instantiate conditions 
+In order to overcome known problems the plan is to create the resulting system configuration bottom up.
+This approach is intended to allow for a more flexible and diverse generation of task sets that can better represent the complexity of real-world systems.
 
-\section{Structure of the Thesis}\label{sec:structure} \todo{möglichst vollständiger Überblick über die Arbeit}
-The first chapter of this thesis is the introduction, which provides an overview of the background, context, problem statement, research questions, and research objectives.
-The chapter \cref{ch:basics} presents a review of the literature on real-time systems, \ac{WCET} and \ac{WCRT} analysis, and benchmarking.
-Further some basic concepts are introduced to provide a foundation for the subsequent chapters.
-The chapter \cref{ch:approach} outlines the proposed approach for generating task sets with known \ac{WCET} and \ac{WCRT}, including the methods and techniques used in the generation process.
-The chapter \cref{ch:conclusion_and_discussion} gives some insight in what has been developed in this thesis, what has been achieved and what can be done in the future.
-The thesis concludes with a summary of the findings and a discussion of the implications of the research.
+
+\section{Structure of the Thesis}\label{sec:structure}
+This thesis is structured into several chapters, each building upon the previous to provide a comprehensive understanding of the research conducted.
+
+\cref{ch:basics} delves into the fundamental concepts and literature review related to real-time systems, \ac{WCET} and \ac{WCRT} analysis, and benchmarking. 
+This chapter introduces essential concepts and theories that form the basis for the subsequent chapters.
+
+In \cref{ch:concept} the proposed approach for \textit{Generating Real-Time System Specifications with Known Response Times} is outlined. 
+This chapter details the methods and techniques employed in the generation process, providing a clear understanding of the research methodology.
+
+The \cref{ch:implementation} provides an in-depth look at the implementation of the proposed approach. 
+It describes the practical aspects of the research, including the tools, technologies, and processes used to bring the theoretical concepts to life.
+
+Finally \cref{ch:summary_discussion}, concludes the thesis with a summary of the findings and a discussion of their implications for the research. 
+This chapter reflects on the research questions and objectives, evaluates the success of the proposed approach, and suggests areas for future work.

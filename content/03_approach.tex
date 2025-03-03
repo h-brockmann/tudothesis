@@ -1,4 +1,4 @@
-\chapter{Approach}
+\chapter{Concept}\label{ch:concept}
 \section{System-model}\label{sec:model}
 In this section, we define the system model that serves as the foundation for the concept of the generated task-sets.
 It is reduced to a description of the task model and the execution model without further defining a hardware model, since the generated model is designed to be a meta model with no constraints on hardware specifications, making it hardware independent.
@@ -81,7 +81,7 @@ Each job $\tau_{i_j}$ is described by the release time $r_{i_m}$, the beginning 
 
 \subsection{Execution Model}\label{sec:execution_model}
 As already mentioned in \cref{sec:taskset} the employed scheduler will be a fixed-priority rate-monotonic scheduler (see \cref{sec:scheduling}).
-The scheduler operates by assigning each task $\Tau_i$ a priority inversely proportional to its period $P_i$ \ref{liuSchedulingAlgorithmsMultiprogramming1973}.
+The scheduler operates by assigning each task $\Tau_i$ a priority inversely proportional to its period $P_i$\ref{liuSchedulingAlgorithmsMultiprogramming1973}.
 Tasks with shorter periods receive higher priorities and are scheduled more frequently.
 Higher-priority tasks can preempt lower-priority tasks.
 If a higher-priority task becomes ready to execute while a lower-priority task is running, the scheduler will interrupt the lower-priority task and allocate the processor to the higher-priority task.
@@ -89,8 +89,7 @@ This is represented in the resulting schedule as jobs being divided into multipl
 The resulting schedule is a list of $C_{i,k}^j$ depicting the complete schedule.
 Each $C_{i,k}^j$ has its own starting time $s_{i,k}^j$ and its finishing time $s_{i,k}^j$.
 
-
-Making use of the \ac{RMS} in combination with the in \cref{sec:task_model} mentioned harmonic task-set it is possible to reach utilizations up to $1$ \cite{liuSchedulingAlgorithmsMultiprogramming1973}.
+Making use of the \ac{RMS} in combination with the in \cref{sec:task_model} mentioned harmonic task-set it is possible to reach utilizations up to $1$\cite{liuSchedulingAlgorithmsMultiprogramming1973}.
 
 \textcite[p. 70f]{buttazzoHardRealTimeComputing2024} explains some assumptions to consider in the scheduling:
 \begin{enumerate}
@@ -103,23 +102,21 @@ Making use of the \ac{RMS} in combination with the in \cref{sec:task_model} ment
 	\item[A7]. All tasks are released as soon as they arrive. 
 	\item[A8]. All overheads in the kernel are assumed to be zero. 
 \end{enumerate}
-
+1
 \todo{buttazzoHardRealTimeComputing2024 explains scheduling with some assumptions}
 
 \cite{dar-tzenpengAssignmentSchedulingCommunicating1997}
 
 
-\section{Concept}\label{sec:concept}
-The general workflow involves several key steps. 
-\begin{enumerate}
-	\item Generate period times based on the server model. \todo{what is a server model?}
-	\item Create task chains and identify any missing links within these chains. \todo{what is a chain?}
-	\item Distribute the load across each period and generate tasks with lower execution times to balance the workload.
-	\item Connect tasks and create conditions, considering the idea of workloads with resources attached, such as inter-task communication. \todo{what is a connection?}
-	\item Spread the server model into multiple server instances. \todo{server models / server instances. what is this?}
-	\item Build a scheduler and perform a schedulability test using the tree structure of the previously built server instances.
-	\item Export the generated task-set for further use.
-\end{enumerate}
+\section{Workflow of Generation}\label{sec:concept}
+The general workflow involves several key steps.
+
+\cref{sec:generating_period_times} describes how the harmonic period times are picked.
+\cref{sec:concept_task_chains} explains the idea of how is decided what tasks will be influencing each other and how the dependency is depicted in the resulting model.
+\cref{sec:period_tree, sec:concept_load_spread} explain the concept of representing the planning cycle with the task-sets periods as a tree graph.
+\cref{sec:concept_lower_execution_times} \subsection{Variation of Execution Times}
+\cref{sec:concept_job_chains} describes the variation of the task chains with final time values to be scheduled.
+\cref{sec:concept_scheduler} paints the idea how the tree graph may be used to create a schedule.
 
 \subsection{Generating Period Times}\label{sec:generating_period_times}
 For the purpose of keeping the generated task-set harmonic, the periods to which the tasks will be assigned are generated first.
@@ -163,7 +160,7 @@ Hence the planning cycle matches with the highest period of the task-set, in the
 		}
 		\caption{Subgraph of \cref{fig:graph_of_periods} showing the jobs associated to each representation of period iteration}
 	\end{subfigure}
-	\caption{Generation of periods and task-set with tasks with given period}
+	\caption{Generation of periods and task-set with tasks with given period}\label{fig:graph}
 \end{figure}
 
 \subsection{Generating Task Chains}\label{sec:concept_task_chains}
@@ -171,9 +168,11 @@ To generate the task-set multiple tasks will be iteratively added and assigned t
 By iterating about given period values a natural order of the tasks' periods is assured.
 With choosing the \ac{RMS} as scheduling method it is an descending order of priority, since the higher periods will result in lower priorities.
 Knowing this the tasks can be connected with its successor (if one does exist) to limit the inter-task communication to be directed from higher priorities to lower priorities.
+
+Without \todo{!} 
 Doing so the sender is assured to run earlier in respect to the receiver, if no locking or priority inversion is apparent. \todo{priority inversion and resource locking in model}
 By skipping a period while generating the tasks, the chains are built to vary the length and distribution of their associated tasks.
-The skip may be done at random. \todo{explain random as random with seed}
+The skip may be done at random.
 
 \subsection{Period-tree}\label{sec:period_tree}
 By using a harmonic task-set it is possible to fan out the given list of periods as seen in \cref{fig:chain_of_periods} into a tree structure as seen in \cref{fig:graph_of_periods}.
@@ -201,22 +200,17 @@ For example, if a period layer of $P1$ has a total execution time of $6$ units a
 
 By randomly distributing the execution times in this manner, the system ensures that the overall utilization remains within the desired bounds, maintaining the schedulability and efficiency of the task set.
 
-\todo{check utilization use}
-\todo{make sure the times fit. CT<1/2period <- is this correct? is this correct for mult 2 or at all? But spare time is needed, true.}
-
 \subsection{Variation of Execution Times}\label{sec:concept_lower_execution_times}
-For the system to not only represent all tasks \ac{WCET} a variation of execution times per task need to be created.
+For the system to not only represent all tasks' \ac{WCET}, a variation of execution times per task need to be created.
 Since the generated tasks with full load still have schedulability, the execution time of the tasks may be reduced without compromising the schedulability.
 For that reason the execution time of each task is multiplied with a random value between zero and one until a sufficient amount of different values is generated.
-Keeping the increasing complexity in mind, the system is designed to use a discrete distribution instead of continuous value functions. \todo{value functions more complex than discrete? source}
+Keeping the increasing complexity in mind, the system is designed to use a discrete distribution instead of continuous value functions to keep the possible permutations at considerable amounts.
 
 \subsection{Generating Job Chains}\label{sec:concept_job_chains}
 As \cref{sec:concept_task_chains} describes chains of tasks, there is the need to specify these to accommodate for the variations described in \cref{sec:concept_lower_execution_times}.
 Whilst the previously created chains of tasks may describe a general dependency, it is now necessary to use the variations to calculate the actual chains being used in the schedule, as described in \cref{sec:concept_scheduler} later on.
 For now the creation is not bound to any restrictions and will end in a permutation of the created variations.
-For example a chain of 
 
-\subsection{Creating Conditions}\label{sec:creating_conditions}
 With multiple possible execution times per task, these variants need to be conditioned to ensure deterministic behavior.
 This can be achieved by defining conditions that link the execution times of tasks within a chain, ensuring that the execution time of one task influences the execution time of subsequent tasks in the chain, as described in \cref{sec:concept_task_chains}.
 The conditions are supposed to mimic the data-flow between two tasks and the influence between these two.
@@ -228,13 +222,13 @@ To hide the effects there may be inserted another independent input into the con
 % This could be as simple as using modulo calculations or by any other hash function.
 
 \begin{figure}[ht]
-	\begin{subfigure}[c]{0.45\textwidth}
+	% \begin{subfigure}[c]{0.45\textwidth}
 		\resizebox{\textwidth}{!}{%
 			\label{fig:conditions_a}
 			\input{./tikz/conditions_a.tex}
 		}
-		\caption{Unshifted}
-	\end{subfigure}
+	% 	\caption{Unshifted}
+	% \end{subfigure}
 	% \hfill
 	% \begin{subfigure}[c]{0.45\textwidth}
 	% 	\resizebox{\textwidth}{!}{%
@@ -254,59 +248,14 @@ For example the first entry in the list of the tasks execution times would lead 
 By defining such conditions, we ensure that the execution times are linked and the overall behavior of the system remains predictable and deterministic. 
 This approach helps in maintaining the schedulability and efficiency of the task set while accommodating variations in execution times.
 
-
 \subsection{Building a Scheduler and Performing Schedulability Test}\label{sec:concept_scheduler}
 The schedule can be generated by performing a depth-first traversal of the previously described tree structure.
 The leaves of the tree represent the tasks with the highest priority and are processed first during the traversal.
 As the traversal continues, tasks in higher layers with lower priorities are processed until the root is reached.
 Starting with an empty schedule for the given planning cycle the execution times of the highest prioritized tasks can simply be added.
 If one layer is added to the schedule, the next layer with the next next higher priority is added into the remaining idle time slots.
-Since the time and utilization are previously calculated it is ensured the task set is scheduable.
+Since the time and utilization are previously calculated it is ensured the task set is schedulable.
 
-
-\todo{prio for equal periods -> arbritrary, but predictable order.}
-
-\todo{building a scheduler (schedulability test)}
-
-\subsection{Exporting Task-Set}\label{sec:exporting_task_set}
-The export of the task set is planned to be flexible to be used in different contexts easily.
-For this reason, a text-based format would be preferred, making it human- as well as machine-readable.
-The task set can be exported in formats such as JSON, XML, or CSV, which are widely used and supported by various tools and programming languages.
-This allows for easy integration with other systems and tools for further analysis, simulation, or implementation.
-
-The export needs provide the information the in Section\ref{sec:task_model} described model to proper represent it.
-
-% \section{Tasks with Release Times and Execution Times}\label{sec:tasks_release_execution}
-% In real-time systems, tasks are characterized by their release times and execution times.
-% The release time of a task is the time at which the task becomes ready for execution.
-% Execution times can vary depending on the complexity and requirements of the task.
-
-% Consider a set of tasks \( \tau = \{\tau_1, \tau_2, \ldots, \tau_n\} \).
-% Each task \( \tau_i \) has a release time \( r_i \) and a list of possible execution times \( \{e_{i1}, e_{i2}, \ldots, e_{im}\} \).
-% The release time \( r_i \) indicates when the task \( \tau_i \) is ready to be executed, and the list of execution times represents the different durations the task might take to complete under various conditions.
-% The release times will be constrained further in the section \cref{sec:harmonic_task_set}.
-
-% For example, let us define three tasks with their respective release times and execution times:
-
-% \begin{itemize}
-% 	\item Task \( \tau_1 \): Release time \( r_1 = 0 \), Execution times \( \{3, 4, 5\} \)
-% 	\item Task \( \tau_2 \): Release time \( r_2 = 2 \), Execution times \( \{2, 3\} \)
-% 	\item Task \( \tau_3 \): Release time \( r_3 = 4 \), Execution times \( \{1, 2, 3\} \)
-% \end{itemize}
-
-% The scheduler must consider both the release times and the possible execution times to ensure that all tasks meet their deadlines.
-% Each task will be assigned a hard deadline which strictly encases the time frame a task may be scheduled in. 
-% This involves determining the optimal order of execution and allocating sufficient resources to handle the variability in execution times.
-
-% By analyzing the release times and execution times, we can develop strategies to improve the efficiency and reliability of real-time systems, ensuring that tasks are completed within their required time frames.
-
-
-% \section{Creating Conditions}\label{sec:creating_conditions}
-
-% \section{Representation}\label{sec:representation}
-
-\section{Implementation}
-\label{sec:implementation}
-
-\todo{depict schedule,  reference execution model}
-The generated schedule is represented by a list of time slices associated to a job $\tau_{i,k}$ being run in that time slice $sched_i, = \{t_{begin}, t_{end}, \tau_{i,j}\}$.
+\subsection{Using the chains}\label{sec:chains}
+\todo{!!}
+\todo{image of longest chains added}

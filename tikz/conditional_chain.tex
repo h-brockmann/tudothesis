@@ -1,0 +1,56 @@
+% \usetikzlibrary{patterns} % Load patterns library
+\begin{tikzpicture}
+	\node[draw, cicle, outer sep=2mm] (n10) at (0,0) {$\tau_1$};
+	\node[draw, cicle, outer sep=2mm] (n20) at (-12,0) {$\tau_2$};
+	\node[draw, cicle, outer sep=2mm] (n21) at (0,0) {$\tau_2$};
+	\node[draw, cicle, outer sep=2mm] (n22) at (12,0) {$\tau_2$};
+	\node[draw, cicle, outer sep=2mm] (n3) at (4,0) {$P=6$};
+	\node[draw, cicle, outer sep=2mm] (n4) at (6,0) {$P=12$};
+	\node[draw, cicle, outer sep=2mm] (n5) at (8,0) {$P=24$};
+
+	\node[draw, rectangle, outer sep=2mm] (n1) at (-1.5,-1) {chain 1};
+	\node[draw, rectangle, outer sep=2mm] (n2) at (-1.5,-2) {chain 2};
+	\node[draw, rectangle, outer sep=2mm] (n3) at (-1.5,-3) {chain 3};
+
+	\draw[thick, fill=black!60, pattern=none] plot[] coordinates { (-0.5 + 0, -0.5)	(0.5 + 0, -0.5)	(0.5 + 0, -3.5)	(-0.5 + 0,-3.5)	} -- cycle;
+	\draw[thick, fill=black!60, pattern=none] plot[] coordinates { (-0.5 + 2, -0.5)	(0.5 + 2, -0.5)	(0.5 + 2, -3.5)	(-0.5 + 2,-3.5)	} -- cycle;
+	\draw[thick, fill=black!60, pattern=none] plot[] coordinates { (-0.5 + 4, -0.5)	(0.5 + 4, -0.5)	(0.5 + 4, -3.5)	(-0.5 + 4,-3.5)	} -- cycle;
+	\draw[thick, fill=black!60, pattern=none] plot[] coordinates { (-0.5 + 6, -0.5)	(0.5 + 6, -0.5)	(0.5 + 6, -3.5)	(-0.5 + 6,-3.5)	} -- cycle;
+	\draw[thick, fill=black!60, pattern=none] plot[] coordinates { (-0.5 + 8, -0.5)	(0.5 + 8, -0.5)	(0.5 + 8, -3.5)	(-0.5 + 8,-3.5)	} -- cycle;
+
+	% chain 1
+	\node[draw, rectangle, outer sep=1mm] (T1) at (0,-1) {$\Tau_1$};
+	\node[draw, rectangle, outer sep=1mm] (T2) at (2,-1) {$\Tau_2$};
+	\node[draw, rectangle, outer sep=1mm] (T3) at (4,-1) {$\Tau_3$};
+	\node[draw, rectangle, outer sep=1mm] (T4) at (6,-1) {$\Tau_4$};
+	\node[draw, rectangle, outer sep=1mm] (T5) at (8,-1) {$\Tau_5$};
+	
+	% chain 2
+	\node[draw, rectangle, outer sep=1mm] (T6) at (0,-2) {$\Tau_6$};
+	\node[draw, rectangle, outer sep=1mm] (T7) at (2,-2) {$\Tau_7$};
+	% 												
+	\node[draw, rectangle, outer sep=1mm] (T8) at (6,-2) {$\Tau_8$};
+	% 											
+	
+	% chain 3
+	\node[draw, rectangle, outer sep=1mm] (T9) at (0,-3) {$\Tau_9$};
+	\node[draw, rectangle, outer sep=1mm] (T10) at (2,-3) {$\Tau_{10}$};
+	\node[draw, rectangle, outer sep=1mm] (T11) at (4,-3) {$\Tau_{11}$};
+	%
+	%
+  
+
+\draw[->] (T1) to (T2);
+\draw[->] (T2) to (T3);
+\draw[->] (T3) to (T4);
+\draw[->] (T4) to (T5);
+\draw[->] (T6) to (T7);
+\draw[->] (T7) to (T8);
+\draw[->] (T9) to (T10);
+\draw[->] (T10) to (T11);
+
+% \draw[->, bend left] (n1) to node[midway,below] {$m_1$} node[midway,above] {$\times 3$} (n2);
+
+		
+
+\end{tikzpicture}

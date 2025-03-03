@@ -535,6 +535,70 @@
       "select": "zotero://select/library/items/QJWKCTAF"
     },
     {
+      "key": "PFSL6XNZ",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Computing Execution Times With Execution Decision Diagrams in the Presence of Out-of-Order Resources",
+      "date": "11/2023",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "https://ieeexplore.ieee.org/document/10075532/",
+      "accessDate": "2025-03-02T11:14:46Z",
+      "rights": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html",
+      "volume": "42",
+      "pages": "3665-3678",
+      "publicationTitle": "IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems",
+      "DOI": "10.1109/TCAD.2023.3258752",
+      "issue": "11",
+      "journalAbbreviation": "IEEE Trans. Comput.-Aided Des. Integr. Circuits Syst.",
+      "ISSN": "0278-0070, 1937-4151",
+      "creators": [
+        {
+          "firstName": "Zhenyu",
+          "lastName": "Bai",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Hugues",
+          "lastName": "Cassé",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Thomas",
+          "lastName": "Carle",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Christine",
+          "lastName": "Rochange",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-03-02T11:14:46Z",
+      "dateModified": "2025-03-02T11:14:46Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/PFSL6XNZ",
+      "itemID": 386,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Eingereichte Version",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-03-02T11:14:47Z",
+          "dateModified": "2025-03-02T11:14:47Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/CV64B7A7",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\CV64B7A7\\Bai et al. - 2023 - Computing Execution Times With Execution Decision Diagrams in the Presence of Out-of-Order Resources.pdf",
+          "select": "zotero://select/library/items/CV64B7A7"
+        }
+      ],
+      "notes": [],
+      "citationKey": "baiComputingExecutionTimes2023",
+      "itemKey": "PFSL6XNZ",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/PFSL6XNZ"
+    },
+    {
       "key": "R4C4GZIJ",
       "version": 0,
       "itemType": "journalArticle",
@@ -1973,6 +2037,201 @@
       "select": "zotero://select/library/items/FGBKFZKU"
     },
     {
+      "key": "PHLGXICK",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "A Survey of Probabilistic Timing Analysis Techniques for Real-Time Systems",
+      "abstractNote": "This survey covers probabilistic timing analysis techniques for real-time systems. It reviews and critiques the key results in the field from its origins in 2000 to the latest research published up to the end of August 2018. The survey provides a taxonomy of the different methods used, and a classification of existing research. A detailed review is provided covering the main subject areas: static probabilistic timing analysis, measurement-based probabilistic timing analysis, and hybrid methods. In addition, research on supporting mechanisms and techniques, case studies, and evaluations is also reviewed. The survey concludes by identifying open issues, key challenges and possible directions for future research.",
+      "date": "2019",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Datacite)",
+      "url": "https://drops.dagstuhl.de/entities/document/10.4230/LITES-v006-i001-a003",
+      "accessDate": "2025-03-02T13:41:26Z",
+      "rights": "Creative Commons Attribution 3.0 Germany license, info:eu-repo/semantics/openAccess",
+      "extra": "Artwork Size: 60 pages, 1053418 bytes\nMedium: application/pdf\nPublisher: Schloss Dagstuhl – Leibniz-Zentrum für Informatik",
+      "volume": "6",
+      "pages": "03:1-03:60",
+      "publicationTitle": "Leibniz Transactions on Embedded Systems (LITES)",
+      "DOI": "10.4230/LITES-V006-I001-A003",
+      "issue": "1",
+      "ISSN": "2199-2002",
+      "creators": [
+        {
+          "firstName": "Robert I.",
+          "lastName": "Davis",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Liliana",
+          "lastName": "Cucu-Grosjean",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "Computer systems organization → Real-time systems",
+          "type": 1
+        },
+        {
+          "tag": "Probabilistic",
+          "type": 1
+        },
+        {
+          "tag": "real-time",
+          "type": 1
+        },
+        {
+          "tag": "timing analysis",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2025-03-02T13:41:26Z",
+      "dateModified": "2025-03-02T13:41:26Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/PHLGXICK",
+      "itemID": 392,
+      "attachments": [],
+      "notes": [],
+      "citationKey": "davisSurveyProbabilisticTiming2019",
+      "itemKey": "PHLGXICK",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/PHLGXICK"
+    },
+    {
+      "key": "NKWWZ2CV",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "A Survey of Probabilistic Timing Analysis Techniques for Real-Time Systems",
+      "abstractNote": "This survey covers probabilistic timing analysis techniques for real-time systems. It reviews and critiques the key results in the field from its origins in 2000 to the latest research published up to the end of August 2018. The survey provides a taxonomy of the different methods used, and a classification of existing research. A detailed review is provided covering the main subject areas: static probabilistic timing analysis, measurement-based probabilistic timing analysis, and hybrid methods. In addition, research on supporting mechanisms and techniques, case studies, and evaluations is also reviewed. The survey concludes by identifying open issues, key challenges and possible directions for future research.",
+      "date": "2019",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Datacite)",
+      "url": "https://drops.dagstuhl.de/entities/document/10.4230/LITES-v006-i001-a003",
+      "accessDate": "2025-03-02T13:42:01Z",
+      "rights": "Creative Commons Attribution 3.0 Germany license, info:eu-repo/semantics/openAccess",
+      "extra": "Artwork Size: 60 pages, 1053418 bytes\nMedium: application/pdf\nPublisher: Schloss Dagstuhl – Leibniz-Zentrum für Informatik",
+      "volume": "6",
+      "pages": "03:1-03:60",
+      "publicationTitle": "Leibniz Transactions on Embedded Systems (LITES)",
+      "DOI": "10.4230/LITES-V006-I001-A003",
+      "issue": "1",
+      "ISSN": "2199-2002",
+      "creators": [
+        {
+          "firstName": "Robert I.",
+          "lastName": "Davis",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Liliana",
+          "lastName": "Cucu-Grosjean",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "Computer systems organization → Real-time systems",
+          "type": 1
+        },
+        {
+          "tag": "Probabilistic",
+          "type": 1
+        },
+        {
+          "tag": "real-time",
+          "type": 1
+        },
+        {
+          "tag": "timing analysis",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2025-03-02T13:42:01Z",
+      "dateModified": "2025-03-02T13:42:01Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/NKWWZ2CV",
+      "itemID": 393,
+      "attachments": [],
+      "notes": [],
+      "citationKey": "davisSurveyProbabilisticTiming2019a",
+      "itemKey": "NKWWZ2CV",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/NKWWZ2CV"
+    },
+    {
+      "key": "GSZYM56Y",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "A Survey of Probabilistic Timing Analysis Techniques for Real-Time Systems",
+      "abstractNote": "This survey covers probabilistic timing analysis techniques for real-time systems. It reviews and critiques the key results in the field from its origins in 2000 to the latest research published up to the end of August 2018. The survey provides a taxonomy of the different methods used, and a classification of existing research. A detailed review is provided covering the main subject areas: static probabilistic timing analysis, measurement-based probabilistic timing analysis, and hybrid methods. In addition, research on supporting mechanisms and techniques, case studies, and evaluations is also reviewed. The survey concludes by identifying open issues, key challenges and possible directions for future research.",
+      "date": "2019",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Datacite)",
+      "url": "https://drops.dagstuhl.de/entities/document/10.4230/LITES-v006-i001-a003",
+      "accessDate": "2025-03-02T13:42:38Z",
+      "rights": "Creative Commons Attribution 3.0 Germany license, info:eu-repo/semantics/openAccess",
+      "extra": "Artwork Size: 60 pages, 1053418 bytes\nMedium: application/pdf\nPublisher: Schloss Dagstuhl – Leibniz-Zentrum für Informatik",
+      "volume": "6",
+      "pages": "03:1-03:60",
+      "publicationTitle": "Leibniz Transactions on Embedded Systems (LITES)",
+      "DOI": "10.4230/LITES-V006-I001-A003",
+      "issue": "1",
+      "ISSN": "2199-2002",
+      "creators": [
+        {
+          "firstName": "Robert I.",
+          "lastName": "Davis",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Liliana",
+          "lastName": "Cucu-Grosjean",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "Computer systems organization → Real-time systems",
+          "type": 1
+        },
+        {
+          "tag": "Probabilistic",
+          "type": 1
+        },
+        {
+          "tag": "real-time",
+          "type": 1
+        },
+        {
+          "tag": "timing analysis",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2025-03-02T13:42:38Z",
+      "dateModified": "2025-03-02T13:42:38Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/GSZYM56Y",
+      "itemID": 394,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-03-02T13:42:58Z",
+          "dateModified": "2025-03-02T13:42:58Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/IKTD5T75",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\IKTD5T75\\Davis und Cucu-Grosjean - 2019 - A Survey of Probabilistic Timing Analysis Techniques for Real-Time Systems.pdf",
+          "select": "zotero://select/library/items/IKTD5T75"
+        }
+      ],
+      "notes": [],
+      "citationKey": "davisSurveyProbabilisticTiming2019b",
+      "itemKey": "GSZYM56Y",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/GSZYM56Y"
+    },
+    {
       "key": "C4FY7CS5",
       "version": 0,
       "itemType": "book",
@@ -2579,6 +2838,66 @@
       "select": "zotero://select/library/items/VLHTSVBG"
     },
     {
+      "key": "KUUMXWNI",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "The logical execution time paradigm: New perspectives for multicore systems (dagstuhl seminar 18092)",
+      "date": "2018",
+      "extra": "Publisher: Schloss Dagstuhl–Leibniz-Zentrum für Informatik",
+      "volume": "8",
+      "pages": "122-149",
+      "publicationTitle": "Dagstuhl Reports",
+      "issue": "2",
+      "journalAbbreviation": "Dagstuhl Reports",
+      "ISSN": "2192-5283",
+      "creators": [
+        {
+          "firstName": "Rolf",
+          "lastName": "Ernst",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Stefan",
+          "lastName": "Kuntz",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Sophie",
+          "lastName": "Quinton",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Martin",
+          "lastName": "Simons",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-02-28T18:31:46Z",
+      "dateModified": "2025-02-28T18:31:46Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/KUUMXWNI",
+      "itemID": 377,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-28T18:32:07Z",
+          "dateModified": "2025-02-28T18:32:07Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/YVY33Z5F",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\YVY33Z5F\\Ernst et al. - 2018 - The logical execution time paradigm New perspectives for multicore systems (dagstuhl seminar 18092).pdf",
+          "select": "zotero://select/library/items/YVY33Z5F"
+        }
+      ],
+      "notes": [],
+      "citationKey": "ernstLogicalExecutionTime2018",
+      "itemKey": "KUUMXWNI",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/KUUMXWNI"
+    },
+    {
       "key": "SSB7S6PS",
       "version": 0,
       "itemType": "journalArticle",
@@ -3148,6 +3467,67 @@
       "select": "zotero://select/library/items/NDNYAHPG"
     },
     {
+      "key": "DSZWVQZQ",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Giotto: a time-triggered language for embedded programming",
+      "date": "01/2003",
+      "language": "en",
+      "shortTitle": "Giotto",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "http://ieeexplore.ieee.org/document/1173196/",
+      "accessDate": "2025-02-28T20:13:39Z",
+      "rights": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html",
+      "volume": "91",
+      "pages": "84-99",
+      "publicationTitle": "Proceedings of the IEEE",
+      "DOI": "10.1109/JPROC.2002.805825",
+      "issue": "1",
+      "journalAbbreviation": "Proc. IEEE",
+      "ISSN": "0018-9219",
+      "creators": [
+        {
+          "firstName": "T.A.",
+          "lastName": "Henzinger",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "B.",
+          "lastName": "Horowitz",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "C.M.",
+          "lastName": "Kirsch",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-02-28T20:13:39Z",
+      "dateModified": "2025-02-28T20:13:39Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/DSZWVQZQ",
+      "itemID": 381,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-28T20:14:42Z",
+          "dateModified": "2025-02-28T20:14:42Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/JK54M8V8",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\JK54M8V8\\Henzinger et al. - 2003 - Giotto a time-triggered language for embedded programming.pdf",
+          "select": "zotero://select/library/items/JK54M8V8"
+        }
+      ],
+      "notes": [],
+      "citationKey": "henzingerGiottoTimetriggeredLanguage2003",
+      "itemKey": "DSZWVQZQ",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/DSZWVQZQ"
+    },
+    {
       "key": "JANNUVN9",
       "version": 0,
       "itemType": "conferencePaper",
@@ -3306,6 +3686,87 @@
       "itemKey": "BKE42UCY",
       "libraryID": 1,
       "select": "zotero://select/library/items/BKE42UCY"
+    },
+    {
+      "key": "L9CRCPJB",
+      "version": 0,
+      "itemType": "document",
+      "title": "AMALTHEA Project results leaflet",
+      "date": "March 2015",
+      "url": "https://itea4.org/project/result/download/5805/AMALTHEA%20Project%20results%20leaflet.pdf",
+      "accessDate": "2025-03-02",
+      "creators": [
+        {
+          "firstName": "",
+          "lastName": "ITEA 2 Office",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-03-02T21:28:22Z",
+      "dateModified": "2025-03-02T21:30:06Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/L9CRCPJB",
+      "itemID": 399,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-03-02T21:30:17Z",
+          "dateModified": "2025-03-02T21:30:17Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/49VQM3VZ",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\49VQM3VZ\\ITEA 2 Office - 2015 - AMALTHEA Project results leaflet.pdf",
+          "select": "zotero://select/library/items/49VQM3VZ"
+        }
+      ],
+      "notes": [],
+      "citationKey": "itea2officeAMALTHEAProjectResults2015",
+      "itemKey": "L9CRCPJB",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/L9CRCPJB"
+    },
+    {
+      "key": "AGK7GFUN",
+      "version": 0,
+      "itemType": "webpage",
+      "title": "ITEA 4 · Project · 13017 AMALTHEA4public",
+      "abstractNote": "ITEA is the Eureka R&D&I Cluster programme for software innovation, enabling a large international community to collaborate in funded projects that turn innovative ideas into new businesses, jobs, economic growth and benefits for society.",
+      "url": "https://itea4.org/project/amalthea4public.html",
+      "accessDate": "2025-03-02T21:33:11Z",
+      "websiteTitle": "itea4.org",
+      "creators": [
+        {
+          "firstName": "Johan van der Heide",
+          "lastName": "johan.van.der.heide[at]itea4.org",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-03-02T21:33:11Z",
+      "dateModified": "2025-03-02T21:33:11Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/AGK7GFUN",
+      "itemID": 401,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-03-02T21:33:17Z",
+          "dateModified": "2025-03-02T21:33:17Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/BD228W2C",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\BD228W2C\\amalthea4public.html",
+          "select": "zotero://select/library/items/BD228W2C"
+        }
+      ],
+      "notes": [],
+      "citationKey": "johan.van.der.heide[at]itea4.orgITEA4Project",
+      "itemKey": "AGK7GFUN",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/AGK7GFUN"
     },
     {
       "key": "EFCCGZUT",
@@ -3760,6 +4221,80 @@
       "select": "zotero://select/library/items/XCTTVJCB"
     },
     {
+      "key": "48LNMT9M",
+      "version": 0,
+      "itemType": "bookSection",
+      "title": "Generalizing Logical Execution Time",
+      "date": "2022",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "https://link.springer.com/10.1007/978-3-031-22337-2_8",
+      "accessDate": "2025-02-28T18:56:48Z",
+      "extra": "Series Title: Lecture Notes in Computer Science\nDOI: 10.1007/978-3-031-22337-2_8",
+      "volume": "13660",
+      "place": "Cham",
+      "publisher": "Springer Nature Switzerland",
+      "ISBN": "978-3-031-22336-5 978-3-031-22337-2",
+      "pages": "160-181",
+      "bookTitle": "Principles of Systems Design",
+      "creators": [
+        {
+          "firstName": "Jean-François",
+          "lastName": "Raskin",
+          "creatorType": "editor"
+        },
+        {
+          "firstName": "Krishnendu",
+          "lastName": "Chatterjee",
+          "creatorType": "editor"
+        },
+        {
+          "firstName": "Laurent",
+          "lastName": "Doyen",
+          "creatorType": "editor"
+        },
+        {
+          "firstName": "Rupak",
+          "lastName": "Majumdar",
+          "creatorType": "editor"
+        },
+        {
+          "firstName": "Edward A.",
+          "lastName": "Lee",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Marten",
+          "lastName": "Lohstroh",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2025-02-28T18:56:48Z",
+      "dateModified": "2025-02-28T18:56:48Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/48LNMT9M",
+      "itemID": 379,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-02-28T18:57:10Z",
+          "dateModified": "2025-02-28T18:57:10Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/GNC88ELR",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\GNC88ELR\\Lee und Lohstroh - 2022 - Generalizing Logical Execution Time.pdf",
+          "select": "zotero://select/library/items/GNC88ELR"
+        }
+      ],
+      "notes": [],
+      "citationKey": "leeGeneralizingLogicalExecution2022",
+      "itemKey": "48LNMT9M",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/48LNMT9M"
+    },
+    {
       "key": "DPFLHCVN",
       "version": 0,
       "itemType": "conferencePaper",
@@ -4201,6 +4736,83 @@
       "itemKey": "YJBIMURY",
       "libraryID": 1,
       "select": "zotero://select/library/items/YJBIMURY"
+    },
+    {
+      "key": "9C3LM86P",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Optimal harmonic period assignment: complexity results and approximation algorithms",
+      "date": "10/2018",
+      "language": "en",
+      "shortTitle": "Optimal harmonic period assignment",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "url": "http://link.springer.com/10.1007/s11241-018-9304-0",
+      "accessDate": "2025-03-01T18:50:42Z",
+      "volume": "54",
+      "pages": "830-860",
+      "publicationTitle": "Real-Time Systems",
+      "DOI": "10.1007/s11241-018-9304-0",
+      "issue": "4",
+      "journalAbbreviation": "Real-Time Syst",
+      "ISSN": "0922-6443, 1573-1383",
+      "creators": [
+        {
+          "firstName": "Morteza",
+          "lastName": "Mohaqeqi",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Mitra",
+          "lastName": "Nasri",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yang",
+          "lastName": "Xu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Anton",
+          "lastName": "Cervin",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Karl-Erik",
+          "lastName": "Årzén",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "harmonic"
+        },
+        {
+          "tag": "UHPA"
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2025-03-01T18:50:42Z",
+      "dateModified": "2025-03-01T18:51:08Z",
+      "uri": "http://zotero.org/users/local/etxm3DPf/items/9C3LM86P",
+      "itemID": 383,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Volltext",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-03-01T18:50:45Z",
+          "dateModified": "2025-03-01T18:50:45Z",
+          "uri": "http://zotero.org/users/local/etxm3DPf/items/BZVLURY9",
+          "path": "C:\\Users\\Henni\\Zotero\\storage\\BZVLURY9\\Mohaqeqi et al. - 2018 - Optimal harmonic period assignment complexity results and approximation algorithms.pdf",
+          "select": "zotero://select/library/items/BZVLURY9"
+        }
+      ],
+      "notes": [],
+      "citationKey": "mohaqeqiOptimalHarmonicPeriod2018",
+      "itemKey": "9C3LM86P",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/9C3LM86P"
     },
     {
       "key": "2U2G29BW",

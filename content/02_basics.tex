@@ -1,53 +1,48 @@
 \chapter{Basics}\label{ch:basics}
-This chapter provides a collection of basic knowledge as a foundation for this work.
+This chapter provides a collection of basic knowledge as a foundation for this work. It covers fundamental concepts and techniques essential for understanding the subsequent chapters.
 
 \section{Real Time Operating Systems}\label{sec:rtos}
-A \ac{RTOS} is designed with precise timing and high reliability in mind for running applications \textcite{stankovicRealtimeOperatingSystems2004}.
-Such systems are used in a wide range of applications, from multimedia systems and smart home systems to automotive and medical sectors, such as pacemakers \cite{hambardeSurveyRealTime2014}.
-In all these systems, the correctness and timeliness of the applications are of utmost importance\cite{hambardeSurveyRealTime2014}.
+A \ac{RTOS} is designed with precise timing and high reliability in mind for running applications\cite{stankovicRealtimeOperatingSystems2004}. Such systems are used in a wide range of applications, from multimedia systems and smart home systems to automotive and medical sectors, such as pacemakers\cite{hambardeSurveyRealTime2014}. In all these systems, the correctness and timeliness of the applications are of utmost importance\cite{hambardeSurveyRealTime2014}.
 
 \subsection{Tasks and Jobs}\label{sec:tasks_and_jobs}
-According to the \textcite{IEEEStandardRealTime}, a task is defined as the ``basic logical unit of concurrent program execution'' that contains code. The standard also states that while the code within a task is executed sequentially, the tasks themselves may run in parallel with other tasks.
-
-Tasks can have deadlines based on their importance and the nature of their work. If a task misses its deadline due to insufficient computational time, the system and results may be affected differently. It is common to categorize task deadlines into three types\cite{dengSchedulingRealtimeApplications1997,abeniIntegratingMultimediaApplications1998,shindeComparisonRealTime2017}:
+According to the \textcite{IEEEStandardRealTime}, a task is defined as the ``basic logical unit of concurrent program execution'' that contains code. The standard also states that while the code within a task is executed sequentially, the tasks themselves may run in parallel with other tasks. Tasks can have deadlines based on their importance and the nature of their work. If a task misses its deadline due to insufficient computational time, the system and results may be affected differently. It is common to categorize task deadlines into three types\cite{dengSchedulingRealtimeApplications1997,abeniIntegratingMultimediaApplications1998,shindeComparisonRealTime2017}:
 \begin{enumerate}
 	\item \textbf{Hard Deadline:}
-	      Missing a hard deadline is considered a system failure. The task must complete by its deadline; otherwise, the system may enter an unsafe state.
+		  Missing a hard deadline is considered a system failure. The task must complete by its deadline; otherwise, the system may enter an unsafe state.
 	\item \textbf{Firm Deadline:}
-	      Missing a firm deadline does not cause a system failure, but the task's result is no longer useful and is discarded. The system continues to operate, but the quality of service may degrade.
+		  Missing a firm deadline does not cause a system failure, but the task's result is no longer useful and is discarded. The system continues to operate, but the quality of service may degrade.
 	\item \textbf{Soft Deadline:}
-	      Missing a soft deadline reduces the task's utility, but the result can still be used. The system can tolerate some deadline misses without significant impact on overall performance.
+		  Missing a soft deadline reduces the task's utility, but the result can still be used. The system can tolerate some deadline misses without significant impact on overall performance.
 \end{enumerate}
-
-A job is the specific execution instance of a given task when scheduled.
-One task may be assigned with multiple jobs.
-If a task is scheduled to execute every $x$ time units, the total number of jobs will be equal to the number of times $x$ fits within the inspection cycle.
-For a more comprehensive description on tasks and jobs, refer to \cref{sec:task}.
+A job is the specific execution instance of a given task when scheduled. One task may be assigned with multiple jobs. If a task is scheduled to execute every $x$ time units, the total number of jobs will be equal to the number of times $x$ fits within the inspection cycle. For a more comprehensive description on tasks and jobs, refer to \cref{sec:task}.
 
 \subsection{Real-time Scheduling}\label{sec:scheduling}
 Creating the schedule of given tasks to be executed some aspects
 
-\todo{Since running a single Task would not necessarily require a scheduler, running multiple tasks in a way to satisfy the requirements a real-time system, especially a hard real-time system presents is topic of a wide field of research.}
+Generating a task set with known response times requires knowledge about the schedule. Implementing a scheduler gives the benefit of taking direct insights in the compilation of the generated results. 
+When confronted with two or more tasks, the system needs to decide what task gets to be executed in the computational unit.
+This is done by employing scheduling techniques, most rely on the use of priorities assigned to the tasks, others schedule the tasks purely on a timely basis.
 
-Generating a task set with known \ac{WCET} and \ac{WCRT} requires knowledge about the schedule.
-Implementing a scheduler gives the benefit of taking direct insights in the compilation of the generated results. 
-To determine the order of operation when being confronted with two or more tasks, the tasks need to get a priority assigned.
-
-There are some scheduling techniques to determine the priority of tasks to be scheduled.
 \begin{itemize}
 	\item \textbf{Clock based Scheduling:}
-	      With clock based scheduling every task gets a share of execution time in which the work of the task may be done.
-	      It is a way to schedule tasks without priorities whilst making sure every task gets time on the computational unit.
-	      While being a simple algorithm it does create a lot of overhead, since the timeslots do not necessarily encompass the whole time needed by the task.
+		With clock based scheduling every task gets a share of execution time in which the work of the task may be done. It is a way to schedule tasks without priorities whilst making sure every task gets time on the computational unit. While being a simple algorithm it does create a lot of overhead, since the timeslots do not necessarily encompass the whole time needed by the task.
 	\item \textbf{(Weighted) Round Robin:}
-	      In basic Round Robin scheduling, each task is assigned a fixed time slice or quantum in a cyclic order, ensuring all tasks get an equal share of CPU time. Weighted Round Robin extends this by assigning different weights to tasks, allowing tasks with higher weights to receive more CPU time compared to tasks with lower weights. This provides a more flexible and efficient scheduling mechanism, especially for systems with tasks of varying importance or computational needs. \cite{helmyOptimizingRoundRobinScheduling2024}
-	\item \textbf{Rate Monotonic Scheduling:} Rate monotonic scheduling is a fixed priority algorithm where tasks with shorter periods are assigned higher priorities. It is optimal for fixed priority scheduling under certain conditions. \cite{lehoczkyRateMonotonicScheduling1989}
-	\item \textbf{Earliest Deadline First:} With the earliest deadline first scheduling algorithm, the priority of the tasks is not fixed, but dynamic. As the name implies, the tasks get a priority assigned in a way to ensure the tasks with the nearest upcoming deadline get to run first. \cite{lehoczkyPerformanceRealtimeBus1986}
+		In basic Round Robin scheduling, each task is assigned a fixed time slice or quantum in a cyclic order, ensuring all tasks get an equal share of CPU time. Weighted Round Robin extends this by assigning different weights to tasks, allowing tasks with higher weights to receive more CPU time compared to tasks with lower weights. This provides a more flexible and efficient scheduling mechanism, especially for systems with tasks of varying importance or computational needs. \cite{helmyOptimizingRoundRobinScheduling2024}
+	\item \textbf{\ac{RMS}} 
+		\ac{RMS} is a fixed priority algorithm where tasks with shorter periods are assigned higher priorities. 
+		It is optimal for fixed priority scheduling under certain conditions. \cite{lehoczkyRateMonotonicScheduling1989}
+	\item \textbf{\ac{EDF}} 
+		With the \ac{EDF} scheduling algorithm, the priority of the tasks is not fixed, but dynamic. 
+		As the name implies, the tasks get a priority assigned in a way to ensure the tasks with the nearest upcoming deadline get to run first.\cite{lehoczkyPerformanceRealtimeBus1986}
 \end{itemize}
 
-\subsection{\ac{LET}}\label{sec:let}
+With each scheduling algorithm having its own benefits and use cases, those algorithms, that use fixed priority scheduling, like \ac{RMS} and \ac{EDF} do provide an option to reach a \textit{utilization} up to a value of $1$, when being used on single-processor units with preemption\cite{liuSchedulingAlgorithmsMultiprogramming1973}.
+Utilization describes the relative amount of used time of the processing unit compared to its idle time.
+For example a single task running every 1000ms for 500ms while no other task is being scheduled will result in a utilization of $U=0.5$.
 
-\begin{figure}[ht]
+\subsection{Execution Time Paradigms}\label{sec:let}
+In the calculation of \ac{WCET} the reading of input and the writing of output often led to too pessimistic estimations of the needed execution time.
+\begin{figure}[t!]
 	\begin{subfigure}[c]{0.32\textwidth}
 		\resizebox{\textwidth}{!}{%
 			\label{fig:model_ZET}
@@ -74,21 +69,24 @@ There are some scheduling techniques to determine the priority of tasks to be sc
 	\caption{Display of three different programming abstractions\cite{chakrabortyAdvancesRealTimeSystems2012}.}
 	\label{fig:model_ZET_LET_BET}
 \end{figure}
-\cref{fig:model_ZET_LET_BET} displays three different approaches to create an abstraction of timing models: \ac{ZET}, \ac{LET} and \ac{BET}.
-With the approach of \ac{ZET} the assumption is to completely ignore the timing aspects of reading and writing output and just assume instantiations effects\cite{chakrabortyAdvancesRealTimeSystems2012}.
-\ac{LET} is a programming model used in real-time systems to decouple the timing behavior of tasks from the actual execution on the hardware. In the \ac{LET} model, the execution time of a task is defined logically rather than physically. This means that a task is considered to start and finish at predefined logical times, regardless of when it actually starts and finishes on the hardware\cite{chakrabortyAdvancesRealTimeSystems2012}.
+\cref{fig:model_ZET_LET_BET} displays three different approaches to create an abstraction of timing models: \ac{ZET} (\cref{fig:model_ZET}), \ac{LET} (\cref{fig:model_LET}) and \ac{BET} (\cref{fig:model_BET}).
+With the approach of \ac{ET} the assumption is to completely ignore the timing aspects of reading and writing output and just assume instantiations effects\cite{chakrabortyAdvancesRealTimeSystems2012}.
+\ac{LET} started as a programming model, but led to a well-known paradigm for analyzing real-time systems to decouple the timing behavior of tasks from the actual execution on the hardware. \
+In the \ac{LET} model, the execution time of a task is defined logically rather than physically. This means that a task is considered to start and finish at predefined logical times, regardless of when it actually starts and finishes on the hardware\cite{chakrabortyAdvancesRealTimeSystems2012}.
 The \ac{BET} approach takes a step away from the abstraction of execution times by bounding them in time frames using deadlines marking upper bounds in which the interaction has to be finished\cite{chakrabortyAdvancesRealTimeSystems2012}.
 
-The \ac{LET} model provides several benefits. Firstly, it ensures predictability by defining the execution times logically. This predictability is crucial for real-time systems as it guarantees that the timing behavior of tasks remains consistent and reliable.
+The concept \ac{LET} that developed from the programming language Giotto\cite{henzingerGiottoTimetriggeredLanguage2003}.
+In their paper \textcite{henzingerGiottoTimetriggeredLanguage2003} present several benefits of the \ac{LET} model:
+Firstly, it ensures predictability by defining the execution times logically.
+This predictability is crucial for real-time systems as it guarantees that the timing behavior of tasks remains consistent and reliable.
 
-Secondly, the \ac{LET} model allows for deterministic behavior. Since the logical execution times are fixed and do not depend on the actual execution times, the system's behavior remains deterministic, which is essential for safety-critical applications.
+Secondly, the \ac{LET} model allows for deterministic behavior.
+Since the logical execution times are fixed and do not depend on the actual execution times, the system's behavior remains deterministic, which is essential for safety-critical applications.
 
-Lastly, the \ac{LET} model decouples the timing behavior of tasks from the underlying hardware. This decoupling makes it easier to port the system to different hardware platforms, enhancing the system's flexibility and adaptability.
+Lastly, the \ac{LET} model decouples the timing behavior of tasks from the underlying hardware.
+This decoupling makes it easier to port the system to different hardware platforms, enhancing the system's flexibility and adaptability.
 
 The \ac{LET} model is commonly used in safety-critical systems, such as automotive and aerospace applications, where predictability and determinism are essential.
-
-\textcite{kopetzRealTimeSystemsDesign2022} provides a comprehensive overview of the \ac{LET} model and its applications in real-time systems.
-
 
 \section{Timing Analysis}\label{sec:timing_analysis}
 For real-time systems it is desired to keep up the reliability and predictability of the given tasks to ensure their timely execution respectively to their deadlines.
@@ -135,7 +133,6 @@ Cache misses can significantly impact the execution time of a task, as accessing
 This can lead to increased execution times and variability in the timing behavior of tasks.
 For this reason it is of interest to depict the cache's status to know if the data access results in a cache miss or a cache hit.
 
-
 \todo{timing accidents - Chen 04 10/53}
 
 Static analysis is advantageous because it does not require actual execution of the code, making it suitable for early stages of development. However, it can be overly conservative, leading to pessimistic WCET estimates due to the need to account for all possible execution paths and hardware behaviors.
@@ -151,9 +148,6 @@ This is particularly useful for complex systems where static analysis may be ove
 However, measurement-based analysis also has limitations, such as the difficulty in guaranteeing that the worst-case scenario has been observed during testing. 
 Additionally, this approach may not be suitable for early stages of development when the hardware is not yet available, in which case appropriate simulators are used trying to mimic real hardware.\cite{wilhelmWorstcaseExecutiontimeProblem2008}
 To address these challenges, hybrid approaches that combine measurement-based and static analysis techniques are often employed to achieve more accurate and reliable WCET estimates\cite{kelterWCETAnalysisOptimization}.
-
-\subsection{Probabilistic Analysis}
-\label{sec:probabilistic_analysis}
 
 Early flowcharts and \ac{AI}s described by \textcite{cousotAbstractInterpretationUnified1977}
 
@@ -197,7 +191,30 @@ This situation is known as the critical instant. By analyzing the system under t
 The theorem is particularly useful in the context of \ac{RMS} and other fixed-priority scheduling algorithms, as it provides a systematic way to evaluate the schedulability of tasks. 
 If all tasks meet their deadlines under the critical instant scenario, the system is considered schedulable.
 
-\subsection{Related Work}
-\label{sec:related_work}
-\todo{}
-\cite{dar-tzenpengAssignmentSchedulingCommunicating1997} Built taskgraph with harmonic set 
+\subsection{Related Work}\label{sec:related_work}
+In the past multiple ideas were presented how to handle or generate task-sets in real-time systems.
+A short list of related work is presented in the \cref{sec:related_work:1,sec:related_work:2,sec:related_work:3}
+
+\subsubsection{Assignment and Scheduling Communicating Periodic Tasks in Distributed Real-Time Systems}\label{sec:related_work:1}
+\textcite{dar-tzenpengAssignmentSchedulingCommunicating1997} presented a solution to build a task-set with inter-task communication in mind while minimizing the system hazard.
+The system hazard is represented by a normalized value of the the maximum task response time.
+
+To tackle the problem they used a task-set with harmonic, periodic tasks and introduced aperiodic tasks as a way to emulate stimuli presented by the systems environment.
+The aperiodic tasks were migrated into the periodic harmony by using deferrable servers.
+
+Making use of a search-tree they reduced the complexity of the problem of task allocation to a manageable amount.
+The idea is to utilize the tree to run their developed \textit{branch-and-bound technique} to prune the tree of infeasbile paths and task combinations.
+
+\subsubsection{SysWCET\: Whole-System Response-Time Analysis for Fixed-Priority Real-Time Systems}\label{sec:related_work:2}
+With \textit{SysWCET} \textcite{dietrichSysWCETWholeSystemResponseTime} explored the idea of mapping out the global control flow into a \textit{system-wide control flow graph} to gain knowledge about the effects of system calls by the presented tasks and reduce the pessimism that often is present when estimating this effects.
+
+To derive actual timing implications, the authors of the paper used the \textit{implicit path enumeration technique} to convert the previously built \ac{CFG} into a \ac{ILP} to solve.
+With this the upper bounds of the \ac{WCET} can be derived.
+
+\subsubsection{GenE: A Benchmark Generator for WCET Analysis}\label{sec:related_work:3}
+\textcite{wagemannGenEBenchmarkGenerator2015} presented with \textit{GenE} a code generator that bases on the idea to dynamically create benchmarks with known flow facts.
+
+GenE uses patterns to create tasks with a focus on realistic control flows.
+These patterns woven together produce control flows with different aspects like assignments, loops and branches.
+Knowing these flow facts is big help for improving the analysis that is evaluated with the generated benchmarks.
+The benchmarks' code is created by utilizing the Low Level Virtual Machine with its intermediate representation (LLVM-IR).
