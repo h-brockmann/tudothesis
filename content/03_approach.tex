@@ -1,6 +1,6 @@
 \chapter{Concept}\label{ch:concept}
 \section{System-model}\label{sec:model}
-In this section, we define the system model that serves as the foundation for the concept of the generated task-sets.
+In this section, we define the system model that serves as the foundation for the concept of the generated task sets.
 It is reduced to a description of the task model and the execution model without further defining a hardware model, since the generated model is designed to be a meta model with no constraints on hardware specifications, making it hardware independent.
 
 \subsection{Task Model}\label{sec:task_model}
@@ -9,22 +9,23 @@ As a foundation for this generator, the following section defines the bounds and
 \subsubsection{Tasks}\label{sec:task}
 Each task $\tau_i$ may be described by multiple points of time:
 \begin{itemize}
-    \item $a_i$: time of arrival
-    \item $r_i$: release time
-    \item $d_i$: deadline.
+    \item $a_i$: time of arrival
+    \item $r_i$: release time
+    \item $d_i$: deadline.
 \end{itemize}
 In this model, tasks are periodic with implicit deadlines, meaning that the arrival time $a_i$, release time $r_i$, and deadline $d_i$ can all be described by a single period value $T_i$. 
 Specifically, the arrival time $a_i$ is the start of the period, the release time $r_i$ is the same as the arrival time, and the deadline $d_i$ is the end of the period. 
 This simplifies the task model as follows:
 \begin{itemize}
-	\item $a_i = k \cdot T_i$
-	\item $r_i = a_i$
-	\item $d_i = (k + 1) \cdot T_i$
+    \item $a_i = k \cdot T_i$
+    \item $r_i = a_i$
+    \item $d_i = (k + 1) \cdot T_i$
 \end{itemize}
 where $k$ is a non-negative integer representing the $k$-th instance of the task.
 This restriction is applied for the same reason mentioned by \textcite{dar-tzenpengAssignmentSchedulingCommunicating1997}, as the allocation of aperiodic tasks can be considered ``a dynamic load sharing problem''\cite{dar-tzenpengAssignmentSchedulingCommunicating1997}. 
-This means that the system must dynamically allocate resources to tasks as they arrive, which can lead to unpredictable behavior and potential overload if not managed properly. 
-By focusing on periodic tasks with well-defined periods and deadlines, the system can ensure a more predictable and manageable load, improving overall schedulability and reliability.
+With aperiodic tasks, it is a challenge in itself to manage the additional tasks and react to them just in time.
+Focusing on periodic tasks with implicit deadlines allows for a predictable schedule that is better to handle.
+Adding aperiodic tasks may be an aspect to implement in the future, with a look onto the principle applied by \textcite{dar-tzenpengAssignmentSchedulingCommunicating1997}.
 
 Given that the proposed generator leverages detailed knowledge about the execution times of task jobs, additional details are provided to describe it. 
 Each task is assigned multiple execution times, representing the possible outcomes depending on the system's status when scheduled. This includes adding a list of possible execution times.
@@ -32,7 +33,7 @@ While $e_{i,k}$ defines the actual execution time of a job $\tau_{i,k}$\cite{but
 This will be described in more detail in \cref{sec:job}.
 
 \subsubsection{Task-set}\label{sec:taskset}
-Two or more tasks would be considered a task-set.
+Two or more tasks would be considered a task set.
 In this model, a task-set $\Gamma$ is simply represented as a set of all given $n$ tasks $\Gamma \coloneqq \{\tau_1, \tau_2, \ldots, \tau_n\}$.
 
 To provide some interaction and influence between multiple tasks a chain $\Gamma^c$ is presented.
@@ -40,12 +41,12 @@ The model of a chain is widely described in research\cite{
 beckerSynthesizingJoblevelDependencies2016,abdullahWorstcaseCauseeffectReaction2019,choiChainBasedFixedPriorityScheduling2020}.
 A chain $\Gamma^c$ describes an \textit{ordered} list of tasks $\tau_1$ to $\tau_m$.
 \begin{center}
-	$\Gamma^c \coloneqq [\tau_s,\tau_{m_1},\tau_{m_2}, \ldots, \tau_e]$
+    $\Gamma^c \coloneqq [\tau_s,\tau_{m_1},\tau_{m_2}, \ldots, \tau_e]$
 \end{center}
 \begin{itemize}
-	\item $\tau_s$: the first task of the chain
-	\item $\tau_{m_*}$: intermediate task of the chain
-	\item $\tau_e$: the last task of the chain
+    \item $\tau_s$: the first task of the chain
+    \item $\tau_{m_*}$: intermediate task of the chain
+    \item $\tau_e$: the last task of the chain
 \end{itemize}
 Each element of that list is denoted with its index as $\Gamma^c[i]$ where $\Gamma^c[1]$ represents the first list element $\tau_s$\cite{choiChainBasedFixedPriorityScheduling2020}.
 The elements in the list are ordered so the influence of the tasks is structured as $\tau_{m_x} \rightarrow \tau_{m_{x+1}}$.
@@ -53,16 +54,16 @@ A task $\tau_{m_{x+1}}$ is dependent on the outcome of $ \tau_{m_{x}}$.
 The interaction between two tasks is done via shared memory on the premise the value is read at the start of a job and written at the end of a job\cite{choiChainBasedFixedPriorityScheduling2020}.
 This corresponds to the model described in \cref{sec:let} of \ac{LET}.
 
-Each task set generated by this scheduler is designed to be a harmonic task-set, meaning that the periods of all tasks are multiples of each other\cite{liuSchedulingAlgorithmsMultiprogramming1973,kuoLoadAdjustmentAdaptive1991}.
-As \textcite{liuSchedulingAlgorithmsMultiprogramming1973} state it will allow the system to reach an utilization of up to $1$, whereas any non-harmonic set of task, when using a fixed-priority rate monotonic scheduling algorithm, will be bound in its utilization.
+Each task set generated by this scheduler is designed to be a harmonic task set, meaning that the periods of all tasks are multiples of each other\cite{liuSchedulingAlgorithmsMultiprogramming1973,kuoLoadAdjustmentAdaptive1991}.
+As \textcite{liuSchedulingAlgorithmsMultiprogramming1973} state, it will allow the system to reach a utilization of up to $1$, whereas any non-harmonic set of tasks, when using a fixed-priority rate monotonic scheduling algorithm, will be bound in its (lower) utilization.
 
 \subsubsection{Jobs}\label{sec:job}
 A job $\tau_{i,k}$ represents a single instance of a task $\tau_i$ (see \cref{sec:tasks_and_jobs}) and is characterized by the following properties:
 \begin{itemize}
-	\item $k$: index of the job $\tau_{i,k}$ with $k \epsilon [0, \ldots, hyperperiod / \max(T_*)]$
-	\item $r_{i,k}$: release time of job $\tau_{i,k}$
-	\item $d_{i,k}$: deadline of job $\tau_{i,k}$
-	\item $e_{i,k}$: computational time of job $\tau_{i,k}$
+    \item $k$: index of the job $\tau_{i,k}$ with $k \epsilon [0, \ldots, hyperperiod / \max(T_*)]$
+    \item $r_{i,k}$: release time of job $\tau_{i,k}$
+    \item $d_{i,k}$: deadline of job $\tau_{i,k}$
+    \item $e_{i,k}$: computational time of job $\tau_{i,k}$
 \end{itemize}
 
 Due to being a harmonic task-set and its properties (see \cref{sec:scheduling}), the \textit{planning cycle}\cite{dar-tzenpengAssignmentSchedulingCommunicating1997} of $\Gamma$ is defined by the \textit{\ac{LCM}} of all tasks' periods $\{T_1, \ldots, T_n\}$, resulting in the period $T_{max}$ of the task with the highest period. 
@@ -74,8 +75,8 @@ Each task $\tau_i$ is characterized by its period $T_i$, its list of possible ex
 
 Each job $\tau_{i_j}$ is described by the release time $r_{i_m}$, the beginning of the next period $P_i+1$ is equal to the implicit deadline $d_i$, and the job's computational time $C_{i_m}$. The release time $r_{i_m}$ per job is set to be aligned with the period beginning with $0$.
 \begin{center}
-    $r_{i_m} = P_i \times m$ \\
-    $d_{i_m} = P_i + r_{i_m}$
+    $r_{i_m} = P_i \times m$ \\
+    $d_{i_m} = P_i + r_{i_m}$
 \end{center}
 \todo{explain chains and their length}
 
@@ -84,23 +85,23 @@ As already mentioned in \cref{sec:taskset} the employed scheduler will be a fixe
 The scheduler operates by assigning each task $\Tau_i$ a priority inversely proportional to its period $P_i$\ref{liuSchedulingAlgorithmsMultiprogramming1973}.
 Tasks with shorter periods receive higher priorities and are scheduled more frequently.
 Higher-priority tasks can preempt lower-priority tasks.
-If a higher-priority task becomes ready to execute while a lower-priority task is running, the scheduler will interrupt the lower-priority task and allocate the processor to the higher-priority task.
+Suppose a higher-priority task becomes ready to execute while a lower-priority task is running. In that case, the scheduler will interrupt the lower-priority task and allocate the processor to the higher-priority task.
 This is represented in the resulting schedule as jobs being divided into multiple segments $C_{i,k}^1$ to $C_{i,k}^j$ where $j$ is equal to the number of preemptions plus $1$.
 The resulting schedule is a list of $C_{i,k}^j$ depicting the complete schedule.
 Each $C_{i,k}^j$ has its own starting time $s_{i,k}^j$ and its finishing time $s_{i,k}^j$.
 
-Making use of the \ac{RMS} in combination with the in \cref{sec:task_model} mentioned harmonic task-set it is possible to reach utilizations up to $1$\cite{liuSchedulingAlgorithmsMultiprogramming1973}.
+Making use of the \ac{RMS} in combination with the in \cref{sec:task_model} mentioned harmonic task-set, it is possible to reach utilizations up to $1$\cite{liuSchedulingAlgorithmsMultiprogramming1973}.
 
 \textcite[p. 70f]{buttazzoHardRealTimeComputing2024} explains some assumptions to consider in the scheduling:
 \begin{enumerate}
-	\item[A1] The instances of a periodic task $\tau_i$ are regular
-	\item[A2]. The instances of a periodic task $\tau_i$ are regularly activated at a constant rate. The interval $\Tau_i$ between two consecutive activations is the period of the task. 
-	\item[A3]. All instances of a periodic task $\tau_i$ have the same worst-case execution time $C_i$.
-	\item[A4]. All instances of a periodic task $\tau_i$ have the same relative deadline $d_i$, which is equal to the period .$\Tau_i$. 
-	\item[A5]. All tasks in $\Tau$ are independent; that is, there are no precedence relations and no resource constraints.
-	\item[A6]. No task can suspend itself, for example, on I/O operations. 
-	\item[A7]. All tasks are released as soon as they arrive. 
-	\item[A8]. All overheads in the kernel are assumed to be zero. 
+    \item[A1] The instances of a periodic task $\tau_i$ are regular
+    \item[A2]. The instances of a periodic task $\tau_i$ are regularly activated at a constant rate. The interval $\Tau_i$ between two consecutive activations is the period of the task. 
+    \item[A3]. All instances of a periodic task $\tau_i$ have the same worst-case execution time $C_i$.
+    \item[A4]. All instances of a periodic task $\tau_i$ have the same relative deadline $d_i$, which is equal to the period .$\Tau_i$. 
+    \item[A5]. All tasks in $\Tau$ are independent; that is, there are no precedence relations and no resource constraints.
+    \item[A6]. No task can suspend itself, for example, on I/O operations. 
+    \item[A7]. All tasks are released as soon as they arrive. 
+    \item[A8]. All overheads in the kernel are assumed to be zero. 
 \end{enumerate}
 1
 \todo{buttazzoHardRealTimeComputing2024 explains scheduling with some assumptions}
@@ -112,75 +113,75 @@ Making use of the \ac{RMS} in combination with the in \cref{sec:task_model} ment
 The general workflow involves several key steps.
 
 \cref{sec:generating_period_times} describes how the harmonic period times are picked.
-\cref{sec:concept_task_chains} explains the idea of how is decided what tasks will be influencing each other and how the dependency is depicted in the resulting model.
+\cref{sec:concept_task_chains} explains the idea of how it is decided what tasks will be influencing each other and how the dependency is depicted in the resulting model.
 \cref{sec:period_tree, sec:concept_load_spread} explain the concept of representing the planning cycle with the task-sets periods as a tree graph.
 \cref{sec:concept_lower_execution_times} \subsection{Variation of Execution Times}
 \cref{sec:concept_job_chains} describes the variation of the task chains with final time values to be scheduled.
-\cref{sec:concept_scheduler} paints the idea how the tree graph may be used to create a schedule.
+\cref{sec:concept_scheduler} paints the idea of how the tree graph may be used to create a schedule.
 
 \subsection{Generating Period Times}\label{sec:generating_period_times}
 For the purpose of keeping the generated task-set harmonic, the periods to which the tasks will be assigned are generated first.
 The period being an abstract value in this scenario, the starting value in the generation is selected to be equal to $1$.
 Every further period is selected by randomly choosing an integer value to multiply the current value with.
-The multiplication defining the amount of jobs being generated, it may be favorable to keep this randomly chosen integer to be relatively small whilst being at minimum the value of $2$. 
+With the multiplication defining the number of jobs being generated, it may be favorable to keep this randomly chosen integer relatively small whilst being at minimum the value of $2$. 
 This is done until a previously defined amount of values is generated, limiting the maximum length of the inter-task communication chains.
 
 With the multiplication of the previous value a harmonic task-set is assured, since the \ac{LCM} is per definition the biggest generated period value.
-In \cref{fig:chain_of_periods} the maximum value is $24$ being a multiple of all lower periods.
+In \cref{fig:chain_of_periods}, the maximum value is $24$, being a multiple of all lower periods.
 Hence the planning cycle matches with the highest period of the task-set, in the given example the resulting time frame used to create the model is $[0,24[$.
 
 \begin{figure}[ht]
-	\begin{subfigure}[c]{0.45\textwidth}
-		\resizebox{\textwidth}{!}{%
-			\label{fig:chain_of_periods}
-		\input{./tikz/chain_of_periods.tex}
-		}
-		\caption{Generation of a small example series of periods by multiplication}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[c]{0.45\textwidth}
-		\resizebox{\textwidth}{!}{%
-			\label{fig:chain_of_tasks}
-			\input{./tikz/chain_of_tasks.tex}
-		}
-		\caption{Task-set $\Tau=\{\Tau_{1}, \ldots, \Tau_{11}\}$ parted into three subsets each a representation of a chain of inter-task communication}
-	\end{subfigure}
-	\begin{subfigure}[c]{0.450\textwidth}
-		\resizebox{\textwidth}{!}{%
-			\label{fig:graph_of_periods}
-			\input{./tikz/graph_of_periods.tex}
-		}
-		\caption{A graph depicting the generated periods. Highlighted with a dotted box: subtree with $P6_0$ as root (see \cref{fid:graph_of_tasks}).}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[c]{0.45\textwidth}
-		\resizebox{\textwidth}{!}{%
-			\label{fig:graph_of_tasks}
-			\input{./tikz/graph_of_tasks.tex}
-		}
-		\caption{Subgraph of \cref{fig:graph_of_periods} showing the jobs associated to each representation of period iteration}
-	\end{subfigure}
-	\caption{Generation of periods and task-set with tasks with given period}\label{fig:graph}
+    \begin{subfigure}[c]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{%
+            \label{fig:chain_of_periods}
+        \input{./tikz/chain_of_periods.tex}
+ }
+        \caption{Generation of a small example series of periods by multiplication}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[c]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{%
+            \label{fig:chain_of_tasks}
+            \input{./tikz/chain_of_tasks.tex}
+ }
+        \caption{Task-set $\Tau=\{\Tau_{1}, \ldots, \Tau_{11}\}$ parted into three subsets, each a representation of a chain of inter-task communication}
+    \end{subfigure}
+    \begin{subfigure}[c]{0.450\textwidth}
+        \resizebox{\textwidth}{!}{%
+            \label{fig:graph_of_periods}
+            \input{./tikz/graph_of_periods.tex}
+ }
+        \caption{A graph depicting the generated periods. Highlighted with a dotted box: subtree with $P6_0$ as root (see \cref{fid:graph_of_tasks}).}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[c]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{%
+            \label{fig:graph_of_tasks}
+            \input{./tikz/graph_of_tasks.tex}
+ }
+        \caption{Subgraph of \cref{fig:graph_of_periods} showing the jobs associated to each representation of period iteration}
+    \end{subfigure}
+    \caption{Generation of periods and task-set with tasks with given period}\label{fig:graph}
 \end{figure}
 
 \subsection{Generating Task Chains}\label{sec:concept_task_chains}
-To generate the task-set multiple tasks will be iteratively added and assigned to the already generated periods.
+Multiple tasks will be iteratively added and assigned to the already generated periods to generate the task set.
 By iterating about given period values a natural order of the tasks' periods is assured.
 With choosing the \ac{RMS} as scheduling method it is an descending order of priority, since the higher periods will result in lower priorities.
 Knowing this the tasks can be connected with its successor (if one does exist) to limit the inter-task communication to be directed from higher priorities to lower priorities.
 
 Without \todo{!} 
-Doing so the sender is assured to run earlier in respect to the receiver, if no locking or priority inversion is apparent. \todo{priority inversion and resource locking in model}
+By doing so, the sender is assured to run earlier with respect to the receiver if no locking or priority inversion is apparent. \todo{priority inversion and resource locking in model}
 By skipping a period while generating the tasks, the chains are built to vary the length and distribution of their associated tasks.
 The skip may be done at random.
 
 \subsection{Period-tree}\label{sec:period_tree}
-By using a harmonic task-set it is possible to fan out the given list of periods as seen in \cref{fig:chain_of_periods} into a tree structure as seen in \cref{fig:graph_of_periods}.
-Due to the periods being multiples of each other, the used multiple is the key to perfectly map the periods onto the same span of time.
-Beginning with the smallest period i.e. $1$, whilst ignoring the periods greater than that for now, it is a perfect representation of needed planning cycle $1$.
+Using a harmonic task-set allows it to fan out the given list of periods as seen in \cref{fig:chain_of_periods} into a tree structure as seen in \cref{fig:graph_of_periods}.
+Due to the periods being multiples of each other, the used multiple is the key to perfectly mapping the periods onto the same span of time.
+Beginning with the smallest period, i.e., $1$, whilst ignoring periods greater than that for now, it perfectly represents the needed planning cycle $1$.
 This is represented by node $P1_0$ in \cref{fig:graph_of_periods}.
-If the next biggest period $3$ gets added into the picture, the planning cycle increases to $3$, resulting in three repetitions of previous period to match the newer and bigger cycle, represented by $P3_0$ and $P1_0$ to $P1_2$ in \cref{fig:graph_of_periods}.
-Repeating this for the remaining periods, the complete tree, built so far, will be multiplied and added.
+If the next biggest period $3$ gets added into the picture, the planning cycle increases to $3$, resulting in three repetitions of the previous period to match the newer and bigger cycle, represented by $P3_0$ and $P1_0$ to $P1_2$ in \cref{fig:graph_of_periods}.
+Repeating this for the remaining periods, the complete tree built so far will be multiplied and added.
 The benefits of this design will be explained in more detail in \cref{sec:concept_scheduler}.
 
 \subsection{Assigning Computational Time}\label{sec:concept_load_spread}
@@ -196,64 +197,65 @@ This $18$ units of execution time must be spread across all tasks in the tree, e
 
 The total execution time for each period layer is then distributed among the tasks assigned to that period. This is done by randomly assigning execution times to each task such that the sum of the execution times equals the total execution time for the period layer.
 
-For example, if a period layer of $P1$ has a total execution time of $6$ units and there are three tasks $T_1$, $T_3$ and $T_9$ assigned to that period, the execution times could be randomly assigned as $CP_{1_1} = 1$, $CP_{3_1} = 2$, and $CP_{9_1} = 3$, ensuring that the sum is \( CP_{1_1} + CP_{3_1} + CP_{9_1} = 6 \) units.
+\todo{rewrite}
+For example, if a period layer of $P1$ has a total execution time of $12$ units and there are three tasks $T_1$, $T_3$ and $T_9$ assigned to that period, the execution times could be randomly assigned as $CP_{1_1} = 3$, $CP_{3_1} = 5$, and $CP_{9_1} = 5$, ensuring that the sum is \( CP_{1_1} + CP_{3_1} + CP_{9_1} = 6 \) units.
 
 By randomly distributing the execution times in this manner, the system ensures that the overall utilization remains within the desired bounds, maintaining the schedulability and efficiency of the task set.
 
 \subsection{Variation of Execution Times}\label{sec:concept_lower_execution_times}
-For the system to not only represent all tasks' \ac{WCET}, a variation of execution times per task need to be created.
+For the system to not only represent all tasks' \ac{WCET}, a variation of execution times per task needs to be created.
 Since the generated tasks with full load still have schedulability, the execution time of the tasks may be reduced without compromising the schedulability.
-For that reason the execution time of each task is multiplied with a random value between zero and one until a sufficient amount of different values is generated.
+For that reason, the execution time of each task is multiplied by a random value between zero and one until a sufficient number of different values are generated.
 Keeping the increasing complexity in mind, the system is designed to use a discrete distribution instead of continuous value functions to keep the possible permutations at considerable amounts.
 
 \subsection{Generating Job Chains}\label{sec:concept_job_chains}
 As \cref{sec:concept_task_chains} describes chains of tasks, there is the need to specify these to accommodate for the variations described in \cref{sec:concept_lower_execution_times}.
 Whilst the previously created chains of tasks may describe a general dependency, it is now necessary to use the variations to calculate the actual chains being used in the schedule, as described in \cref{sec:concept_scheduler} later on.
-For now the creation is not bound to any restrictions and will end in a permutation of the created variations.
+For now, the creation is not bound to any restrictions and will end in a permutation of the created variations.
 
 With multiple possible execution times per task, these variants need to be conditioned to ensure deterministic behavior.
 This can be achieved by defining conditions that link the execution times of tasks within a chain, ensuring that the execution time of one task influences the execution time of subsequent tasks in the chain, as described in \cref{sec:concept_task_chains}.
-The conditions are supposed to mimic the data-flow between two tasks and the influence between these two.
-The most simple attempt to combine the different variants of the two tasks together would be by pseudo-randomly assigning a follow-up variant of the second task to each of the first tasks variants.
-Biggest shortcoming with this idea would the easy predictability of a chain, since the first task would determine the execution times of the following tasks by transitivity.
-To hide the effects there may be inserted another independent input into the condition.
+The conditions are supposed to mimic the data flow between two tasks and the influence between these two.
+The most simple attempt to combine the different variants of the two tasks together would be by pseudo-randomly assigning a follow-up variant of the second task to each of the first task's variants.
+The biggest shortcoming with this idea would be the easy predictability of a chain since the first task would determine the execution times of the following tasks by transitivity.
+To hide the effects, another independent input may be inserted into the condition, representing the environment's influence on the program.
 
 % Having two array like structures for each tasks variants the independent input may be used as a shift to look up the condition to use.
-% This could be as simple as using modulo calculations or by any other hash function.
+% This could be as simple as using modulo calculations or any other hash function.
 
 \begin{figure}[ht]
-	% \begin{subfigure}[c]{0.45\textwidth}
-		\resizebox{\textwidth}{!}{%
-			\label{fig:conditions_a}
-			\input{./tikz/conditions_a.tex}
-		}
-	% 	\caption{Unshifted}
-	% \end{subfigure}
-	% \hfill
-	% \begin{subfigure}[c]{0.45\textwidth}
-	% 	\resizebox{\textwidth}{!}{%
-	% 		\label{fig:conditions_b}
-	% 		\input{./tikz/conditions_b.tex}
-	% 	}
-	% 	\caption{Shifted}
-	% \end{subfigure}
-	\caption{Generation of periods and task-set with tasks with given period}
+    % \begin{subfigure}[c]{0.45\textwidth}
+        \resizebox{\textwidth}{!}{%
+            \label{fig:conditions_a}
+            \input{./tikz/conditions_a.tex}
+ }
+    %   \caption{Unshifted}
+    % \end{subfigure}
+    % \hfill
+    % \begin{subfigure}[c]{0.45\textwidth}
+    %   \resizebox{\textwidth}{!}{%
+    %       \label{fig:conditions_b}
+    %       \input{./tikz/conditions_b.tex}
+    %   }
+    %   \caption{Shifted}
+    % \end{subfigure}
+    \caption{Generation of periods and task-set with tasks with given period}
 \end{figure}
 
 For example, consider a chain of tasks \( \tau_1 \{ CP: \{10,25,33,79,110\}\}, \tau_2 \{ CP: \{7,12,21,46,70\}\}, \tau_3 \{CP: \{18,30,35,42,75\} \).
 We can define conditions such that the execution time of \( \tau_1 \) affects the execution time of \( \tau_2 \), and the execution time of \( \tau_2 \) affects the execution time of \( \tau_3 \). 
-For instance as displayed in \cref{fig:conditions_a} the chain has multiple routes to traverse about the possible execution times.
-For example the first entry in the list of the tasks execution times would lead to the index 3 in second tasks list and finally get to index 2 in the third tasks list resulting in a specific chain \( \tau_1: 10 \rightarrow \tau_2: 46 \rightarrow \tau_3: 35 \).
+For instance, as displayed in \cref{fig:conditions_a}, the chain has multiple routes to traverse about the possible execution times.
+For example, the first entry in the list of the tasks execution times would lead to index 3 in the second tasks list and finally get to index 2 in the third tasks list resulting in a specific chain \( \tau_1: 10 \rightarrow \tau_2: 46 \rightarrow \tau_3: 35 \).
 
 By defining such conditions, we ensure that the execution times are linked and the overall behavior of the system remains predictable and deterministic. 
-This approach helps in maintaining the schedulability and efficiency of the task set while accommodating variations in execution times.
+This approach helps maintain the schedulability and efficiency of the task set while accommodating variations in execution times.
 
 \subsection{Building a Scheduler and Performing Schedulability Test}\label{sec:concept_scheduler}
 The schedule can be generated by performing a depth-first traversal of the previously described tree structure.
-The leaves of the tree represent the tasks with the highest priority and are processed first during the traversal.
+The hightest prioritized tasks are added as leaves into thre tree and are processed first during the traversal.
 As the traversal continues, tasks in higher layers with lower priorities are processed until the root is reached.
-Starting with an empty schedule for the given planning cycle the execution times of the highest prioritized tasks can simply be added.
-If one layer is added to the schedule, the next layer with the next next higher priority is added into the remaining idle time slots.
+Starting with an empty schedule for the given planning cycle, the execution times of the highest prioritized tasks can simply be added.
+If one layer is added to the schedule, the next layer with the next higher priority is added to the remaining idle time slots.
 Since the time and utilization are previously calculated it is ensured the task set is schedulable.
 
 \subsection{Using the chains}\label{sec:chains}
