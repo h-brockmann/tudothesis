@@ -8,33 +8,33 @@ A \ac{RTOS} is designed with precise timing and high reliability in mind for run
 According to the \textcite{IEEEStandardRealTime}, a task is defined as the ``basic logical unit of concurrent program execution'' that contains code. The standard also states that while the code within a task is executed sequentially, the tasks may run in parallel with other tasks. Tasks can have deadlines based on their importance and the nature of their work. The system and results may be affected differently if a task misses its deadline due to insufficient computational time. It is common to categorize task deadlines into three types\cite{dengSchedulingRealtimeApplications1997,abeniIntegratingMultimediaApplications1998,shindeComparisonRealTime2017}:
 \todo{rewrite}
 \begin{enumerate}
-    \item \textbf{Hard Deadline:}
- Missing a hard deadline is considered a system failure. The task must be completed by its deadline; otherwise, the system may enter an unsafe state.
-    \item \textbf{Firm Deadline:}
- Missing a firm deadline does not cause a system failure, but the task's result is no longer useful and is discarded. The system continues to operate, but the quality of service may degrade.
-    \item \textbf{Soft Deadline:}
- Missing a soft deadline reduces the task's utility, but the result can still be used. The system can tolerate some deadline misses without significantly impacting overall performance.
+	\item \textbf{Hard Deadline:}
+	      Missing a hard deadline is considered a system failure. The task must be completed by its deadline; otherwise, the system may enter an unsafe state.
+	\item \textbf{Firm Deadline:}
+	      Missing a firm deadline does not cause a system failure, but the task's result is no longer useful and is discarded. The system continues to operate, but the quality of service may degrade.
+	\item \textbf{Soft Deadline:}
+	      Missing a soft deadline reduces the task's utility, but the result can still be used. The system can tolerate some deadline misses without significantly impacting overall performance.
 \end{enumerate}
 A job is the specific execution instance of a given task when scheduled. One task may be assigned with multiple jobs. If a task is scheduled to execute every $x$ time unit, the total number of jobs will equal the number of times $x$ fits within the inspection cycle. For a more comprehensive description of tasks and jobs, refer to \cref{sec:task}.
 
 \subsection{Real-time Scheduling}\label{sec:scheduling}
 Creating the schedule of given tasks to be executed some aspects
 
-Generating a task set with known response times requires knowledge about the schedule. Implementing a scheduler benefits from taking direct insights into compiling the generated results. 
+Generating a task set with known response times requires knowledge about the schedule. Implementing a scheduler benefits from taking direct insights into compiling the generated results.
 When confronted with two or more tasks, the system must decide what task gets to be executed in the computational unit.
 This is done by employing scheduling techniques, which most rely on the use of priorities assigned to the tasks, while others schedule the tasks on a timely basis.
 
 \begin{itemize}
-    \item \textbf{Clock based Scheduling:}
- With clock-based scheduling, every task gets a share of execution time in which the work of the task may be done. It is a way to schedule tasks without priorities while ensuring every task gets time on the computational unit. While a simple algorithm, it creates a lot of overhead since the timeslots do not necessarily encompass the whole time needed by the task.
-    \item \textbf{(Weighted) Round Robin:}
- In basic round-robin scheduling, each task is assigned a fixed time slice or quantum in a cyclic order, ensuring all tasks get an equal share of CPU time. Weighted Round Robin extends this by assigning different weights to tasks, allowing tasks with higher weights to receive more CPU time than tasks with lower weights. This provides a more flexible and efficient scheduling mechanism, especially for systems with tasks of varying importance or computational needs. \cite{helmyOptimizingRoundRobinScheduling2024}
-    \item \textbf{\ac{RMS}} 
-        \ac{RMS} is a fixed priority algorithm where tasks with shorter periods are assigned higher priorities. 
- It is optimal for fixed-priority scheduling under certain conditions. \cite{lehoczkyRateMonotonicScheduling1989}
-    \item \textbf{\ac{EDF}} 
- With the \ac{EDF} scheduling algorithm, the priority of the tasks is not fixed, but dynamic. 
- As the name implies, the tasks get a priority assigned in a way to ensure the tasks with the nearest upcoming deadline get to run first.\cite{lehoczkyPerformanceRealtimeBus1986}
+	\item \textbf{Clock based Scheduling:}
+	      With clock-based scheduling, every task gets a share of execution time in which the work of the task may be done. It is a way to schedule tasks without priorities while ensuring every task gets time on the computational unit. While a simple algorithm, it creates a lot of overhead since the timeslots do not necessarily encompass the whole time needed by the task.
+	\item \textbf{(Weighted) Round Robin:}
+	      In basic round-robin scheduling, each task is assigned a fixed time slice or quantum in a cyclic order, ensuring all tasks get an equal share of CPU time. Weighted Round Robin extends this by assigning different weights to tasks, allowing tasks with higher weights to receive more CPU time than tasks with lower weights. This provides a more flexible and efficient scheduling mechanism, especially for systems with tasks of varying importance or computational needs. \cite{helmyOptimizingRoundRobinScheduling2024}
+	\item \textbf{\ac{RMS}}
+	      \ac{RMS} is a fixed priority algorithm where tasks with shorter periods are assigned higher priorities.
+	      It is optimal for fixed-priority scheduling under certain conditions. \cite{lehoczkyRateMonotonicScheduling1989}
+	\item \textbf{\ac{EDF}}
+	      With the \ac{EDF} scheduling algorithm, the priority of the tasks is not fixed, but dynamic.
+	      As the name implies, the tasks get a priority assigned in a way to ensure the tasks with the nearest upcoming deadline get to run first.\cite{lehoczkyPerformanceRealtimeBus1986}
 \end{itemize}
 
 With each scheduling algorithm having its own benefits and use cases, those algorithms, that use fixed priority scheduling, like \ac{RMS} and \ac{EDF} do provide an option to reach a \textit{utilization} up to a value of $1$ when being used on single-processor units with preemption\cite{liuSchedulingAlgorithmsMultiprogramming1973}.
@@ -44,31 +44,31 @@ For example, a single task running every 1000ms for 500ms while no other task is
 \subsection{Execution Time Paradigms}\label{sec:let}
 In the calculation of \ac{WCET}, the reading of input and the writing of output often led to too pessimistic estimations of the needed execution time.
 \begin{figure}[t!]
-    \begin{subfigure}[c]{0.32\textwidth}
-        \resizebox{\textwidth}{!}{%
-            \label{fig:model_ZET}
-            \input{./tikz/model_ZET.tex}
- }
-        \caption{Zero Execution Time}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[c]{0.32\textwidth}
-        \resizebox{\textwidth}{!}{%
-            \label{fig:model_LET}
-            \input{./tikz/model_LET.tex}
- }
-        \caption{Logical Execution Time}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[c]{0.32\textwidth}
-        \resizebox{\textwidth}{!}{%
-            \label{fig:model_BET}
-            \input{./tikz/model_BET.tex}
- }
-        \caption{Bounded Execution Time}
-    \end{subfigure}
-    \caption{Display of three different programming abstractions\cite{chakrabortyAdvancesRealTimeSystems2012}.}
-    \label{fig:model_ZET_LET_BET}
+	\begin{subfigure}[c]{0.32\textwidth}
+		\resizebox{\textwidth}{!}{%
+			\label{fig:model_ZET}
+			\input{./tikz/model_ZET.tex}
+		}
+		\caption{Zero Execution Time}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[c]{0.32\textwidth}
+		\resizebox{\textwidth}{!}{%
+			\label{fig:model_LET}
+			\input{./tikz/model_LET.tex}
+		}
+		\caption{Logical Execution Time}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[c]{0.32\textwidth}
+		\resizebox{\textwidth}{!}{%
+			\label{fig:model_BET}
+			\input{./tikz/model_BET.tex}
+		}
+		\caption{Bounded Execution Time}
+	\end{subfigure}
+	\caption{Display of three different programming abstractions\cite{chakrabortyAdvancesRealTimeSystems2012}.}
+	\label{fig:model_ZET_LET_BET}
 \end{figure}
 \cref{fig:model_ZET_LET_BET} displays three different approaches to create an abstraction of timing models: \ac{ZET} (\cref{fig:model_ZET}), \ac{LET} (\cref{fig:model_LET}) and \ac{BET} (\cref{fig:model_BET}).
 With the approach of \ac{LET}, the assumption is to completely ignore the timing aspects of reading and writing output and just assume instantiations effects\cite{chakrabortyAdvancesRealTimeSystems2012}.
@@ -104,67 +104,67 @@ These phases are \textit{control-flow analysis}, \textit{processor behavior anal
 \subsubsection{Control-Flow Analysis}\label{sec:cfa}
 
 \begin{figure}[h]
-    \begin{subfigure}[c]{0.45\textwidth}
-        \input{./listings/cfg_code.tex}
-        \caption{Example code}
-        \label{fig:cfg_code}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[c]{0.45\textwidth}
-        \input{./tikz/control_flow_graph.tex}
-        \caption{\ac{CFG} for \cref{fig:cfg_code}}
-        \label{fig:cfg}
-    \end{subfigure}
-    \caption{Example code of a loop with branching code and its representation as a \ac{CFG} (figure taken from \cite{liCacheModelingRealtime1996}).}
-    \label{fig:code_and_cfg}
+	\begin{subfigure}[c]{0.45\textwidth}
+		\input{./listings/cfg_code.tex}
+		\caption{Example code}
+		\label{fig:cfg_code}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[c]{0.45\textwidth}
+		\input{./tikz/control_flow_graph.tex}
+		\caption{\ac{CFG} for \cref{fig:cfg_code}}
+		\label{fig:cfg}
+	\end{subfigure}
+	\caption{Example code of a loop with branching code and its representation as a \ac{CFG} (figure taken from \cite{liCacheModelingRealtime1996}).}
+	\label{fig:code_and_cfg}
 \end{figure}
 
-When analyzing a given task, a \ac{CFG} is built to represent the execution paths of the task's code, including a task's call graph. The control-flow analysis, previously called \textit{high-level analysis}, attempts to gain as much knowledge about the control flow of a given task by identifying loops and their bounds, flow branches, and function calls. When including information about the data flow of the task, it may be possible to exclude infeasible paths from the \ac{CFG} that may not be executed at all, for example, paths with mutually exclusive conditions. 
+When analyzing a given task, a \ac{CFG} is built to represent the execution paths of the task's code, including a task's call graph. The control-flow analysis, previously called \textit{high-level analysis}, attempts to gain as much knowledge about the control flow of a given task by identifying loops and their bounds, flow branches, and function calls. When including information about the data flow of the task, it may be possible to exclude infeasible paths from the \ac{CFG} that may not be executed at all, for example, paths with mutually exclusive conditions.
 
-\Cref{fig:code_and_cfg} illustrates an example code snippet and its corresponding \ac{CFG}. 
-The code snippet, shown in \cref{fig:cfg_code}, contains loops and branches that determine the sequence of operations based on the value of the variable \texttt{k}. 
+\Cref{fig:code_and_cfg} illustrates an example code snippet and its corresponding \ac{CFG}.
+The code snippet, shown in \cref{fig:cfg_code}, contains loops and branches that determine the sequence of operations based on the value of the variable \texttt{k}.
 The \ac{CFG}, depicted in \cref{fig:cfg}, visually represents the basic blocks of the piece of code, highlighting the possible execution paths.
 On the base of the \ac{CFG} and some additional information, like the loop bound of $k<10$ in this example, it is possible to deduct constraints describing the flow of the code, enabling an estimation of the costs of different execution paths, through the graph\cite{liCacheModelingRealtime1996,wilhelmWorstcaseExecutiontimeProblem2008}.
 This technique is called \ac{IPET}\cite{wilhelmWorstcaseExecutiontimeProblem2008}.
 
 \subsection{Data Flow Analysis}\label{sec:dfa}
 \ac{DFA} is used to analyze the flow of data in a program to detect dependencies and bottlenecks.
-Some bottlenecks may be cache misses e.g. because an \ac{LRU} entry was overwritten. 
-Cache misses can significantly impact the execution time of a task, as accessing data from the main memory is much slower than accessing it from the cache\cite{liCacheModelingRealtime1996}. 
+Some bottlenecks may be cache misses e.g. because an \ac{LRU} entry was overwritten.
+Cache misses can significantly impact the execution time of a task, as accessing data from the main memory is much slower than accessing it from the cache\cite{liCacheModelingRealtime1996}.
 This can lead to increased execution times and variability in the timing behavior of tasks.
 For this reason, it is interesting to depict the cache's status to know if the data access results in a cache miss or a cache hit.
 
 To tackle the problem of keeping track of cache contents, \ac{AI}s may be used.
 With such interpretation of examined programs, it is possible to formalize the memory accesses and assignments\cite{cousotAbstractInterpretationUnified1977}.
-This being a great chance, it is still necessary to know the status of the cache at the point where the program is started to decide whether a cache miss or cache hit is expected. 
+This being a great chance, it is still necessary to know the status of the cache at the point where the program is started to decide whether a cache miss or cache hit is expected.
 
 Static analysis is advantageous because it does not require actual execution of the code, making it suitable for early stages of development. However, it can be overly conservative, leading to pessimistic WCET estimates due to the need to account for all possible execution paths and hardware behaviors.
 
 \subsection{Measurement-based Analysis}\label{sec:measurement_analysis}
 \todo{rewrite complete paragraph see abdulaziz mathematical modeling and computer simulation}
-Measurement-based analysis involves executing the code on the target hardware and measuring the execution times to determine the \ac{wcet}. 
-This approach relies on collecting empirical data from actual runs of the system, which can provide more accurate and realistic estimates of execution times compared to purely static methods. 
+Measurement-based analysis involves executing the code on the target hardware and measuring the execution times to determine the \ac{wcet}.
+This approach relies on collecting empirical data from actual runs of the system, which can provide more accurate and realistic estimates of execution times compared to purely static methods.
 By running the code under various conditions and workloads, measurement-based analysis can capture the system's dynamic behavior, including the effects of caches, pipelines, and other hardware features that may impact execution time.
 However, this method requires a comprehensive set of test cases to ensure that all possible execution paths are covered, which can be challenging and time-consuming\cite{wilhelmWorstcaseExecutiontimeProblem2008}.
 \todo{rewrite}
-One of the main advantages of measurement-based analysis is its ability to provide precise timing information that reflects the system's actual performance. 
+One of the main advantages of measurement-based analysis is its ability to provide precise timing information that reflects the system's actual performance.
 This is particularly useful for complex systems where static analysis may be overly conservative and result in pessimistic WCET estimates.
-However, measurement-based analysis also has limitations, such as the difficulty in guaranteeing that the worst-case scenario has been observed during testing. 
+However, measurement-based analysis also has limitations, such as the difficulty in guaranteeing that the worst-case scenario has been observed during testing.
 Additionally, this approach may not be suitable for the early stages of development when the hardware is not yet available, in which case appropriate simulators are used to mimic real hardware.\cite{wilhelmWorstcaseExecutiontimeProblem2008}
 To address these challenges, hybrid approaches that combine measurement-based and static analysis techniques are often employed to achieve more accurate and reliable WCET estimates\cite{kelterWCETAnalysisOptimization}.
 
 \begin{figure}[htbp]
-    \centering
-    \resizebox{\textwidth}{!}{
-        \input{./tikz/overestimation_wilhelm.tex}
- }
-    \caption{
- The graph above illustrates two curves representing the basic concepts of timing analysis.
- The first curve, with the dotted area, shows the range of all possible execution times, with the minimum and maximum values being the \ac{BCET} and \ac{WCET}, respectively.
- The second curve, with the cross-hatched area, represents the range of execution times identified through analysis, with the minimum and maximum values being the \textit{minimal observed execution time} and \textit{maximal observed execution time}.
- This graph is adapted from \textcite{wilhelmWorstcaseExecutiontimeProblem2008}.
- }
-    \label{fig:overestimation}
+	\centering
+	\resizebox{\textwidth}{!}{
+		\input{./tikz/overestimation_wilhelm.tex}
+	}
+	\caption{
+		The graph above illustrates two curves representing the basic concepts of timing analysis.
+		The first curve, with the dotted area, shows the range of all possible execution times, with the minimum and maximum values being the \ac{BCET} and \ac{WCET}, respectively.
+		The second curve, with the cross-hatched area, represents the range of execution times identified through analysis, with the minimum and maximum values being the \textit{minimal observed execution time} and \textit{maximal observed execution time}.
+		This graph is adapted from \textcite{wilhelmWorstcaseExecutiontimeProblem2008}.
+	}
+	\label{fig:overestimation}
 \end{figure}
 
 \textcite{kelterWCETAnalysisOptimization} mentions several techniques that can be used for \ac{WCET} analysis, including static analysis, measurement-based analysis, statistical analysis, and hybrid approaches.
@@ -174,7 +174,7 @@ Hybrid approaches combine both static and measurement-based techniques to provid
 Static analysis is a proper and safe way to get information about the execution times since it is unhinged from hardware constraints and derived from a meta-model created from reviewing the code \cite{kelterWCETAnalysisOptimization}.
 
 Benchmarks play a significant role in evaluating analysis techniques.
-Providing multiple task sets with known execution scenarios and the task's behavior, the analysis techniques can be tested for their effectiveness. 
+Providing multiple task sets with known execution scenarios and the task's behavior, the analysis techniques can be tested for their effectiveness.
 Benchmarks commonly used are, for example, the Mälardalen \ac{WCET} benchmark and the TACLeBench benchmark suite\cite{falkTACLeBenchBenchmarkCollection2016}.
 
 Accurate \ac{WCET} analysis is critical for the design and verification of real-time systems, ensuring that all tasks can be scheduled and executed within their deadlines, thereby maintaining the system's overall reliability and performance\cite{kelterWCETAnalysisOptimization}.
@@ -185,10 +185,10 @@ Accurate \ac{WCET} analysis is critical for the design and verification of real-
 The Critical Instant Theorem, introduced by \textcite{liuSchedulingAlgorithmsMultiprogramming1973}, states that the \ac{WCRT} of a task occurs when it is released simultaneously with all higher-priority tasks.
 This theorem is fundamental in fixed-priority scheduling, as it helps determine the worst-case scenario for task execution.
 
-According to the theorem, to find the worst-case response time of a task, one must consider the scenario where the task is released at the same time as all higher-priority tasks. 
+According to the theorem, to find the worst-case response time of a task, one must consider the scenario where the task is released at the same time as all higher-priority tasks.
 This situation is known as the critical instant. By analyzing the system under this condition, one can ensure that the calculated response times are the worst-case values.
 
-The theorem is particularly useful in the context of \ac{RMS} and other fixed-priority scheduling algorithms, as it provides a systematic way to evaluate the schedulability of tasks. 
+The theorem is particularly useful in the context of \ac{RMS} and other fixed-priority scheduling algorithms, as it provides a systematic way to evaluate the schedulability of tasks.
 The system is considered schedulable if all tasks meet their deadlines under the critical instant scenario.
 
 \subsection{Related Work}\label{sec:related_work}

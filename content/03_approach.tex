@@ -9,17 +9,17 @@ As a foundation for this generator, the following section defines the bounds and
 \subsubsection{Tasks}\label{sec:task}
 Each task $\tau_i$ may be described by multiple points of time:
 \begin{itemize}
-    \item $a_i$: time of arrival
-    \item $r_i$: release time
-    \item $d_i$: deadline.
+  \item $a_i$: time of arrival
+  \item $r_i$: release time
+  \item $d_i$: deadline.
 \end{itemize}
 In this model, tasks are periodic with implicit deadlines, meaning that the arrival time $a_i$, release time $r_i$, and deadline $d_i$ can all be described by a single period value $T_i$. 
 Specifically, the arrival time $a_i$ is the start of the period, the release time $r_i$ is the same as the arrival time, and the deadline $d_i$ is the end of the period. 
 This simplifies the task model as follows:
 \begin{itemize}
-    \item $a_i = k \cdot T_i$
-    \item $r_i = a_i$
-    \item $d_i = (k + 1) \cdot T_i$
+  \item $a_i = k \cdot T_i$
+  \item $r_i = a_i$
+  \item $d_i = (k + 1) \cdot T_i$
 \end{itemize}
 where $k$ is a non-negative integer representing the $k$-th instance of the task.
 This restriction is applied for the same reason mentioned by \textcite{dar-tzenpengAssignmentSchedulingCommunicating1997}, as the allocation of aperiodic tasks can be considered ``a dynamic load sharing problem''\cite{dar-tzenpengAssignmentSchedulingCommunicating1997}. 
@@ -41,12 +41,12 @@ The model of a chain is widely described in research\cite{
 beckerSynthesizingJoblevelDependencies2016,abdullahWorstcaseCauseeffectReaction2019,choiChainBasedFixedPriorityScheduling2020}.
 A chain $\Gamma^c$ describes an \textit{ordered} list of tasks $\tau_1$ to $\tau_m$.
 \begin{center}
-    $\Gamma^c \coloneqq [\tau_s,\tau_{m_1},\tau_{m_2}, \ldots, \tau_e]$
+  $\Gamma^c \coloneqq [\tau_s,\tau_{m_1},\tau_{m_2}, \ldots, \tau_e]$
 \end{center}
 \begin{itemize}
-    \item $\tau_s$: the first task of the chain
-    \item $\tau_{m_*}$: intermediate task of the chain
-    \item $\tau_e$: the last task of the chain
+  \item $\tau_s$: the first task of the chain
+  \item $\tau_{m_*}$: intermediate task of the chain
+  \item $\tau_e$: the last task of the chain
 \end{itemize}
 Each element of that list is denoted with its index as $\Gamma^c[i]$ where $\Gamma^c[1]$ represents the first list element $\tau_s$\cite{choiChainBasedFixedPriorityScheduling2020}.
 The elements in the list are ordered so the influence of the tasks is structured as $\tau_{m_x} \rightarrow \tau_{m_{x+1}}$.
@@ -60,10 +60,10 @@ As \textcite{liuSchedulingAlgorithmsMultiprogramming1973} state, it will allow t
 \subsubsection{Jobs}\label{sec:job}
 A job $\tau_{i,k}$ represents a single instance of a task $\tau_i$ (see \cref{sec:tasks_and_jobs}) and is characterized by the following properties:
 \begin{itemize}
-    \item $k$: index of the job $\tau_{i,k}$ with $k \epsilon [0, \ldots, hyperperiod / \max(T_*)]$
-    \item $r_{i,k}$: release time of job $\tau_{i,k}$
-    \item $d_{i,k}$: deadline of job $\tau_{i,k}$
-    \item $e_{i,k}$: computational time of job $\tau_{i,k}$
+  \item $k$: index of the job $\tau_{i,k}$ with $k \epsilon [0, \ldots, hyperperiod / \max(T_*)]$
+  \item $r_{i,k}$: release time of job $\tau_{i,k}$
+  \item $d_{i,k}$: deadline of job $\tau_{i,k}$
+  \item $e_{i,k}$: computational time of job $\tau_{i,k}$
 \end{itemize}
 
 Due to being a harmonic task-set and its properties (see \cref{sec:scheduling}), the \textit{planning cycle}\cite{dar-tzenpengAssignmentSchedulingCommunicating1997} of $\Gamma$ is defined by the \textit{\ac{LCM}} of all tasks' periods $\{T_1, \ldots, T_n\}$, resulting in the period $T_{max}$ of the task with the highest period. 
@@ -75,8 +75,8 @@ Each task $\tau_i$ is characterized by its period $T_i$, its list of possible ex
 
 Each job $\tau_{i_j}$ is described by the release time $r_{i_m}$, the beginning of the next period $P_i+1$ is equal to the implicit deadline $d_i$, and the job's computational time $C_{i_m}$. The release time $r_{i_m}$ per job is set to be aligned with the period beginning with $0$.
 \begin{center}
-    $r_{i_m} = P_i \times m$ \\
-    $d_{i_m} = P_i + r_{i_m}$
+  $r_{i_m} = P_i \times m$ \\
+  $d_{i_m} = P_i + r_{i_m}$
 \end{center}
 \todo{explain chains and their length}
 
@@ -94,14 +94,14 @@ Making use of the \ac{RMS} in combination with the in \cref{sec:task_model} ment
 
 \textcite[p. 70f]{buttazzoHardRealTimeComputing2024} explains some assumptions to consider in the scheduling:
 \begin{enumerate}
-    \item[A1] The instances of a periodic task $\tau_i$ are regular
-    \item[A2]. The instances of a periodic task $\tau_i$ are regularly activated at a constant rate. The interval $\Tau_i$ between two consecutive activations is the period of the task. 
-    \item[A3]. All instances of a periodic task $\tau_i$ have the same worst-case execution time $C_i$.
-    \item[A4]. All instances of a periodic task $\tau_i$ have the same relative deadline $d_i$, which is equal to the period .$\Tau_i$. 
-    \item[A5]. All tasks in $\Tau$ are independent; that is, there are no precedence relations and no resource constraints.
-    \item[A6]. No task can suspend itself, for example, on I/O operations. 
-    \item[A7]. All tasks are released as soon as they arrive. 
-    \item[A8]. All overheads in the kernel are assumed to be zero. 
+  \item[A1] The instances of a periodic task $\tau_i$ are regular
+  \item[A2]. The instances of a periodic task $\tau_i$ are regularly activated at a constant rate. The interval $\Tau_i$ between two consecutive activations is the period of the task. 
+  \item[A3]. All instances of a periodic task $\tau_i$ have the same worst-case execution time $C_i$.
+  \item[A4]. All instances of a periodic task $\tau_i$ have the same relative deadline $d_i$, which is equal to the period .$\Tau_i$. 
+  \item[A5]. All tasks in $\Tau$ are independent; that is, there are no precedence relations and no resource constraints.
+  \item[A6]. No task can suspend itself, for example, on I/O operations. 
+  \item[A7]. All tasks are released as soon as they arrive. 
+  \item[A8]. All overheads in the kernel are assumed to be zero. 
 \end{enumerate}
 1
 \todo{buttazzoHardRealTimeComputing2024 explains scheduling with some assumptions}
@@ -131,37 +131,37 @@ In \cref{fig:chain_of_periods}, the maximum value is $24$, being a multiple of a
 Hence the planning cycle matches with the highest period of the task-set, in the given example the resulting time frame used to create the model is $[0,24[$.
 
 \begin{figure}[ht]
-    \begin{subfigure}[c]{0.45\textwidth}
-        \resizebox{\textwidth}{!}{%
-            \label{fig:chain_of_periods}
-        \input{./tikz/chain_of_periods.tex}
+  \begin{subfigure}[c]{0.45\textwidth}
+    \resizebox{\textwidth}{!}{%
+      \label{fig:chain_of_periods}
+    \input{./tikz/chain_of_periods.tex}
  }
-        \caption{Generation of a small example series of periods by multiplication}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[c]{0.45\textwidth}
-        \resizebox{\textwidth}{!}{%
-            \label{fig:chain_of_tasks}
-            \input{./tikz/chain_of_tasks.tex}
+    \caption{Generation of a small example series of periods by multiplication}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[c]{0.45\textwidth}
+    \resizebox{\textwidth}{!}{%
+      \label{fig:chain_of_tasks}
+      \input{./tikz/chain_of_tasks.tex}
  }
-        \caption{Task-set $\Tau=\{\Tau_{1}, \ldots, \Tau_{11}\}$ parted into three subsets, each a representation of a chain of inter-task communication}
-    \end{subfigure}
-    \begin{subfigure}[c]{0.450\textwidth}
-        \resizebox{\textwidth}{!}{%
-            \label{fig:graph_of_periods}
-            \input{./tikz/graph_of_periods.tex}
+    \caption{Task-set $\Tau=\{\Tau_{1}, \ldots, \Tau_{11}\}$ parted into three subsets, each a representation of a chain of inter-task communication}
+  \end{subfigure}
+  \begin{subfigure}[c]{0.450\textwidth}
+    \resizebox{\textwidth}{!}{%
+      \label{fig:graph_of_periods}
+      \input{./tikz/graph_of_periods.tex}
  }
-        \caption{A graph depicting the generated periods. Highlighted with a dotted box: subtree with $P6_0$ as root (see \cref{fid:graph_of_tasks}).}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[c]{0.45\textwidth}
-        \resizebox{\textwidth}{!}{%
-            \label{fig:graph_of_tasks}
-            \input{./tikz/graph_of_tasks.tex}
+    \caption{A graph depicting the generated periods. Highlighted with a dotted box: subtree with $P6_0$ as root (see \cref{fid:graph_of_tasks}).}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[c]{0.45\textwidth}
+    \resizebox{\textwidth}{!}{%
+      \label{fig:graph_of_tasks}
+      \input{./tikz/graph_of_tasks.tex}
  }
-        \caption{Subgraph of \cref{fig:graph_of_periods} showing the jobs associated to each representation of period iteration}
-    \end{subfigure}
-    \caption{Generation of periods and task-set with tasks with given period}\label{fig:graph}
+    \caption{Subgraph of \cref{fig:graph_of_periods} showing the jobs associated to each representation of period iteration}
+  \end{subfigure}
+  \caption{Generation of periods and task-set with tasks with given period}\label{fig:graph}
 \end{figure}
 
 \subsection{Generating Task Chains}\label{sec:concept_task_chains}
@@ -224,22 +224,22 @@ To hide the effects, another independent input may be inserted into the conditio
 % This could be as simple as using modulo calculations or any other hash function.
 
 \begin{figure}[ht]
-    % \begin{subfigure}[c]{0.45\textwidth}
-        \resizebox{\textwidth}{!}{%
-            \label{fig:conditions_a}
-            \input{./tikz/conditions_a.tex}
+  % \begin{subfigure}[c]{0.45\textwidth}
+    \resizebox{\textwidth}{!}{%
+      \label{fig:conditions_a}
+      \input{./tikz/conditions_a.tex}
  }
-    %   \caption{Unshifted}
-    % \end{subfigure}
-    % \hfill
-    % \begin{subfigure}[c]{0.45\textwidth}
-    %   \resizebox{\textwidth}{!}{%
-    %       \label{fig:conditions_b}
-    %       \input{./tikz/conditions_b.tex}
-    %   }
-    %   \caption{Shifted}
-    % \end{subfigure}
-    \caption{Generation of periods and task-set with tasks with given period}
+  %  \caption{Unshifted}
+  % \end{subfigure}
+  % \hfill
+  % \begin{subfigure}[c]{0.45\textwidth}
+  %  \resizebox{\textwidth}{!}{%
+  %    \label{fig:conditions_b}
+  %    \input{./tikz/conditions_b.tex}
+  %  }
+  %  \caption{Shifted}
+  % \end{subfigure}
+  \caption{Generation of periods and task-set with tasks with given period}
 \end{figure}
 
 For example, consider a chain of tasks \( \tau_1 \{ CP: \{10,25,33,79,110\}\}, \tau_2 \{ CP: \{7,12,21,46,70\}\}, \tau_3 \{CP: \{18,30,35,42,75\} \).
